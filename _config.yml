@@ -1,0 +1,8 @@
+safe: true
+lsi: false
+pygments: false
+paginate: 20
+permalink: /blog/:categories/:year/:month/:day/:title.html
+
+theme: normal
+brand: iOS Forms

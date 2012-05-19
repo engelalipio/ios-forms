@@ -1,0 +1,31 @@
+{% if page.url == '/ios-forms/index.html' %}
+{% assign homeClass = 'active' %}
+{% elsif page.url contains '/ios-forms/blog/' %}
+{% assign blogClass = 'active' %}
+{% elsif page.url == '/ios-forms/license.html' %}
+{% assign licenseClass = 'active' %}
+{% endif %}
+
+<nav class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="/ios-forms/index.html">{{site.brand}}</a>
+            <div class="nav-collapse">
+                <ul class="nav">
+                    <li class="{{homeClass}}"><a href="/ios-forms/index.html">Home</a></li>
+                    <li class="{{blogClass}}"><a href="/ios-forms/blog/index.html">Blog</a></li>
+                    <li class="{{licenseClass}}"><a href="/ios-forms/license.html">License</a></li>
+                </ul>
+                <ul class="nav pull-right">
+                    <li><a href="http://mfcollins3.github.com">Michael Collins</a></li>
+                    <li><a href="https://github.com/mfcollins3/ios-forms">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
