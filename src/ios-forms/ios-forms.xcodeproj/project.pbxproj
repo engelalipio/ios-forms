@@ -14,6 +14,12 @@
 		4CDC9DE71567FB860043AC98 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CDC9DE51567FB860043AC98 /* InfoPlist.strings */; };
 		4CDC9DE91567FB860043AC98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC9DE81567FB860043AC98 /* main.m */; };
 		4CDC9DF21567FBEE0043AC98 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DF11567FBEE0043AC98 /* GHUnitIOS.framework */; };
+		4CDC9DF515683E4E0043AC98 /* IRFormFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC9DF415683E4E0043AC98 /* IRFormFieldTests.m */; };
+		4CDC9DF815683F220043AC98 /* IRFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CDC9DF615683F220043AC98 /* IRFormField.h */; };
+		4CDC9DF915683F220043AC98 /* IRFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC9DF715683F220043AC98 /* IRFormField.m */; };
+		4CDC9DFA15683F220043AC98 /* IRFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC9DF715683F220043AC98 /* IRFormField.m */; };
+		4CDC9DFC15683FB20043AC98 /* IRFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CDC9DF615683F220043AC98 /* IRFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CDC9DFE1568461D0043AC98 /* TestField.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CDC9DFD1568461D0043AC98 /* TestField.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,10 @@
 		4CDC9DE81567FB860043AC98 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4CDC9DEA1567FB860043AC98 /* ios-forms-unit-tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-forms-unit-tests-Prefix.pch"; sourceTree = "<group>"; };
 		4CDC9DF11567FBEE0043AC98 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = ../../lib/GHUnitIOS.framework; sourceTree = "<group>"; };
+		4CDC9DF415683E4E0043AC98 /* IRFormFieldTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFormFieldTests.m; sourceTree = "<group>"; };
+		4CDC9DF615683F220043AC98 /* IRFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRFormField.h; sourceTree = "<group>"; };
+		4CDC9DF715683F220043AC98 /* IRFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFormField.m; sourceTree = "<group>"; };
+		4CDC9DFD1568461D0043AC98 /* TestField.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestField.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				4CDC9DCD1567FB350043AC98 /* Supporting Files */,
+				4CDC9DF615683F220043AC98 /* IRFormField.h */,
+				4CDC9DF715683F220043AC98 /* IRFormField.m */,
 			);
 			path = "ios-forms";
 			sourceTree = "<group>";
@@ -103,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				4CDC9DE31567FB860043AC98 /* Supporting Files */,
+				4CDC9DF415683E4E0043AC98 /* IRFormFieldTests.m */,
+				4CDC9DFD1568461D0043AC98 /* TestField.plist */,
 			);
 			path = "ios-forms-unit-tests";
 			sourceTree = "<group>";
@@ -125,6 +139,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CDC9DF815683F220043AC98 /* IRFormField.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CDC9DFB15683FA80043AC98 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CDC9DFC15683FB20043AC98 /* IRFormField.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +178,7 @@
 				4CDC9DD71567FB860043AC98 /* Sources */,
 				4CDC9DD81567FB860043AC98 /* Frameworks */,
 				4CDC9DD91567FB860043AC98 /* Resources */,
+				4CDC9DFB15683FA80043AC98 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -198,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CDC9DE71567FB860043AC98 /* InfoPlist.strings in Resources */,
+				4CDC9DFE1568461D0043AC98 /* TestField.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CDC9DF915683F220043AC98 /* IRFormField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +242,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CDC9DE91567FB860043AC98 /* main.m in Sources */,
+				4CDC9DF515683E4E0043AC98 /* IRFormFieldTests.m in Sources */,
+				4CDC9DFA15683F220043AC98 /* IRFormField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
