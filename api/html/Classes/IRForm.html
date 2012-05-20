@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>IRFormField Class Reference</title>
+		<title>IRForm Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
@@ -17,7 +17,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">IRFormField Class Reference</h1>
+				<h1 class="hideInXcode">IRForm Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -48,10 +48,6 @@
 	
 	<option value="//api/name/initWithPropertyList:bundle:model:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithPropertyList:bundle:model:</option>
 	
-	<option value="//api/name/setValue:">&nbsp;&nbsp;&nbsp;&nbsp;- setValue:</option>
-	
-	<option value="//api/name/value">&nbsp;&nbsp;&nbsp;&nbsp;- value</option>
-	
 	
 	
 </select>
@@ -68,9 +64,7 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initializing an IRFormField Instance">Initializing an IRFormField Instance</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Field Value">Field Value</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initializing an IRForm Instance">Initializing an IRForm Instance</a></span></li>
 	
 </ul></li>
 
@@ -88,10 +82,6 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithPropertyList:bundle:model:">initWithPropertyList:bundle:model:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setValue:">setValue:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/value">value</a></span></li>
-	
 </ul></li>
 
 
@@ -99,7 +89,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="IRFormField Class Reference" name="top"></a>
+				<a title="IRForm Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -108,7 +98,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">IRFormField Class Reference</h1>
+						<h1 class="title title-header">IRForm Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -119,7 +109,7 @@
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">IRFormField.h<br />IRFormField.m</td>
+	<td class="specification-value">IRForm.h<br />IRForm.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -129,11 +119,14 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>Base class for a form field.</p>
+						<p>The IRForm class represents a data entry form.</p>
 
-<p>The IRFormField class implements the base class for a form field. Subclasses
-will add specific behavior for the type of field being used to represent
-data to be edited.</p>
+<p>The IRForm class manages all of the information for a data entry form and
+works with an <a href="../Classes/IRFormViewController.html">IRFormViewController</a> object to present the form and the data
+entry user interface to the user. The IRForm class acts as both a table view
+delegate and data source and works with the table view user interface that
+is presented by the <a href="../Classes/IRFormViewController.html">IRFormViewController</a> in order to present the sections
+and fields of the form correctly.</p>
 					</div>
 					
 					
@@ -145,44 +138,21 @@ data to be edited.</p>
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						<a title="Initializing an IRFormField Instance" name="task_Initializing an IRFormField Instance"></a>
-						<h3 class="subsubtitle task-title">Initializing an IRFormField Instance</h3>
-
+						<a title="Initializing an IRForm Instance" name="task_Initializing an IRForm Instance"></a>
+						
+<h3 class="subsubtitle task-title">Initializing an IRForm Instance</h3>
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/initWithDictionary:model:">&ndash;&nbsp;initWithDictionary:model:</a></code>
-		<span class="tooltip"><p>Initializes a new IRFormField instance from the settings in a dictionary.</p></span>
+		<span class="tooltip"><p>Initializes an IRForm instance using settings in a dictionary.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/initWithPropertyList:bundle:model:">&ndash;&nbsp;initWithPropertyList:bundle:model:</a></code>
-		<span class="tooltip"><p>Initializes a new IRFormField by loading the field definition from a property
-list.</p></span>
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
-						<a title="Field Value" name="task_Field Value"></a>
-						<h3 class="subsubtitle task-title">Field Value</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/value">&ndash;&nbsp;value</a></code>
-		<span class="tooltip"><p>Gets the value of the property that the form field is mapped to.</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/setValue:">&ndash;&nbsp;setValue:</a></code>
-		<span class="tooltip"><p>Sets the <a href="#//api/name/value">value</a> of the property that the form field is mapped to.</p></span>
+		<span class="tooltip"><p>Initializes an IRForm instance using settings stored in a property list.</p></span>
 	</span>
 	
 	
@@ -210,12 +180,12 @@ list.</p></span>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Initializes a new IRFormField instance from the settings in a dictionary.</p>
+		<p>Initializes an IRForm instance using settings in a dictionary.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (id)initWithDictionary:(NSDictionary *)<em>dictionary</em> model:(id)<em>aModel</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (id)initWithDictionary:(NSDictionary *)<em>dictionary</em> model:(id)<em>model</em></code></div>
 
     
 	
@@ -224,13 +194,13 @@ list.</p></span>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>dictionary</em></dt>
-			<dd><p>An NSDictionary object containing the settings to apply to
-the form field.</p></dd>
+			<dd><p>An NSDictionary object containing the settings for the
+form.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>aModel</em></dt>
-			<dd><p>The model object that contains the <a href="#//api/name/value">value</a> for the form field.</p></dd>
+			<dt><em>model</em></dt>
+			<dd><p>The model that stores the state for the form.</p></dd>
 		</dl>
 		
 	</div>
@@ -239,8 +209,7 @@ the form field.</p></dd>
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>Returns the initialized object, or nil if an error occurred while
-initializing the object.</p>
+		<p>Returns the initialized IRForm object, or nil if an error occurred.</p>
 	</div>
 	
 	
@@ -249,10 +218,11 @@ initializing the object.</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Initializes a new IRFormField instance from the settings in a dictionary.</p>
+		<p>Initializes an IRForm instance using settings in a dictionary.</p>
 
-<p>The initWithDictionary: method is the designated initializer for the
-IRFormField class.</p>
+<p>The initWithDictionary:model: method is the designated initializer for the
+IRForm class. The initWithDictionary:model method will load the form from an
+NSDictionary object.</p>
 	</div>
 	
 	
@@ -263,7 +233,7 @@ IRFormField class.</p>
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">IRFormField.h</code><br />
+		<code class="declared-in-ref">IRForm.h</code><br />
 	</div>				
 	
 	
@@ -276,13 +246,12 @@ IRFormField class.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Initializes a new IRFormField by loading the field definition from a property
-list.</p>
+		<p>Initializes an IRForm instance using settings stored in a property list.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (id)initWithPropertyList:(NSString *)<em>propertyListName</em> bundle:(NSBundle *)<em>bundle</em> model:(id)<em>aModel</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (id)initWithPropertyList:(NSString *)<em>propertyListName</em> bundle:(NSBundle *)<em>bundle</em> model:(id)<em>model</em></code></div>
 
     
 	
@@ -291,19 +260,19 @@ list.</p>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>propertyListName</em></dt>
-			<dd><p>The name of the property list containing the field
-definition</p></dd>
+			<dd><p>The name of the property list that contains the form
+definition.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>bundle</em></dt>
-			<dd><p>The bundle containing the property list, or nil if the property
-list is in the application bundle.</p></dd>
+			<dd><p>The bundle that contains the property list, or nil to use the
+main bundle for the application.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>aModel</em></dt>
-			<dd><p>The model object that contains the <a href="#//api/name/value">value</a> for the form field.</p></dd>
+			<dt><em>model</em></dt>
+			<dd><p>The model that stores the state for the form.</p></dd>
 		</dl>
 		
 	</div>
@@ -312,8 +281,7 @@ list is in the application bundle.</p></dd>
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>Returns the initialized object, or nil if an error occurred while
-initializing the object.</p>
+		<p>Returns the initialized IRForm object, or nil if an error occurred.</p>
 	</div>
 	
 	
@@ -322,8 +290,10 @@ initializing the object.</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Initializes a new IRFormField by loading the field definition from a property
-list.</p>
+		<p>Initializes an IRForm instance using settings stored in a property list.</p>
+
+<p>The initWithPropertyList:bundle:model: method will load a form from a
+property list.</p>
 	</div>
 	
 	
@@ -334,104 +304,7 @@ list.</p>
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">IRFormField.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/setValue:" title="setValue:"></a>
-	<h3 class="subsubtitle method-title">setValue:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Sets the <a href="#//api/name/value">value</a> of the property that the form field is mapped to.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)setValue:(id)<em>value</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>value</em></dt>
-			<dd><p>The new <a href="#//api/name/value">value</a> for the property backing the form field.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Sets the <a href="#//api/name/value">value</a> of the property that the form field is mapped to.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">IRFormField.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/value" title="value"></a>
-	<h3 class="subsubtitle method-title">value</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Gets the value of the property that the form field is mapped to.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (id)value</code></div>
-
-    
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>Returns the value of the property that the form field is mapped to.</p>
-	</div>
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Gets the value of the property that the form field is mapped to.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">IRFormField.h</code><br />
+		<code class="declared-in-ref">IRForm.h</code><br />
 	</div>				
 	
 	
