@@ -21,6 +21,19 @@
 		4C35DA591568634E008A54FE /* IRFormSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA561568634E008A54FE /* IRFormSection.m */; };
 		4C35DA5B1568786C008A54FE /* TestForm.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C35DA5A1568786C008A54FE /* TestForm.plist */; };
 		4C35DA5D15687891008A54FE /* TestSection.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C35DA5C15687891008A54FE /* TestSection.plist */; };
+		4C35DA5F15693AFF008A54FE /* IRForms.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C35DA5E15693AFF008A54FE /* IRForms.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C35DA6615693BB4008A54FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DDD1567FB860043AC98 /* UIKit.framework */; };
+		4C35DA6715693BB4008A54FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DCA1567FB350043AC98 /* Foundation.framework */; };
+		4C35DA6815693BB4008A54FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DE01567FB860043AC98 /* CoreGraphics.framework */; };
+		4C35DA6E15693BB4008A54FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C35DA6C15693BB4008A54FE /* InfoPlist.strings */; };
+		4C35DA7015693BB4008A54FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA6F15693BB4008A54FE /* main.m */; };
+		4C35DA7415693BB4008A54FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA7315693BB4008A54FE /* AppDelegate.m */; };
+		4C35DA7C15693DCB008A54FE /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C35DA7B15693DCB008A54FE /* MainStoryboard_iPhone.storyboard */; };
+		4C35DA7E15693DDE008A54FE /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C35DA7D15693DDE008A54FE /* MainStoryboard_iPad.storyboard */; };
+		4C35DA8015695F31008A54FE /* IRFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA45156860B5008A54FE /* IRFormViewController.m */; };
+		4C35DA8115695F3A008A54FE /* IRFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC9DF715683F220043AC98 /* IRFormField.m */; };
+		4C35DA8215695F40008A54FE /* IRForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA4E156862AF008A54FE /* IRForm.m */; };
+		4C35DA8315695F44008A54FE /* IRFormSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA561568634E008A54FE /* IRFormSection.m */; };
 		4CDC9DCB1567FB350043AC98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DCA1567FB350043AC98 /* Foundation.framework */; };
 		4CDC9DDE1567FB860043AC98 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DDD1567FB860043AC98 /* UIKit.framework */; };
 		4CDC9DDF1567FB860043AC98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DCA1567FB350043AC98 /* Foundation.framework */; };
@@ -47,6 +60,16 @@
 		4C35DA561568634E008A54FE /* IRFormSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFormSection.m; sourceTree = "<group>"; };
 		4C35DA5A1568786C008A54FE /* TestForm.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestForm.plist; sourceTree = "<group>"; };
 		4C35DA5C15687891008A54FE /* TestSection.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestSection.plist; sourceTree = "<group>"; };
+		4C35DA5E15693AFF008A54FE /* IRForms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRForms.h; sourceTree = "<group>"; };
+		4C35DA6415693BB3008A54FE /* FormsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C35DA6B15693BB4008A54FE /* FormsSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FormsSample-Info.plist"; sourceTree = "<group>"; };
+		4C35DA6D15693BB4008A54FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C35DA6F15693BB4008A54FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C35DA7115693BB4008A54FE /* FormsSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FormsSample-Prefix.pch"; sourceTree = "<group>"; };
+		4C35DA7215693BB4008A54FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4C35DA7315693BB4008A54FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4C35DA7B15693DCB008A54FE /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		4C35DA7D15693DDE008A54FE /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		4CDC9DC71567FB350043AC98 /* libios-forms.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libios-forms.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDC9DCA1567FB350043AC98 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4CDC9DCE1567FB350043AC98 /* ios-forms-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-forms-Prefix.pch"; sourceTree = "<group>"; };
@@ -65,6 +88,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4C35DA6115693BB3008A54FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C35DA6615693BB4008A54FE /* UIKit.framework in Frameworks */,
+				4C35DA6715693BB4008A54FE /* Foundation.framework in Frameworks */,
+				4C35DA6815693BB4008A54FE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4CDC9DC41567FB350043AC98 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -87,11 +120,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C35DA6915693BB4008A54FE /* FormsSample */ = {
+			isa = PBXGroup;
+			children = (
+				4C35DA7A15693D84008A54FE /* iPhone */,
+				4C35DA7915693D7D008A54FE /* iPad */,
+				4C35DA7215693BB4008A54FE /* AppDelegate.h */,
+				4C35DA7315693BB4008A54FE /* AppDelegate.m */,
+				4C35DA6A15693BB4008A54FE /* Supporting Files */,
+			);
+			path = FormsSample;
+			sourceTree = "<group>";
+		};
+		4C35DA6A15693BB4008A54FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C35DA6B15693BB4008A54FE /* FormsSample-Info.plist */,
+				4C35DA6C15693BB4008A54FE /* InfoPlist.strings */,
+				4C35DA6F15693BB4008A54FE /* main.m */,
+				4C35DA7115693BB4008A54FE /* FormsSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C35DA7915693D7D008A54FE /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				4C35DA7D15693DDE008A54FE /* MainStoryboard_iPad.storyboard */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		4C35DA7A15693D84008A54FE /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				4C35DA7B15693DCB008A54FE /* MainStoryboard_iPhone.storyboard */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
 		4CDC9DBC1567FB350043AC98 = {
 			isa = PBXGroup;
 			children = (
 				4CDC9DCC1567FB350043AC98 /* ios-forms */,
 				4CDC9DE21567FB860043AC98 /* ios-forms-unit-tests */,
+				4C35DA6915693BB4008A54FE /* FormsSample */,
 				4CDC9DC91567FB350043AC98 /* Frameworks */,
 				4CDC9DC81567FB350043AC98 /* Products */,
 			);
@@ -102,6 +175,7 @@
 			children = (
 				4CDC9DC71567FB350043AC98 /* libios-forms.a */,
 				4CDC9DDB1567FB860043AC98 /* ios-forms-unit-tests.app */,
+				4C35DA6415693BB3008A54FE /* FormsSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +203,7 @@
 				4C35DA4E156862AF008A54FE /* IRForm.m */,
 				4C35DA551568634E008A54FE /* IRFormSection.h */,
 				4C35DA561568634E008A54FE /* IRFormSection.m */,
+				4C35DA5E15693AFF008A54FE /* IRForms.h */,
 			);
 			path = "ios-forms";
 			sourceTree = "<group>";
@@ -174,6 +249,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C35DA5F15693AFF008A54FE /* IRForms.h in Headers */,
 				4CDC9DF815683F220043AC98 /* IRFormField.h in Headers */,
 				4C35DA46156860B5008A54FE /* IRFormViewController.h in Headers */,
 				4C35DA4F156862AF008A54FE /* IRForm.h in Headers */,
@@ -184,6 +260,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		4C35DA6315693BB3008A54FE /* FormsSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C35DA7515693BB4008A54FE /* Build configuration list for PBXNativeTarget "FormsSample" */;
+			buildPhases = (
+				4C35DA6015693BB3008A54FE /* Sources */,
+				4C35DA6115693BB3008A54FE /* Frameworks */,
+				4C35DA6215693BB3008A54FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FormsSample;
+			productName = FormsSample;
+			productReference = 4C35DA6415693BB3008A54FE /* FormsSample.app */;
+			productType = "com.apple.product-type.application";
+		};
 		4CDC9DC61567FB350043AC98 /* ios-forms */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CDC9DD41567FB350043AC98 /* Build configuration list for PBXNativeTarget "ios-forms" */;
@@ -241,11 +334,22 @@
 			targets = (
 				4CDC9DC61567FB350043AC98 /* ios-forms */,
 				4CDC9DDA1567FB860043AC98 /* ios-forms-unit-tests */,
+				4C35DA6315693BB3008A54FE /* FormsSample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4C35DA6215693BB3008A54FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C35DA6E15693BB4008A54FE /* InfoPlist.strings in Resources */,
+				4C35DA7C15693DCB008A54FE /* MainStoryboard_iPhone.storyboard in Resources */,
+				4C35DA7E15693DDE008A54FE /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4CDC9DD91567FB860043AC98 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -260,6 +364,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4C35DA6015693BB3008A54FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C35DA7015693BB4008A54FE /* main.m in Sources */,
+				4C35DA7415693BB4008A54FE /* AppDelegate.m in Sources */,
+				4C35DA8015695F31008A54FE /* IRFormViewController.m in Sources */,
+				4C35DA8115695F3A008A54FE /* IRFormField.m in Sources */,
+				4C35DA8215695F40008A54FE /* IRForm.m in Sources */,
+				4C35DA8315695F44008A54FE /* IRFormSection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4CDC9DC31567FB350043AC98 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -290,6 +407,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		4C35DA6C15693BB4008A54FE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C35DA6D15693BB4008A54FE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		4CDC9DE51567FB860043AC98 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -301,6 +426,33 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4C35DA7615693BB4008A54FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FormsSample/FormsSample-Prefix.pch";
+				INFOPLIST_FILE = "FormsSample/FormsSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4C35DA7715693BB4008A54FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FormsSample/FormsSample-Prefix.pch";
+				INFOPLIST_FILE = "FormsSample/FormsSample-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		4CDC9DD21567FB350043AC98 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -413,6 +565,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4C35DA7515693BB4008A54FE /* Build configuration list for PBXNativeTarget "FormsSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C35DA7615693BB4008A54FE /* Debug */,
+				4C35DA7715693BB4008A54FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		4CDC9DC11567FB350043AC98 /* Build configuration list for PBXProject "ios-forms" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

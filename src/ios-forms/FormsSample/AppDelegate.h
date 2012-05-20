@@ -1,7 +1,9 @@
 /*
- * IRFormViewController.m
+ * AppDelegate.h
  *
- * This file implements the IRFormViewController class.
+ * This file defines the AppDelegate class. An AppDelegate object is used to
+ * implement the delegate for the UIApplication object that runs the sample
+ * application.
  *
  * Copyright 2012 ImaginaryRealities, LLC
  *
@@ -24,14 +26,23 @@
  * SOFTWARE.
  */
 
-#import "IRFormViewController.h"
+/**
+ * Application delegate for the sample application.
+ *
+ * An AppDelegate object is created to act as the delegate for the UIApplication
+ * object that runs the sample application. The AppDelegate class implements
+ * event handlers that respond to application level events. The AppDelegate
+ * object will also manage the global application state for the sample
+ * application.
+ */
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@implementation IRFormViewController
-
-#pragma mark - Initialization
-
-- (void)awakeFromNib {
-    NSLog(@"awakeFromNib called.");
-}
+/**
+ * The main window for the application's user interface.
+ *
+ * The window property stores the reference to the UIWindow object that hosts
+ * the application user interface.
+ */
+@property (strong, nonatomic) UIWindow *window;
 
 @end

@@ -1,7 +1,8 @@
 /*
- * IRFormViewController.m
+ * IRForms.h
  *
- * This file implements the IRFormViewController class.
+ * This header file imports all of the public header files for the iOS Forms
+ * library.
  *
  * Copyright 2012 ImaginaryRealities, LLC
  *
@@ -24,14 +25,7 @@
  * SOFTWARE.
  */
 
+#import "IRForm.h"
 #import "IRFormViewController.h"
-
-@implementation IRFormViewController
-
-#pragma mark - Initialization
-
-- (void)awakeFromNib {
-    NSLog(@"awakeFromNib called.");
-}
-
-@end
+#import "IRFormSection.h"
+#import "IRFormField.h"

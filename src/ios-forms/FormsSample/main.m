@@ -1,7 +1,9 @@
 /*
- * IRFormViewController.m
+ * main.m
  *
- * This file implements the IRFormViewController class.
+ * This program implements a sample application for manual testing the forms
+ * user experience and demonstrating how to use the iOS Forms library in a
+ * practical iOS application.
  *
  * Copyright 2012 ImaginaryRealities, LLC
  *
@@ -24,14 +26,19 @@
  * SOFTWARE.
  */
 
-#import "IRFormViewController.h"
+#import "AppDelegate.h"
 
-@implementation IRFormViewController
-
-#pragma mark - Initialization
-
-- (void)awakeFromNib {
-    NSLog(@"awakeFromNib called.");
+/**
+ * Main program for the iOS Forms sample application.
+ *
+ * @param argc The number of arguments that were passed to the application.
+ * @param argv An array of C-style strings containing the arguments that were
+ *      passed to the application.
+ * @return This function does not return.
+ */
+int main(int argc, char *argv[])
+{
+    @autoreleasepool {
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+    }
 }
-
-@end

@@ -1,7 +1,7 @@
 /*
- * IRFormViewController.m
+ * AppDelegate.m
  *
- * This file implements the IRFormViewController class.
+ * This file implements the AppDelegate class.
  *
  * Copyright 2012 ImaginaryRealities, LLC
  *
@@ -24,14 +24,10 @@
  * SOFTWARE.
  */
 
-#import "IRFormViewController.h"
+#import "AppDelegate.h"
 
-@implementation IRFormViewController
+@implementation AppDelegate
 
-#pragma mark - Initialization
-
-- (void)awakeFromNib {
-    NSLog(@"awakeFromNib called.");
-}
+@synthesize window;
 
 @end
