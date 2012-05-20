@@ -1,8 +1,9 @@
 /*
- * ios-forms-Prefix.pch
+ * IRFormViewController.h
  *
- * This file includes the header files that should be included in the
- * pre-compiled header file for this project.
+ * This file defines the IRFormViewController class. The IRFormViewController
+ * class implements a view controller that presents a form-based user interface
+ * to the user for data entry.
  *
  * Copyright 2012 ImaginaryRealities, LLC
  *
@@ -25,7 +26,14 @@
  * SOFTWARE.
  */
 
-#ifdef __OBJC__
-    #import <Foundation/Foundation.h>
-    #import <UIKit/UIKit.h>
-#endif
+/**
+ * View controller for a data entry form.
+ *
+ * The IRFormViewController class implements a view that presents a data entry
+ * user experience to the user. The IRFormViewController class embeds a
+ * UITableView object that presents the data entry form as a table view. The
+ * table view is linked to an IRForm object that implements the form and manages
+ * the data entry experience.
+ */
+@interface IRFormViewController : UIViewController
+@end

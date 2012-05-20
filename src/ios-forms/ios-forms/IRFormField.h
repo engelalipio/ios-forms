@@ -70,7 +70,7 @@
                     bundle:(NSBundle *)bundle
                      model:(id)aModel;
 
-/** @name Field value */
+/** @name Field Value */
 
 /**
  * Gets the value of the property that the form field is mapped to.

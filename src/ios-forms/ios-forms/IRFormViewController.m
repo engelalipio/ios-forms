@@ -1,8 +1,7 @@
 /*
- * ios-forms-Prefix.pch
+ * IRFormViewController.m
  *
- * This file includes the header files that should be included in the
- * pre-compiled header file for this project.
+ * This file implements the IRFormViewController class.
  *
  * Copyright 2012 ImaginaryRealities, LLC
  *
@@ -25,7 +24,7 @@
  * SOFTWARE.
  */
 
-#ifdef __OBJC__
-    #import <Foundation/Foundation.h>
-    #import <UIKit/UIKit.h>
-#endif
+#import "IRFormViewController.h"
+
+@implementation IRFormViewController
+@end

@@ -1,8 +1,8 @@
 /*
- * ios-forms-Prefix.pch
+ * IRFormViewControllerTests.m
  *
- * This file includes the header files that should be included in the
- * pre-compiled header file for this project.
+ * This file implements the IRFormViewControllerTests class that unit tests the
+ * IRFormViewController class.
  *
  * Copyright 2012 ImaginaryRealities, LLC
  *
@@ -25,7 +25,10 @@
  * SOFTWARE.
  */
 
-#ifdef __OBJC__
-    #import <Foundation/Foundation.h>
-    #import <UIKit/UIKit.h>
-#endif
+#import "IRFormViewController.h"
+
+@interface IRFormViewControllerTests : GHTestCase
+@end
+
+@implementation IRFormViewControllerTests
+@end

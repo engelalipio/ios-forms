@@ -1,8 +1,7 @@
 /*
- * ios-forms-Prefix.pch
+ * IRFormTests.m
  *
- * This file includes the header files that should be included in the
- * pre-compiled header file for this project.
+ * This file implements the IRFormTests class that unit tests the IRForm class.
  *
  * Copyright 2012 ImaginaryRealities, LLC
  *
@@ -24,8 +23,21 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+ 
+#import "IRForm.h"
 
-#ifdef __OBJC__
-    #import <Foundation/Foundation.h>
-    #import <UIKit/UIKit.h>
-#endif
+@interface IRFormTests : GHTestCase
+@end
+
+@implementation IRFormTests
+
+- (void)testInitializesFromPropertyList {
+    NSMutableDictionary *model = [NSMutableDictionary dictionary];
+    
+    IRForm *form = [[IRForm alloc] initWithPropertyList:@"TestForm"
+                                                 bundle:nil
+                                                  model:model];
+    GHAssertNotNil(form, @"The form is nil.");
+}
+
+@end

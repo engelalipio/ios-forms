@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C35DA4215686056008A54FE /* IRFormViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA4015686056008A54FE /* IRFormViewControllerTests.m */; };
+		4C35DA46156860B5008A54FE /* IRFormViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C35DA44156860B5008A54FE /* IRFormViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C35DA48156860B5008A54FE /* IRFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA45156860B5008A54FE /* IRFormViewController.m */; };
+		4C35DA49156860B5008A54FE /* IRFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA45156860B5008A54FE /* IRFormViewController.m */; };
+		4C35DA4C15686271008A54FE /* IRFormTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA4B15686271008A54FE /* IRFormTests.m */; };
+		4C35DA4F156862AF008A54FE /* IRForm.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C35DA4D156862AF008A54FE /* IRForm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C35DA50156862AF008A54FE /* IRForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA4E156862AF008A54FE /* IRForm.m */; };
+		4C35DA51156862AF008A54FE /* IRForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA4E156862AF008A54FE /* IRForm.m */; };
+		4C35DA5415686310008A54FE /* IRFormSectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA5315686310008A54FE /* IRFormSectionTests.m */; };
+		4C35DA571568634E008A54FE /* IRFormSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C35DA551568634E008A54FE /* IRFormSection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C35DA581568634E008A54FE /* IRFormSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA561568634E008A54FE /* IRFormSection.m */; };
+		4C35DA591568634E008A54FE /* IRFormSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA561568634E008A54FE /* IRFormSection.m */; };
+		4C35DA5B1568786C008A54FE /* TestForm.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C35DA5A1568786C008A54FE /* TestForm.plist */; };
+		4C35DA5D15687891008A54FE /* TestSection.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C35DA5C15687891008A54FE /* TestSection.plist */; };
 		4CDC9DCB1567FB350043AC98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DCA1567FB350043AC98 /* Foundation.framework */; };
 		4CDC9DDE1567FB860043AC98 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DDD1567FB860043AC98 /* UIKit.framework */; };
 		4CDC9DDF1567FB860043AC98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DCA1567FB350043AC98 /* Foundation.framework */; };
@@ -15,14 +29,24 @@
 		4CDC9DE91567FB860043AC98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC9DE81567FB860043AC98 /* main.m */; };
 		4CDC9DF21567FBEE0043AC98 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DF11567FBEE0043AC98 /* GHUnitIOS.framework */; };
 		4CDC9DF515683E4E0043AC98 /* IRFormFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC9DF415683E4E0043AC98 /* IRFormFieldTests.m */; };
-		4CDC9DF815683F220043AC98 /* IRFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CDC9DF615683F220043AC98 /* IRFormField.h */; };
+		4CDC9DF815683F220043AC98 /* IRFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CDC9DF615683F220043AC98 /* IRFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4CDC9DF915683F220043AC98 /* IRFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC9DF715683F220043AC98 /* IRFormField.m */; };
 		4CDC9DFA15683F220043AC98 /* IRFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC9DF715683F220043AC98 /* IRFormField.m */; };
-		4CDC9DFC15683FB20043AC98 /* IRFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CDC9DF615683F220043AC98 /* IRFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4CDC9DFE1568461D0043AC98 /* TestField.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CDC9DFD1568461D0043AC98 /* TestField.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C35DA4015686056008A54FE /* IRFormViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFormViewControllerTests.m; sourceTree = "<group>"; };
+		4C35DA44156860B5008A54FE /* IRFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRFormViewController.h; sourceTree = "<group>"; };
+		4C35DA45156860B5008A54FE /* IRFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFormViewController.m; sourceTree = "<group>"; };
+		4C35DA4B15686271008A54FE /* IRFormTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFormTests.m; sourceTree = "<group>"; };
+		4C35DA4D156862AF008A54FE /* IRForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRForm.h; sourceTree = "<group>"; };
+		4C35DA4E156862AF008A54FE /* IRForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRForm.m; sourceTree = "<group>"; };
+		4C35DA5315686310008A54FE /* IRFormSectionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFormSectionTests.m; sourceTree = "<group>"; };
+		4C35DA551568634E008A54FE /* IRFormSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRFormSection.h; sourceTree = "<group>"; };
+		4C35DA561568634E008A54FE /* IRFormSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFormSection.m; sourceTree = "<group>"; };
+		4C35DA5A1568786C008A54FE /* TestForm.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestForm.plist; sourceTree = "<group>"; };
+		4C35DA5C15687891008A54FE /* TestSection.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestSection.plist; sourceTree = "<group>"; };
 		4CDC9DC71567FB350043AC98 /* libios-forms.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libios-forms.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDC9DCA1567FB350043AC98 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4CDC9DCE1567FB350043AC98 /* ios-forms-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-forms-Prefix.pch"; sourceTree = "<group>"; };
@@ -99,6 +123,12 @@
 				4CDC9DCD1567FB350043AC98 /* Supporting Files */,
 				4CDC9DF615683F220043AC98 /* IRFormField.h */,
 				4CDC9DF715683F220043AC98 /* IRFormField.m */,
+				4C35DA44156860B5008A54FE /* IRFormViewController.h */,
+				4C35DA45156860B5008A54FE /* IRFormViewController.m */,
+				4C35DA4D156862AF008A54FE /* IRForm.h */,
+				4C35DA4E156862AF008A54FE /* IRForm.m */,
+				4C35DA551568634E008A54FE /* IRFormSection.h */,
+				4C35DA561568634E008A54FE /* IRFormSection.m */,
 			);
 			path = "ios-forms";
 			sourceTree = "<group>";
@@ -117,6 +147,11 @@
 				4CDC9DE31567FB860043AC98 /* Supporting Files */,
 				4CDC9DF415683E4E0043AC98 /* IRFormFieldTests.m */,
 				4CDC9DFD1568461D0043AC98 /* TestField.plist */,
+				4C35DA4015686056008A54FE /* IRFormViewControllerTests.m */,
+				4C35DA4B15686271008A54FE /* IRFormTests.m */,
+				4C35DA5315686310008A54FE /* IRFormSectionTests.m */,
+				4C35DA5A1568786C008A54FE /* TestForm.plist */,
+				4C35DA5C15687891008A54FE /* TestSection.plist */,
 			);
 			path = "ios-forms-unit-tests";
 			sourceTree = "<group>";
@@ -140,14 +175,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CDC9DF815683F220043AC98 /* IRFormField.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4CDC9DFB15683FA80043AC98 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4CDC9DFC15683FB20043AC98 /* IRFormField.h in Headers */,
+				4C35DA46156860B5008A54FE /* IRFormViewController.h in Headers */,
+				4C35DA4F156862AF008A54FE /* IRForm.h in Headers */,
+				4C35DA571568634E008A54FE /* IRFormSection.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,7 +208,6 @@
 				4CDC9DD71567FB860043AC98 /* Sources */,
 				4CDC9DD81567FB860043AC98 /* Frameworks */,
 				4CDC9DD91567FB860043AC98 /* Resources */,
-				4CDC9DFB15683FA80043AC98 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -223,6 +252,8 @@
 			files = (
 				4CDC9DE71567FB860043AC98 /* InfoPlist.strings in Resources */,
 				4CDC9DFE1568461D0043AC98 /* TestField.plist in Resources */,
+				4C35DA5B1568786C008A54FE /* TestForm.plist in Resources */,
+				4C35DA5D15687891008A54FE /* TestSection.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +265,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CDC9DF915683F220043AC98 /* IRFormField.m in Sources */,
+				4C35DA48156860B5008A54FE /* IRFormViewController.m in Sources */,
+				4C35DA50156862AF008A54FE /* IRForm.m in Sources */,
+				4C35DA581568634E008A54FE /* IRFormSection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +278,12 @@
 				4CDC9DE91567FB860043AC98 /* main.m in Sources */,
 				4CDC9DF515683E4E0043AC98 /* IRFormFieldTests.m in Sources */,
 				4CDC9DFA15683F220043AC98 /* IRFormField.m in Sources */,
+				4C35DA4215686056008A54FE /* IRFormViewControllerTests.m in Sources */,
+				4C35DA49156860B5008A54FE /* IRFormViewController.m in Sources */,
+				4C35DA4C15686271008A54FE /* IRFormTests.m in Sources */,
+				4C35DA51156862AF008A54FE /* IRForm.m in Sources */,
+				4C35DA5415686310008A54FE /* IRFormSectionTests.m in Sources */,
+				4C35DA591568634E008A54FE /* IRFormSection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +429,7 @@
 				4CDC9DD61567FB350043AC98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CDC9DEE1567FB860043AC98 /* Build configuration list for PBXNativeTarget "ios-forms-unit-tests" */ = {
 			isa = XCConfigurationList;
@@ -397,6 +438,7 @@
 				4CDC9DF01567FB860043AC98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

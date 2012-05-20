@@ -1,8 +1,8 @@
 /*
- * ios-forms-Prefix.pch
+ * IRFormSectionTests.h
  *
- * This file includes the header files that should be included in the
- * pre-compiled header file for this project.
+ * This file implements the IRFormSectionTests class that unit tests the
+ * IRFormSection class.
  *
  * Copyright 2012 ImaginaryRealities, LLC
  *
@@ -25,7 +25,22 @@
  * SOFTWARE.
  */
 
-#ifdef __OBJC__
-    #import <Foundation/Foundation.h>
-    #import <UIKit/UIKit.h>
-#endif
+#import "IRFormSection.h"
+
+@interface IRFormSectionTests : GHTestCase
+@end
+
+@implementation IRFormSectionTests
+
+- (void)testInitializesFromPropertyList {
+    NSMutableDictionary *model = [NSMutableDictionary dictionary];
+    
+    IRFormSection *section = 
+        [[IRFormSection alloc] initWithPropertyList:@"TestSection"
+                                             bundle:nil
+                                              model:model];
+    
+    GHAssertNotNil(section, @"The section is nil.");
+}
+
+@end
