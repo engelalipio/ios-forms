@@ -32,7 +32,10 @@
  * user as a section of a form. A section may have a title and descriptive text
  * as well as the fields.
  */
-@interface IRFormSection : NSObject
+@interface IRFormSection : NSObject {
+    @private
+    NSMutableArray *fields;
+}
 
 /** @name Initializing an IRFormSection instance. */
 
@@ -67,5 +70,14 @@
 - (id)initWithPropertyList:(NSString *)propertyListName
                     bundle:(NSBundle *)bundle
                      model:(id)model;
+
+/** @name Number of Fields in the Section */
+
+/**
+ * Gets the number of fields in the section.
+ *
+ * @return Returns the number of fields in the section.
+ */
+- (NSInteger)numberOfFields;
 
 @end

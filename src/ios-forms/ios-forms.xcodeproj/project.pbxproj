@@ -34,6 +34,7 @@
 		4C35DA8115695F3A008A54FE /* IRFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC9DF715683F220043AC98 /* IRFormField.m */; };
 		4C35DA8215695F40008A54FE /* IRForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA4E156862AF008A54FE /* IRForm.m */; };
 		4C35DA8315695F44008A54FE /* IRFormSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA561568634E008A54FE /* IRFormSection.m */; };
+		4C35DA8F15696299008A54FE /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C35DA8E15696299008A54FE /* libOCMock.a */; };
 		4CDC9DCB1567FB350043AC98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DCA1567FB350043AC98 /* Foundation.framework */; };
 		4CDC9DDE1567FB860043AC98 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DDD1567FB860043AC98 /* UIKit.framework */; };
 		4CDC9DDF1567FB860043AC98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DCA1567FB350043AC98 /* Foundation.framework */; };
@@ -70,6 +71,7 @@
 		4C35DA7315693BB4008A54FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4C35DA7B15693DCB008A54FE /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		4C35DA7D15693DDE008A54FE /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		4C35DA8E15696299008A54FE /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = ../../lib/OCMock/libOCMock.a; sourceTree = "<group>"; };
 		4CDC9DC71567FB350043AC98 /* libios-forms.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libios-forms.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDC9DCA1567FB350043AC98 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4CDC9DCE1567FB350043AC98 /* ios-forms-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-forms-Prefix.pch"; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				4CDC9DDF1567FB860043AC98 /* Foundation.framework in Frameworks */,
 				4CDC9DE11567FB860043AC98 /* CoreGraphics.framework in Frameworks */,
 				4CDC9DF21567FBEE0043AC98 /* GHUnitIOS.framework in Frameworks */,
+				4C35DA8F15696299008A54FE /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +186,7 @@
 		4CDC9DC91567FB350043AC98 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C35DA8E15696299008A54FE /* libOCMock.a */,
 				4CDC9DF11567FBEE0043AC98 /* GHUnitIOS.framework */,
 				4CDC9DCA1567FB350043AC98 /* Foundation.framework */,
 				4CDC9DDD1567FB860043AC98 /* UIKit.framework */,
@@ -529,7 +533,12 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ios-forms-unit-tests/ios-forms-unit-tests-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../lib/OCMock";
 				INFOPLIST_FILE = "ios-forms-unit-tests/ios-forms-unit-tests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../lib/OCMock\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -550,7 +559,12 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ios-forms-unit-tests/ios-forms-unit-tests-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../lib/OCMock";
 				INFOPLIST_FILE = "ios-forms-unit-tests/ios-forms-unit-tests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../lib/OCMock\"",
+				);
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = (
 					"-ObjC",

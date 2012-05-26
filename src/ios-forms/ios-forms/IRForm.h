@@ -35,7 +35,10 @@
  * is presented by the IRFormViewController in order to present the sections
  * and fields of the form correctly.
  */
-@interface IRForm : NSObject
+@interface IRForm : NSObject <UITableViewDataSource, UITableViewDelegate> {
+    @private
+    NSMutableArray *sections;
+}
 
 /** @name Initializing an IRForm Instance */
 

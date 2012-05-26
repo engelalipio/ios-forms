@@ -25,6 +25,7 @@
  */
 
 #import "IRFormSection.h"
+#import "IRFormField.h"
 
 @implementation IRFormSection
 
@@ -38,6 +39,15 @@
     self = [super init];
     if (!self) {
         return self;
+    }
+    
+    NSArray *formFields = [dictionary objectForKey:@"Fields"];
+    NSUInteger fieldCount = [formFields count];
+    fields = [[NSMutableArray alloc] initWithCapacity:fieldCount];
+    for (NSUInteger i = 0; i < fieldCount; i++) {
+        NSDictionary *formField = [formFields objectAtIndex:i];
+        IRFormField *field = [[IRFormField alloc] initWithDictionary:formField model:model];
+        [fields addObject:field];
     }
     
     return self;
@@ -64,6 +74,12 @@
                                                     error:&error];
     
     return [self initWithDictionary:dictionary model:model];
+}
+
+#pragma mark - Number of fields in the section
+
+- (NSInteger)numberOfFields {
+    return [fields count];
 }
 
 @end

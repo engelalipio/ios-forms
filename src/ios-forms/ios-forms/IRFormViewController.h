@@ -26,6 +26,8 @@
  * SOFTWARE.
  */
 
+@class IRForm;
+
 /**
  * View controller for a data entry form.
  *
@@ -35,5 +37,23 @@
  * table view is linked to an IRForm object that implements the form and manages
  * the data entry experience.
  */
-@interface IRFormViewController : UIViewController
+@interface IRFormViewController : UIViewController {
+    @private
+    IRForm *form;
+    UITableView *tableView;
+}
+
+/** @name Must Be Overridden by Derived Classes */
+
+/**
+ * Creates or loads the form to be presented in the view.
+ *
+ * This method must be overridden by a derived class in order to load the form
+ * that the view will present to the user.
+ *
+ * @return Returns an IRForm object containing the definition of the form to be
+ *      presented in the view.
+ */
+- (IRForm *)loadForm;
+
 @end

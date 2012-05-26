@@ -31,13 +31,34 @@
 
 @implementation IRFormTests
 
-- (void)testInitializesFromPropertyList {
+- (void)testNumberOfSectionsReturnsCorrectResult {
+    id mockTableView = [OCMockObject mockForClass:[UITableView class]];
+    
     NSMutableDictionary *model = [NSMutableDictionary dictionary];
     
-    IRForm *form = [[IRForm alloc] initWithPropertyList:@"TestForm"
-                                                 bundle:nil
-                                                  model:model];
+    IRForm *form = [[IRForm alloc] initWithPropertyList:@"TestForm" bundle:nil model:model];
     GHAssertNotNil(form, @"The form is nil.");
+    
+    GHAssertEquals(2,
+                   [form numberOfSectionsInTableView:mockTableView],
+                   @"The number of sections in the form is incorrect.");
+    
+    [mockTableView verify];
+}
+
+- (void)testNumberOfRowsInSectionReturnsCorrectResult {
+    id mockTableView = [OCMockObject mockForClass:[UITableView class]];
+    
+    NSMutableDictionary *model = [NSMutableDictionary dictionary];
+    
+    IRForm *form = [[IRForm alloc] initWithPropertyList:@"TestForm" bundle:nil model:model];
+    GHAssertNotNil(form, @"The form is nil.");
+    
+    GHAssertEquals(3,
+                   [form tableView:mockTableView numberOfRowsInSection:0],
+                   @"The number of fields in incorrect.");
+    
+    [mockTableView verify];
 }
 
 @end

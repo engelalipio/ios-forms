@@ -25,6 +25,7 @@
  */
 
 #import "IRForm.h"
+#import "IRFormSection.h"
 
 @implementation IRForm
 
@@ -38,6 +39,17 @@
     self = [super init];
     if (!self) {
         return self;
+    }
+
+    NSArray *formSections = [dictionary objectForKey:@"Sections"];
+    NSUInteger numberOfSections = [formSections count];
+    sections = [[NSMutableArray alloc] initWithCapacity:numberOfSections];
+    for (NSUInteger i = 0; i < numberOfSections; i++) {
+        NSDictionary *formSection = [formSections objectAtIndex:i];
+        IRFormSection *section = [[IRFormSection alloc]
+                                  initWithDictionary:formSection
+                                  model:model];
+        [sections addObject:section];
     }
     
     return self;
@@ -67,6 +79,17 @@
     }
     
     return [self initWithDictionary:dictionary model:model];
+}
+
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return [sections count];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    IRFormSection *formSection = [sections objectAtIndex:section];
+    return [formSection numberOfFields];
 }
 
 @end

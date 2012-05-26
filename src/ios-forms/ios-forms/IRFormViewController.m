@@ -25,13 +25,37 @@
  */
 
 #import "IRFormViewController.h"
+#import "IRForm.h"
 
 @implementation IRFormViewController
 
-#pragma mark - Initialization
+#pragma mark - View lifecycle
 
-- (void)awakeFromNib {
-    NSLog(@"awakeFromNib called.");
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    CGRect frame = [self.view frame];
+    
+    form = [self loadForm];
+    
+    tableView = [[UITableView alloc] initWithFrame:frame
+                                             style:UITableViewStyleGrouped];
+    tableView.dataSource = form;
+    tableView.delegate = form;
+}
+
+- (void)viewDidUnload {
+    [super viewDidUnload];
+    
+    tableView = nil;
+    form = nil;
+}
+
+#pragma mark - 
+
+- (IRForm *)loadForm {
+    [self doesNotRecognizeSelector:@selector(loadForm)];
+    return nil;
 }
 
 @end

@@ -26,9 +26,30 @@
  */
 
 #import "IRFormViewController.h"
+#import "IRForm.h"
 
 @interface IRFormViewControllerTests : GHTestCase
 @end
 
 @implementation IRFormViewControllerTests
+
+- (void)testViewDidLoadCallsLoadForm {
+    IRFormViewController *viewController = [[IRFormViewController alloc] init];
+    id mockViewController = [OCMockObject partialMockForObject:viewController];
+    
+    id mockView = [OCMockObject mockForClass:[UIView class]];
+    CGRect frame = CGRectMake(0.0f, 0.0f, 320.0f, 480.0f);
+    [[[mockView stub] andReturnValue:OCMOCK_VALUE(frame)] frame];
+    [[[mockViewController stub] andReturn:mockView] view];
+    
+    id mockForm = [OCMockObject mockForClass:[IRForm class]];
+    [[[mockViewController expect] andReturn:mockForm] loadForm];
+    
+    [mockViewController viewDidLoad];
+    
+    [mockView verify];
+    [mockViewController verify];
+    [mockForm verify];
+}
+
 @end
