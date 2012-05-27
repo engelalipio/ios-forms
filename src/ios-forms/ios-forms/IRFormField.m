@@ -80,4 +80,16 @@
     [model setValue:value forKeyPath:keyPath];
 }
 
+#pragma mark - Create the Field Cell
+
+- (UITableViewCell *)cellForTableView:(UITableView *)tableView {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"IRFormField"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"IRFormField"];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    }
+    
+    return cell;
+}
+
 @end

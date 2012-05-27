@@ -25,6 +25,8 @@
  * SOFTWARE.
  */
 
+@class IRFormField;
+
 /**
  * The IRFormSection class represents a section of a data entry form.
  *
@@ -71,7 +73,7 @@
                     bundle:(NSBundle *)bundle
                      model:(id)model;
 
-/** @name Number of Fields in the Section */
+/** @name Fields */
 
 /**
  * Gets the number of fields in the section.
@@ -79,5 +81,13 @@
  * @return Returns the number of fields in the section.
  */
 - (NSInteger)numberOfFields;
+
+/**
+ * Gets the field at the specified index in the section.
+ *
+ * @param index The zero-based index of the field in the section.
+ * @return Returns the IRFormField object for the field.
+ */
+- (IRFormField *)fieldAtIndex:(NSInteger)index;
 
 @end

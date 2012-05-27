@@ -82,4 +82,8 @@
     return [fields count];
 }
 
+- (IRFormField *)fieldAtIndex:(NSInteger)index {
+    return [fields objectAtIndex:index];
+}
+
 @end

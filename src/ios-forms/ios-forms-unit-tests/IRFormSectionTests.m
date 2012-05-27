@@ -26,6 +26,7 @@
  */
 
 #import "IRFormSection.h"
+#import "IRFormField.h"
 
 @interface IRFormSectionTests : GHTestCase
 @end
@@ -41,6 +42,14 @@
                                               model:model];
     
     GHAssertNotNil(section, @"The section is nil.");
+}
+
+- (void)testFieldAtIndexReturnsFormField {
+    NSMutableDictionary *model = [NSMutableDictionary dictionary];
+    
+    IRFormSection *section = [[IRFormSection alloc] initWithPropertyList:@"TestSection" bundle:nil model:model];
+    IRFormField *field = [section fieldAtIndex:0];
+    GHAssertNotNil(field, @"The field is nil.");
 }
 
 @end

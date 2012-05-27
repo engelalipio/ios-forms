@@ -40,6 +40,7 @@
     
     tableView = [[UITableView alloc] initWithFrame:frame
                                              style:UITableViewStyleGrouped];
+    [self.view addSubview:tableView];
     tableView.dataSource = form;
     tableView.delegate = form;
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C26DE2D1571A6420072A077 /* PersonalInformationFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE2C1571A6420072A077 /* PersonalInformationFormViewController.m */; };
+		4C26DE311571A8890072A077 /* UserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE301571A8890072A077 /* UserProfile.m */; };
+		4C26DE331571AD370072A077 /* UserProfileForm.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C26DE321571AD370072A077 /* UserProfileForm.plist */; };
 		4C35DA4215686056008A54FE /* IRFormViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA4015686056008A54FE /* IRFormViewControllerTests.m */; };
 		4C35DA46156860B5008A54FE /* IRFormViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C35DA44156860B5008A54FE /* IRFormViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C35DA48156860B5008A54FE /* IRFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA45156860B5008A54FE /* IRFormViewController.m */; };
@@ -50,6 +53,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C26DE2B1571A6420072A077 /* PersonalInformationFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalInformationFormViewController.h; sourceTree = "<group>"; };
+		4C26DE2C1571A6420072A077 /* PersonalInformationFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalInformationFormViewController.m; sourceTree = "<group>"; };
+		4C26DE2F1571A8890072A077 /* UserProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfile.h; sourceTree = "<group>"; };
+		4C26DE301571A8890072A077 /* UserProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfile.m; sourceTree = "<group>"; };
+		4C26DE321571AD370072A077 /* UserProfileForm.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserProfileForm.plist; sourceTree = "<group>"; };
 		4C35DA4015686056008A54FE /* IRFormViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFormViewControllerTests.m; sourceTree = "<group>"; };
 		4C35DA44156860B5008A54FE /* IRFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRFormViewController.h; sourceTree = "<group>"; };
 		4C35DA45156860B5008A54FE /* IRFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFormViewController.m; sourceTree = "<group>"; };
@@ -131,6 +139,11 @@
 				4C35DA7215693BB4008A54FE /* AppDelegate.h */,
 				4C35DA7315693BB4008A54FE /* AppDelegate.m */,
 				4C35DA6A15693BB4008A54FE /* Supporting Files */,
+				4C26DE2B1571A6420072A077 /* PersonalInformationFormViewController.h */,
+				4C26DE2C1571A6420072A077 /* PersonalInformationFormViewController.m */,
+				4C26DE2F1571A8890072A077 /* UserProfile.h */,
+				4C26DE301571A8890072A077 /* UserProfile.m */,
+				4C26DE321571AD370072A077 /* UserProfileForm.plist */,
 			);
 			path = FormsSample;
 			sourceTree = "<group>";
@@ -351,6 +364,7 @@
 				4C35DA6E15693BB4008A54FE /* InfoPlist.strings in Resources */,
 				4C35DA7C15693DCB008A54FE /* MainStoryboard_iPhone.storyboard in Resources */,
 				4C35DA7E15693DDE008A54FE /* MainStoryboard_iPad.storyboard in Resources */,
+				4C26DE331571AD370072A077 /* UserProfileForm.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +392,8 @@
 				4C35DA8115695F3A008A54FE /* IRFormField.m in Sources */,
 				4C35DA8215695F40008A54FE /* IRForm.m in Sources */,
 				4C35DA8315695F44008A54FE /* IRFormSection.m in Sources */,
+				4C26DE2D1571A6420072A077 /* PersonalInformationFormViewController.m in Sources */,
+				4C26DE311571A8890072A077 /* UserProfile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +602,7 @@
 				4C35DA7715693BB4008A54FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CDC9DC11567FB350043AC98 /* Build configuration list for PBXProject "ios-forms" */ = {
 			isa = XCConfigurationList;

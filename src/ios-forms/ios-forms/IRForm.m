@@ -26,6 +26,7 @@
 
 #import "IRForm.h"
 #import "IRFormSection.h"
+#import "IRFormField.h"
 
 @implementation IRForm
 
@@ -90,6 +91,12 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     IRFormSection *formSection = [sections objectAtIndex:section];
     return [formSection numberOfFields];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    IRFormSection *formSection = [sections objectAtIndex:[indexPath section]];
+    IRFormField *formField = [formSection fieldAtIndex:[indexPath row]];
+    return [formField cellForTableView:tableView];
 }
 
 @end

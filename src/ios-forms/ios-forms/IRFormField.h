@@ -86,4 +86,20 @@
  */
 - (void)setValue:(id)value;
 
+/** @name Create the View for the Field */
+
+/**
+ * Creates the cell view for the form field.
+ *
+ * The cellForTableView: method is overridden by derived classes to create and
+ * initialize a UITableViewCell object that contains the user experience for the
+ * form field.
+ *
+ * @param tableView The UITableView object that the form field is creating the
+ *      cell user interface for.
+ * @return Returns a UITableViewCell object that will present the field's user
+ *      experience to the user in the form's table view.
+ */
+- (UITableViewCell *)cellForTableView:(UITableView *)tableView;
+
 @end

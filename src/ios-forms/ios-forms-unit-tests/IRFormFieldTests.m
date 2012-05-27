@@ -82,4 +82,19 @@
     GHAssertEqualStrings(@"Michael", [model objectForKey:@"firstName"], @"The firstName property is not set.");
 }
 
+- (void)testCellForTableViewCreatesCell {
+    id mockTableView = [OCMockObject mockForClass:[UITableView class]];
+    [[[mockTableView expect] andReturn:nil] dequeueReusableCellWithIdentifier:@"IRFormField"];
+    
+    NSMutableDictionary *model = [NSMutableDictionary dictionary];
+    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"firstName", @"KeyPath", nil];
+    IRFormField *field = [[IRFormField alloc] initWithDictionary:dictionary model:model];
+    
+    UITableViewCell *cell = [field cellForTableView:mockTableView];
+    GHAssertNotNil(cell, @"The cell is nil.");
+    GHAssertEquals(UITableViewCellSelectionStyleNone, cell.selectionStyle, @"The selection style is not none.");
+    
+    [mockTableView verify];
+}
+
 @end

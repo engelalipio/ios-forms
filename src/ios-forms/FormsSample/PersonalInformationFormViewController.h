@@ -1,8 +1,9 @@
 /*
- * IRFormViewControllerTests.m
+ * PersonalInformationFormViewController.h
  *
- * This file implements the IRFormViewControllerTests class that unit tests the
- * IRFormViewController class.
+ * This file defines the PersonalInformationFormViewController class. The
+ * PersonalInformationFormViewController class presents a form view for data
+ * entry that collects information about the user.
  *
  * Copyright 2012 ImaginaryRealities, LLC
  *
@@ -26,32 +27,15 @@
  */
 
 #import "IRFormViewController.h"
-#import "IRForm.h"
 
-@interface IRFormViewControllerTests : GHTestCase
-@end
-
-@implementation IRFormViewControllerTests
-
-- (void)testViewDidLoadCallsLoadForm {
-    IRFormViewController *viewController = [[IRFormViewController alloc] init];
-    id mockViewController = [OCMockObject partialMockForObject:viewController];
-    
-    id mockView = [OCMockObject mockForClass:[UIView class]];
-    CGRect frame = CGRectMake(0.0f, 0.0f, 320.0f, 480.0f);
-    [[[mockView stub] andReturnValue:OCMOCK_VALUE(frame)] frame];
-    [[[mockViewController stub] andReturn:mockView] view];
-    
-    [[mockView expect] addSubview:[OCMArg any]];
-    
-    id mockForm = [OCMockObject mockForClass:[IRForm class]];
-    [[[mockViewController expect] andReturn:mockForm] loadForm];
-    
-    [mockViewController viewDidLoad];
-    
-    [mockView verify];
-    [mockViewController verify];
-    [mockForm verify];
-}
-
+/**
+ * View controller for a data entry form that collects information about the
+ * user.
+ *
+ * The PersonalInformationFormViewController class presents a data entry form
+ * that will collect information about the user. The information collected will
+ * include the user's first name, last name, and other personal identifiable
+ * information.
+ */
+@interface PersonalInformationFormViewController : IRFormViewController
 @end

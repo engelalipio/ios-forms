@@ -1,8 +1,7 @@
 /*
- * IRFormViewControllerTests.m
+ * PersonalInformationFormViewController.m
  *
- * This file implements the IRFormViewControllerTests class that unit tests the
- * IRFormViewController class.
+ * This file implements the PersonalInformationFormViewController class.
  *
  * Copyright 2012 ImaginaryRealities, LLC
  *
@@ -25,33 +24,20 @@
  * SOFTWARE.
  */
 
-#import "IRFormViewController.h"
+#import "PersonalInformationFormViewController.h"
 #import "IRForm.h"
+#import "UserProfile.h"
 
-@interface IRFormViewControllerTests : GHTestCase
-@end
+@implementation PersonalInformationFormViewController
 
-@implementation IRFormViewControllerTests
+#pragma mark - Load the Form
 
-- (void)testViewDidLoadCallsLoadForm {
-    IRFormViewController *viewController = [[IRFormViewController alloc] init];
-    id mockViewController = [OCMockObject partialMockForObject:viewController];
-    
-    id mockView = [OCMockObject mockForClass:[UIView class]];
-    CGRect frame = CGRectMake(0.0f, 0.0f, 320.0f, 480.0f);
-    [[[mockView stub] andReturnValue:OCMOCK_VALUE(frame)] frame];
-    [[[mockViewController stub] andReturn:mockView] view];
-    
-    [[mockView expect] addSubview:[OCMArg any]];
-    
-    id mockForm = [OCMockObject mockForClass:[IRForm class]];
-    [[[mockViewController expect] andReturn:mockForm] loadForm];
-    
-    [mockViewController viewDidLoad];
-    
-    [mockView verify];
-    [mockViewController verify];
-    [mockForm verify];
+- (IRForm *)loadForm {
+    UserProfile *model = [[UserProfile alloc] init];
+    IRForm *form = [[IRForm alloc] initWithPropertyList:@"UserProfileForm"
+                                                 bundle:nil
+                                                  model:model];
+    return form;
 }
 
 @end

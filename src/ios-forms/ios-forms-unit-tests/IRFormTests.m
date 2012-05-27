@@ -61,4 +61,19 @@
     [mockTableView verify];
 }
 
+- (void)testFormReturnsCellForField {
+    id mockTableView = [OCMockObject mockForClass:[UITableView class]];
+    [[[mockTableView expect] andReturn:nil] dequeueReusableCellWithIdentifier:@"IRFormField"];
+    
+    NSMutableDictionary *model = [NSMutableDictionary dictionary];
+    
+    IRForm *form = [[IRForm alloc] initWithPropertyList:@"TestForm" bundle:nil model:model];
+    GHAssertNotNil(form, @"The form is nil.");
+    
+    UITableViewCell *cell = [form tableView:mockTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    GHAssertNotNil(cell, @"The cell is nil.");
+    
+    [mockTableView verify];
+}
+
 @end
