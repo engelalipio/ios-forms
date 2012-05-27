@@ -34,6 +34,14 @@
 @interface IRTextFormField : IRLabelFormField <UITextFieldDelegate> {
     @private
     NSString *placeholder;
+    UITextAutocapitalizationType autocapitalizationType;
+    UITextAutocorrectionType autocorrectionType;
+    UIKeyboardAppearance keyboardAppearance;
+    UIKeyboardType keyboardType;
+    BOOL enablesReturnKeyAutomatically;
+    UIReturnKeyType returnKeyType;
+    BOOL secureTextEntry;
+    UITextSpellCheckingType spellCheckingType;
 }
 
 @end

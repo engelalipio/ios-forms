@@ -45,6 +45,97 @@
         }
     }
     
+    NSString *value = [dictionary objectForKey:@"AutocapitalizationType"];
+    autocapitalizationType = UITextAutocapitalizationTypeNone;
+    if (value) {
+        value = [value lowercaseString];
+        if ([value isEqualToString:@"all"]) {
+            autocapitalizationType = UITextAutocapitalizationTypeAllCharacters;
+        } else if ([value isEqualToString:@"sentences"]) {
+            autocapitalizationType = UITextAutocapitalizationTypeSentences;
+        } else if ([value isEqualToString:@"words"]) {
+            autocapitalizationType = UITextAutocapitalizationTypeWords;
+        }
+    }
+    
+    NSNumber *numberValue = [dictionary objectForKey:@"AutocorrectionType"];
+    autocorrectionType = UITextAutocorrectionTypeDefault;
+    if (numberValue) {
+        autocorrectionType = [numberValue boolValue] ? UITextAutocorrectionTypeYes : UITextAutocorrectionTypeNo;
+    }
+    
+    value = [dictionary objectForKey:@"KeyboardAppearance"];
+    keyboardAppearance = UIKeyboardAppearanceDefault;
+    if ([[value lowercaseString] isEqualToString:@"alert"]) {
+        keyboardAppearance = UIKeyboardAppearanceAlert;
+    }
+    
+    value = [dictionary objectForKey:@"KeyboardType"];
+    keyboardType = UIKeyboardTypeDefault;
+    if (value) {
+        value = [value lowercaseString];
+        if ([value isEqualToString:@"ascii"]) {
+            keyboardType = UIKeyboardTypeASCIICapable;
+        } else if ([value isEqualToString:@"numbersandpunctuation"]) {
+            keyboardType = UIKeyboardTypeNumbersAndPunctuation;
+        } else if ([value isEqualToString:@"url"]) {
+            keyboardType = UIKeyboardTypeURL;
+        } else if ([value isEqualToString:@"numberpad"]) {
+            keyboardType = UIKeyboardTypeNumberPad;
+        } else if ([value isEqualToString:@"phonepad"]) {
+            keyboardType = UIKeyboardTypePhonePad;
+        } else if ([value isEqualToString:@"namephonepad"]) {
+            keyboardType = UIKeyboardTypeNamePhonePad;
+        } else if ([value isEqualToString:@"emailaddress"]) {
+            keyboardType = UIKeyboardTypeEmailAddress;
+        } else if ([value isEqualToString:@"decimalpad"]) {
+            keyboardType = UIKeyboardTypeDecimalPad;
+        } else if ([value isEqualToString:@"twitter"]) {
+            keyboardType = UIKeyboardTypeTwitter;
+        } else if ([value isEqualToString:@"alphabet"]) {
+            keyboardType = UIKeyboardTypeAlphabet;
+        }
+    }
+    
+    numberValue = [dictionary objectForKey:@"EnablesReturnKeyAutomatically"];
+    enablesReturnKeyAutomatically = numberValue ? [numberValue boolValue] : NO;
+    
+    value = [dictionary objectForKey:@"ReturnKeyType"];
+    returnKeyType = UIReturnKeyDefault;
+    if (value) {
+        value = [value lowercaseString];
+        if ([value isEqualToString:@"go"]) {
+            returnKeyType = UIReturnKeyGo;
+        } else if ([value isEqualToString:@"google"]) {
+            returnKeyType = UIReturnKeyGoogle;
+        } else if ([value isEqualToString:@"join"]) {
+            returnKeyType = UIReturnKeyJoin;
+        } else if ([value isEqualToString:@"next"]) {
+            returnKeyType = UIReturnKeyNext;
+        } else if ([value isEqualToString:@"route"]) {
+            returnKeyType = UIReturnKeyRoute;
+        } else if ([value isEqualToString:@"search"]) {
+            returnKeyType = UIReturnKeySearch;
+        } else if ([value isEqualToString:@"send"]) {
+            returnKeyType = UIReturnKeySend;
+        } else if ([value isEqualToString:@"yahoo"]) {
+            returnKeyType = UIReturnKeyYahoo;
+        } else if ([value isEqualToString:@"done"]) {
+            returnKeyType = UIReturnKeyDone;
+        } else if ([value isEqualToString:@"emergencycall"]) {
+            returnKeyType = UIReturnKeyEmergencyCall;
+        }
+    }
+    
+    numberValue = [dictionary objectForKey:@"Secure"];
+    secureTextEntry = numberValue ? [numberValue boolValue] : NO;
+    
+    numberValue = [dictionary objectForKey:@"SpellChecking"];
+    spellCheckingType = UITextSpellCheckingTypeDefault;
+    if (numberValue) {
+        spellCheckingType = [numberValue boolValue] ? UITextSpellCheckingTypeYes : UITextSpellCheckingTypeNo;
+    }
+    
     return self;
 }
 
@@ -61,6 +152,14 @@
     textField.delegate = self;
     textField.placeholder = placeholder;
     textField.text = [self value];
+    textField.autocapitalizationType = autocapitalizationType;
+    textField.autocorrectionType = autocorrectionType;
+    textField.keyboardAppearance = keyboardAppearance;
+    textField.keyboardType = keyboardType;
+    textField.enablesReturnKeyAutomatically = enablesReturnKeyAutomatically;
+    textField.returnKeyType = returnKeyType;
+    textField.secureTextEntry = secureTextEntry;
+    textField.spellCheckingType = spellCheckingType;
     
     return cell;
 }

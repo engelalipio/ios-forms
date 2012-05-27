@@ -14,6 +14,8 @@
 					<string>Prefix</string>
 					<key>Placeholder</key>
 					<string>Prefix</string>
+					<key>ReturnKeyType</key>
+					<string>Next</string>
 				</dict>
 				<dict>
 					<key>KeyPath</key>
@@ -22,6 +24,8 @@
 					<string>First Name</string>
 					<key>Placeholder</key>
 					<string>First name</string>
+					<key>ReturnKeyType</key>
+					<string>Next</string>
 				</dict>
 				<dict>
 					<key>KeyPath</key>
@@ -30,6 +34,8 @@
 					<string>Middle Name</string>
 					<key>Placeholder</key>
 					<string>Middle name</string>
+					<key>ReturnKeyType</key>
+					<string>Next</string>
 				</dict>
 				<dict>
 					<key>KeyPath</key>
@@ -38,6 +44,8 @@
 					<string>Last Name</string>
 					<key>Placeholder</key>
 					<string>Last name</string>
+					<key>ReturnKeyType</key>
+					<string>Next</string>
 				</dict>
 				<dict>
 					<key>KeyPath</key>
@@ -46,6 +54,8 @@
 					<string>Suffix</string>
 					<key>Placeholder</key>
 					<string>Suffix</string>
+					<key>ReturnKeyType</key>
+					<string>Done</string>
 				</dict>
 			</array>
 		</dict>
