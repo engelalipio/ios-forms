@@ -1,8 +1,8 @@
 /*
- * IRLabelFormFieldTests.m
+ * IRTextFormFieldTests.m
  *
- * This file implements the IRLabelFormFieldTests class that unit tests the
- * IRLabelFormField class.
+ * This file implements the IRTextFormFieldTests class that unit tests the
+ * IRTextFormField class.
  *
  * Copyright 2012 ImaginaryRealities, LLC
  *
@@ -25,16 +25,16 @@
  * SOFTWARE.
  */
 
-#import "IRLabelFormField.h"
-#import "IRLabelFormFieldCell.h"
+#import "IRTextFormField.h"
+#import "IRTextFormFieldCell.h"
 
-@interface IRLabelFormFieldTests : GHTestCase
+@interface IRTextFormFieldTests : GHTestCase
 @end
 
-@implementation IRLabelFormFieldTests
+@implementation IRTextFormFieldTests
 
-- (void)testFormFieldSetsLabelText {
-    NSMutableDictionary *model = [NSMutableDictionary dictionary];
+- (void)testFormFieldSetsInitializesCell {
+    NSMutableDictionary *model = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"Michael", @"firstName", nil];
     NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:
                                 @"firstName",
                                 @"KeyPath",
@@ -42,8 +42,10 @@
                                 @"CellReuseIdentifier",
                                 @"First Name",
                                 @"LabelText",
+                                @"First name",
+                                @"Placeholder",
                                 nil];
-    IRLabelFormField *formField = [[IRLabelFormField alloc] initWithDictionary:dictionary model:model];
+    IRTextFormField *formField = [[IRTextFormField alloc] initWithDictionary:dictionary model:model];
     
     id mockTableView = [OCMockObject mockForClass:[UITableView class]];
     [[[mockTableView expect] andReturn:nil] dequeueReusableCellWithIdentifier:@"TestField"];
@@ -52,6 +54,11 @@
     UILabel *label = (UILabel *)[cell.contentView viewWithTag:kIRFormFieldCellLabelTag];
     GHAssertNotNil(label, @"The label is nil.");
     GHAssertEqualStrings(@"First Name", label.text, @"The label is incorrect.");
+    
+    UITextField *textField = (UITextField *)[cell.contentView viewWithTag:kIRFormFieldCellTextTag];
+    GHAssertNotNil(textField, @"The text field is nil.");
+    GHAssertEqualStrings(@"First name", textField.placeholder, @"The placeholder is incorrect.");
+    GHAssertEqualStrings(@"Michael", textField.text, @"The field text is incorrect.");
     
     [mockTableView verify];
 }

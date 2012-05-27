@@ -12,29 +12,39 @@
 					<string>prefix</string>
 					<key>LabelText</key>
 					<string>Prefix</string>
+					<key>Placeholder</key>
+					<string>Prefix</string>
 				</dict>
 				<dict>
 					<key>KeyPath</key>
 					<string>firstName</string>
 					<key>LabelText</key>
 					<string>First Name</string>
+					<key>Placeholder</key>
+					<string>First name</string>
 				</dict>
 				<dict>
 					<key>KeyPath</key>
 					<string>middleName</string>
 					<key>LabelText</key>
 					<string>Middle Name</string>
+					<key>Placeholder</key>
+					<string>Middle name</string>
 				</dict>
 				<dict>
 					<key>KeyPath</key>
 					<string>lastName</string>
 					<key>LabelText</key>
 					<string>Last Name</string>
+					<key>Placeholder</key>
+					<string>Last name</string>
 				</dict>
 				<dict>
 					<key>KeyPath</key>
 					<string>suffix</string>
 					<key>LabelText</key>
+					<string>Suffix</string>
+					<key>Placeholder</key>
 					<string>Suffix</string>
 				</dict>
 			</array>

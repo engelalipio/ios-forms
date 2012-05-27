@@ -1,9 +1,8 @@
 /*
- * IRLabelFormFieldCell.h
+ * IRTextFormFieldCell.h
  *
- * This file defines the IRLabelFormFieldCell class. The IRLabelFormFieldCell
- * class is the base class for a standard form field cell that has a label for
- * the field.
+ * This file defines the IRTextFormFieldCell class that implements a custom cell
+ * view that includes a text field for editing a simple text value.
  *
  * Copyright 2012 ImaginaryRealities, LLC
  *
@@ -26,13 +25,17 @@
  * SOFTWARE.
  */
 
-#define kIRFormFieldCellLabelTag 1
+#import "IRLabelFormFieldCell.h"
+
+#define kIRFormFieldCellTextTag 2
 
 /**
- * Base class for a form field cell that displays a label.
+ * Cell for a form field that displays a form value in a text box and allows the
+ * user to edit the value.
  *
- * The IRLabelFormFieldCell class implements a custom cell for a form field that
- * displays a label on the left side of the view.
+ * The IRTextFormFieldCell class implements a custom cell that displays a form
+ * value in a text box and allows the user to edit the text value using the
+ * keyboard.
  */
-@interface IRLabelFormFieldCell : UITableViewCell
+@interface IRTextFormFieldCell : IRLabelFormFieldCell
 @end

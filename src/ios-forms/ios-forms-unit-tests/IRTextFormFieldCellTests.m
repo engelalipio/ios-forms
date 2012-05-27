@@ -1,9 +1,8 @@
 /*
- * IRLabelFormFieldCell.h
+ * IRTextFormFieldCellTests.m
  *
- * This file defines the IRLabelFormFieldCell class. The IRLabelFormFieldCell
- * class is the base class for a standard form field cell that has a label for
- * the field.
+ * This file implements the IRTextFormFieldCellTests class that unit tests the
+ * IRTextFormFieldCell class.
  *
  * Copyright 2012 ImaginaryRealities, LLC
  *
@@ -26,13 +25,18 @@
  * SOFTWARE.
  */
 
-#define kIRFormFieldCellLabelTag 1
+#import "IRTextFormFieldCell.h"
 
-/**
- * Base class for a form field cell that displays a label.
- *
- * The IRLabelFormFieldCell class implements a custom cell for a form field that
- * displays a label on the left side of the view.
- */
-@interface IRLabelFormFieldCell : UITableViewCell
+@interface IRTextFormFieldCellTests : GHTestCase
+@end
+
+@implementation IRTextFormFieldCellTests
+
+- (void)testCellInitializesSuccessfully {
+    IRTextFormFieldCell *cell = [[IRTextFormFieldCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"TestField"];
+    
+    UITextField *textField = (UITextField *)[cell.contentView viewWithTag:kIRFormFieldCellTextTag];
+    GHAssertNotNil(textField, @"The text field is nil.");
+}
+
 @end

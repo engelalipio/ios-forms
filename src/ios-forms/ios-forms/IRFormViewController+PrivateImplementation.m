@@ -45,7 +45,8 @@
 
 - (CGRect)adjustFrameHeightBy:(CGFloat)change multipliedBy:(NSInteger)direction
 {
-    CGFloat newHeight = 1 == direction ? 416.0f : 460.0f - change;
+    CGRect frame = self.view.frame;
+    CGFloat newHeight = 1 == direction ? frame.size.height : frame.size.height - change;
     return CGRectMake(0.0f, 0.0f, self.tableView.frame.size.width, newHeight);
 }
 

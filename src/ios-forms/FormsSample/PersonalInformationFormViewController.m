@@ -34,6 +34,11 @@
 
 - (IRForm *)loadForm {
     UserProfile *model = [[UserProfile alloc] init];
+    model.firstName = @"Michael";
+    model.middleName = @"Francis";
+    model.lastName = @"Collins";
+    model.suffix = @"III";
+    
     IRForm *form = [[IRForm alloc] initWithPropertyList:@"UserProfileForm"
                                                  bundle:nil
                                                   model:model];
