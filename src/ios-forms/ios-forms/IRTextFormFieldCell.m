@@ -44,4 +44,9 @@
     return self;
 }
 
+- (void)activateCell {
+    UITextField *textField = (UITextField *)[self.contentView viewWithTag:kIRFormFieldCellTextTag];
+    [textField becomeFirstResponder];
+}
+
 @end

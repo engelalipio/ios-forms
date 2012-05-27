@@ -1,9 +1,7 @@
 /*
- * IRLabelFormFieldCell.h
+ * IRFormFieldCell.m
  *
- * This file defines the IRLabelFormFieldCell class. The IRLabelFormFieldCell
- * class is the base class for a standard form field cell that has a label for
- * the field.
+ * This file implements the IRFormFieldCell class.
  *
  * Copyright 2012 ImaginaryRealities, LLC
  *
@@ -28,13 +26,9 @@
 
 #import "IRFormFieldCell.h"
 
-#define kIRFormFieldCellLabelTag 1
+@implementation IRFormFieldCell
 
-/**
- * Base class for a form field cell that displays a label.
- *
- * The IRLabelFormFieldCell class implements a custom cell for a form field that
- * displays a label on the left side of the view.
- */
-@interface IRLabelFormFieldCell : IRFormFieldCell
+- (void)activateCell {
+}
+
 @end

@@ -27,6 +27,7 @@
 #import "IRForm.h"
 #import "IRFormSection.h"
 #import "IRFormField.h"
+#import "IRFormFieldCell.h"
 
 @implementation IRForm
 
@@ -107,6 +108,13 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     IRFormSection *formSection = [sections objectAtIndex:section];
     return formSection.header;
+}
+
+#pragma mark - Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    IRFormFieldCell *cell = (IRFormFieldCell *)[tableView cellForRowAtIndexPath:indexPath];
+    [cell activateCell];
 }
 
 @end

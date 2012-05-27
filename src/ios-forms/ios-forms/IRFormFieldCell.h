@@ -1,9 +1,8 @@
 /*
- * IRLabelFormFieldCell.h
+ * IRFormFieldCell.h
  *
- * This file defines the IRLabelFormFieldCell class. The IRLabelFormFieldCell
- * class is the base class for a standard form field cell that has a label for
- * the field.
+ * This file defines the IRFormFieldCell base class. The IRFormFieldCell class
+ * implements the basic behavior for all form field cells.
  *
  * Copyright 2012 ImaginaryRealities, LLC
  *
@@ -26,15 +25,25 @@
  * SOFTWARE.
  */
 
-#import "IRFormFieldCell.h"
-
-#define kIRFormFieldCellLabelTag 1
+/**
+ * Base class for a cell that is used to present the value of a form field.
+ *
+ * The IRFormFieldCell class is the base class for a cell view that presents the
+ * value of a form field and allows the user to edit or operate on the field.
+ * The IRFormFieldCell class implements basic behavior or interfaces that are
+ * overridden by derived classes or shared by derived classes.
+ */
+@interface IRFormFieldCell : UITableViewCell
 
 /**
- * Base class for a form field cell that displays a label.
+ * Makes the editable part of the cell view active.
  *
- * The IRLabelFormFieldCell class implements a custom cell for a form field that
- * displays a label on the left side of the view.
+ * The activateCell method is called when the editable or interactive part of
+ * the cell should become active. For example, in a cell with a text field, the
+ * text field may become the first responder.
+ *
+ * The default implementation of this method does nothing.
  */
-@interface IRLabelFormFieldCell : IRFormFieldCell
+- (void)activateCell;
+
 @end
