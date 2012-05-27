@@ -29,6 +29,8 @@
 
 @implementation IRTextFormField
 
+#pragma mark - Initialization
+
 - (id)initWithDictionary:(NSDictionary *)dictionary model:(id)aModel {
     self = [super initWithDictionary:dictionary model:aModel];
     if (self) {
@@ -46,6 +48,8 @@
     return self;
 }
 
+#pragma mark - Cell creation and initialization
+
 - (UITableViewCell *)createCellWithReuseIdentifier:(NSString *)reuseIdentifier {
     return [[IRTextFormFieldCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
 }
@@ -54,10 +58,17 @@
     UITableViewCell *cell = [super cellForTableView:tableView];
     
     UITextField *textField = (UITextField *)[cell.contentView viewWithTag:kIRFormFieldCellTextTag];
+    textField.delegate = self;
     textField.placeholder = placeholder;
     textField.text = [self value];
     
     return cell;
+}
+
+#pragma mark - UITextFieldDelegate methods
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    [self setValue:textField.text];
 }
 
 @end

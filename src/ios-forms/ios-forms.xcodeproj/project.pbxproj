@@ -96,7 +96,6 @@
 		4C26DE5115728D3E0072A077 /* IRLabelFormFieldCellTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRLabelFormFieldCellTests.m; sourceTree = "<group>"; };
 		4C26DE5315728D9C0072A077 /* IRLabelFormFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRLabelFormFieldCell.h; sourceTree = "<group>"; };
 		4C26DE5415728D9C0072A077 /* IRLabelFormFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRLabelFormFieldCell.m; sourceTree = "<group>"; };
-		4C26DE59157292FD0072A077 /* LabelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelCell.xib; sourceTree = "<group>"; };
 		4C26DE5B157296630072A077 /* IRTextFormFieldCellTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRTextFormFieldCellTests.m; sourceTree = "<group>"; };
 		4C26DE5D157296ED0072A077 /* IRTextFormFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRTextFormFieldCell.h; sourceTree = "<group>"; };
 		4C26DE5E157296ED0072A077 /* IRTextFormFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRTextFormFieldCell.m; sourceTree = "<group>"; };
@@ -274,7 +273,6 @@
 				4C26DE4B15728B080072A077 /* IRLabelFormField.m */,
 				4C26DE5315728D9C0072A077 /* IRLabelFormFieldCell.h */,
 				4C26DE5415728D9C0072A077 /* IRLabelFormFieldCell.m */,
-				4C26DE59157292FD0072A077 /* LabelCell.xib */,
 				4C26DE5D157296ED0072A077 /* IRTextFormFieldCell.h */,
 				4C26DE5E157296ED0072A077 /* IRTextFormFieldCell.m */,
 				4C26DE6615729A7B0072A077 /* IRTextFormField.h */,

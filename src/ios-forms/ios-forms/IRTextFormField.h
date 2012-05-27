@@ -31,7 +31,7 @@
  * Form field that displays a form value in a text box and allows the user to
  * edit the field value.
  */
-@interface IRTextFormField : IRLabelFormField {
+@interface IRTextFormField : IRLabelFormField <UITextFieldDelegate> {
     @private
     NSString *placeholder;
 }

@@ -63,4 +63,28 @@
     [mockTableView verify];
 }
 
+- (void)testModelIsUpdatedWhenEditingEnds {
+    NSMutableDictionary *model = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"Michael", @"firstName", nil];
+    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:
+                                @"firstName",
+                                @"KeyPath",
+                                @"TestField",
+                                @"CellReuseIdentifier",
+                                @"First Name",
+                                @"Label Text",
+                                @"First name",
+                                @"Placeholder",
+                                nil];
+    IRTextFormField *formField = [[IRTextFormField alloc] initWithDictionary:dictionary model:model];
+    
+    id mockTextField = [OCMockObject mockForClass:[UITextField class]];
+    [[[mockTextField expect] andReturn:@"John"] text];
+    
+    [formField textFieldDidEndEditing:mockTextField];
+    
+    GHAssertEqualStrings(@"John", [model objectForKey:@"firstName"], @"The first name is not correct.");
+                                   
+    [mockTextField verify];
+}
+
 @end
