@@ -25,7 +25,7 @@
  */
 
 #import "IRFormSection.h"
-#import "IRFormField.h"
+#import "IRLabelFormField.h"
 
 @implementation IRFormSection
 
@@ -46,7 +46,7 @@
     fields = [[NSMutableArray alloc] initWithCapacity:fieldCount];
     for (NSUInteger i = 0; i < fieldCount; i++) {
         NSDictionary *formField = [formFields objectAtIndex:i];
-        IRFormField *field = [[IRFormField alloc] initWithDictionary:formField model:model];
+        IRFormField *field = [[IRLabelFormField alloc] initWithDictionary:formField model:model];
         [fields addObject:field];
     }
     

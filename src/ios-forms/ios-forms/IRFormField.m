@@ -125,11 +125,15 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellReuseIdentifier];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellReuseIdentifier];
+        cell = [self createCellWithReuseIdentifier:cellReuseIdentifier];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     
     return cell;
+}
+
+- (UITableViewCell *)createCellWithReuseIdentifier:(NSString *)reuseIdentifier {
+    return [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
 }
 
 @end

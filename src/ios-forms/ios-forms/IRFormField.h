@@ -106,4 +106,17 @@
  */
 - (UITableViewCell *)cellForTableView:(UITableView *)tableView;
 
+/**
+ * Creates the cell view for the form field.
+ *
+ * The cellForTableView: method will invoke createCellWithReuseIdentifier: to
+ * create a new cell object. Subclasses will override this method to return the 
+ * correct cell. If the form field specifies a custom cell in a nib resource, 
+ * this method will not be called.
+ *
+ * @param reuseIdentifier The reuse identifier to use for the custom table cell.
+ * @return Returns the UITableViewCell object.
+ */
+- (UITableViewCell *)createCellWithReuseIdentifier:(NSString *)reuseIdentifier;
+
 @end

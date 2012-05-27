@@ -10,22 +10,32 @@
 				<dict>
 					<key>KeyPath</key>
 					<string>prefix</string>
+					<key>LabelText</key>
+					<string>Prefix</string>
 				</dict>
 				<dict>
 					<key>KeyPath</key>
 					<string>firstName</string>
+					<key>LabelText</key>
+					<string>First Name</string>
 				</dict>
 				<dict>
 					<key>KeyPath</key>
 					<string>middleName</string>
+					<key>LabelText</key>
+					<string>Middle Name</string>
 				</dict>
 				<dict>
 					<key>KeyPath</key>
 					<string>lastName</string>
+					<key>LabelText</key>
+					<string>Last Name</string>
 				</dict>
 				<dict>
 					<key>KeyPath</key>
 					<string>suffix</string>
+					<key>LabelText</key>
+					<string>Suffix</string>
 				</dict>
 			</array>
 		</dict>
