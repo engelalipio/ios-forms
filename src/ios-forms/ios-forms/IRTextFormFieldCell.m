@@ -38,6 +38,7 @@
         textField.borderStyle = UITextBorderStyleNone;
         textField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
         textField.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        textField.clearButtonMode = UITextFieldViewModeWhileEditing;
         [self.contentView addSubview:textField];
     }
 
