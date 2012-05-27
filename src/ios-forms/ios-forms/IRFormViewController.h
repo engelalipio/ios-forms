@@ -40,8 +40,11 @@
 @interface IRFormViewController : UIViewController {
     @private
     IRForm *form;
-    UITableView *tableView;
 }
+
+/** @name Properties */
+
+@property (nonatomic, strong) UITableView *tableView;
 
 /** @name Must Be Overridden by Derived Classes */
 

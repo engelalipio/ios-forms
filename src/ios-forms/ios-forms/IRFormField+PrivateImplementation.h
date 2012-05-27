@@ -30,6 +30,8 @@
 
 @interface IRFormField (PrivateImplementation)
 
+/** @name Device Detection */
+
 /**
  * Determines whether the current device is an iPhone or iPad device.
  *

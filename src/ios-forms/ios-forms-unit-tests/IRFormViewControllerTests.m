@@ -26,6 +26,7 @@
  */
 
 #import "IRFormViewController.h"
+#import "IRFormViewController+PrivateImplementation.h"
 #import "IRForm.h"
 
 @interface IRFormViewControllerTests : GHTestCase
@@ -33,9 +34,12 @@
 
 @implementation IRFormViewControllerTests
 
-- (void)testViewDidLoadCallsLoadForm {
+- (void)testViewDidLoadInitializesViewController {
     IRFormViewController *viewController = [[IRFormViewController alloc] init];
     id mockViewController = [OCMockObject partialMockForObject:viewController];
+    
+    [[mockViewController expect] addObserver:viewController selector:@selector(keyboardWillAppear:) name:UIKeyboardWillShowNotification object:nil];
+    [[mockViewController expect] addObserver:viewController selector:@selector(keyboardWillDisappear:) name:UIKeyboardWillHideNotification object:nil];
     
     id mockView = [OCMockObject mockForClass:[UIView class]];
     CGRect frame = CGRectMake(0.0f, 0.0f, 320.0f, 480.0f);
@@ -52,6 +56,17 @@
     [mockView verify];
     [mockViewController verify];
     [mockForm verify];
+}
+
+- (void)testViewDidUnloadRemovesNotifications {
+    IRFormViewController *viewController = [[IRFormViewController alloc] init];
+    id mockViewController = [OCMockObject partialMockForObject:viewController];
+    
+    [[mockViewController expect] removeObserver:viewController];
+    
+    [mockViewController viewDidUnload];
+    
+    [mockViewController verify];
 }
 
 @end

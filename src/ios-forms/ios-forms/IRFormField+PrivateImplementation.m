@@ -29,6 +29,8 @@
 
 @implementation IRFormField (PrivateImplementation)
 
+#pragma mark - Device Detection
+
 - (BOOL)isiPad {
     return [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad;
 }

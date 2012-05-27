@@ -25,9 +25,12 @@
  */
 
 #import "IRFormViewController.h"
+#import "IRFormViewController+PrivateImplementation.h"
 #import "IRForm.h"
 
 @implementation IRFormViewController
+
+@synthesize tableView;
 
 #pragma mark - View lifecycle
 
@@ -38,17 +41,22 @@
     
     form = [self loadForm];
     
-    tableView = [[UITableView alloc] initWithFrame:frame
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, frame.size.width, frame.size.height)
                                              style:UITableViewStyleGrouped];
-    [self.view addSubview:tableView];
+    [self.view addSubview:self.tableView];
     tableView.dataSource = form;
     tableView.delegate = form;
+    
+    [self addObserver:self selector:@selector(keyboardWillAppear:) name:UIKeyboardWillShowNotification object:nil];
+    [self addObserver:self selector:@selector(keyboardWillDisappear:) name:UIKeyboardWillHideNotification object:nil];
 }
 
 - (void)viewDidUnload {
     [super viewDidUnload];
     
-    tableView = nil;
+    [self removeObserver:self];
+    
+    self.tableView = nil;
     form = nil;
 }
 
