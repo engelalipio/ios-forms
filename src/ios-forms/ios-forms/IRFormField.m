@@ -25,6 +25,7 @@
  */
 
 #import "IRFormField.h"
+#import "IRFormField+PrivateImplementation.h"
 
 @implementation IRFormField
 
@@ -42,13 +43,32 @@
     
     model = aModel;
     keyPath = [dictionary objectForKey:@"KeyPath"];
-    cellReuseIdentifier = [dictionary objectForKey:@"CellReuseIdentifier"];
-    cellNibName = [dictionary objectForKey:@"CellNibName"];
-    cellBundleId = [dictionary objectForKey:@"CellBundleId"];
     cellNibRegistered = NO;
+    
+    if ([self isiPad]) {
+        cellReuseIdentifier = [dictionary objectForKey:@"CellReuseIdentifier_iPad"];
+        cellNibName = [dictionary objectForKey:@"CellNibName_iPad"];
+        cellBundleId = [dictionary objectForKey:@"CellBundleId_iPad"];
+    } else {
+        cellReuseIdentifier = [dictionary objectForKey:@"CellReuseIdentifier_iPhone"];
+        cellNibName = [dictionary objectForKey:@"CellNibName_iPhone"];
+        cellBundleId = [dictionary objectForKey:@"CellBundleId_iPhone"];
+    }
+    
+    if (!cellReuseIdentifier) {
+        cellReuseIdentifier = [dictionary objectForKey:@"CellReuseIdentifier"];
+    }
     
     if (!cellReuseIdentifier) {
         cellReuseIdentifier = @"IRFormField";
+    }
+    
+    if (!cellNibName) {
+        cellNibName = [dictionary objectForKey:@"CellNibName"];
+    }
+    
+    if (!cellBundleId) {
+        cellBundleId = [dictionary objectForKey:@"CellBundleId"];
     }
     
     return self;

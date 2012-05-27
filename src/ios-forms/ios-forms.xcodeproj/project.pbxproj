@@ -10,6 +10,10 @@
 		4C26DE2D1571A6420072A077 /* PersonalInformationFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE2C1571A6420072A077 /* PersonalInformationFormViewController.m */; };
 		4C26DE311571A8890072A077 /* UserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE301571A8890072A077 /* UserProfile.m */; };
 		4C26DE331571AD370072A077 /* UserProfileForm.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C26DE321571AD370072A077 /* UserProfileForm.plist */; };
+		4C26DE3D15727E2C0072A077 /* IRFormField+PrivateImplementation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C26DE3B15727E2C0072A077 /* IRFormField+PrivateImplementation.h */; };
+		4C26DE3E15727E2C0072A077 /* IRFormField+PrivateImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE3C15727E2C0072A077 /* IRFormField+PrivateImplementation.m */; };
+		4C26DE3F15727E2C0072A077 /* IRFormField+PrivateImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE3C15727E2C0072A077 /* IRFormField+PrivateImplementation.m */; };
+		4C26DE4015727E2C0072A077 /* IRFormField+PrivateImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE3C15727E2C0072A077 /* IRFormField+PrivateImplementation.m */; };
 		4C35DA4215686056008A54FE /* IRFormViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA4015686056008A54FE /* IRFormViewControllerTests.m */; };
 		4C35DA46156860B5008A54FE /* IRFormViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C35DA44156860B5008A54FE /* IRFormViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C35DA48156860B5008A54FE /* IRFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA45156860B5008A54FE /* IRFormViewController.m */; };
@@ -58,6 +62,8 @@
 		4C26DE2F1571A8890072A077 /* UserProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfile.h; sourceTree = "<group>"; };
 		4C26DE301571A8890072A077 /* UserProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfile.m; sourceTree = "<group>"; };
 		4C26DE321571AD370072A077 /* UserProfileForm.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserProfileForm.plist; sourceTree = "<group>"; };
+		4C26DE3B15727E2C0072A077 /* IRFormField+PrivateImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRFormField+PrivateImplementation.h"; sourceTree = "<group>"; };
+		4C26DE3C15727E2C0072A077 /* IRFormField+PrivateImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRFormField+PrivateImplementation.m"; sourceTree = "<group>"; };
 		4C35DA4015686056008A54FE /* IRFormViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFormViewControllerTests.m; sourceTree = "<group>"; };
 		4C35DA44156860B5008A54FE /* IRFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRFormViewController.h; sourceTree = "<group>"; };
 		4C35DA45156860B5008A54FE /* IRFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFormViewController.m; sourceTree = "<group>"; };
@@ -221,6 +227,8 @@
 				4C35DA551568634E008A54FE /* IRFormSection.h */,
 				4C35DA561568634E008A54FE /* IRFormSection.m */,
 				4C35DA5E15693AFF008A54FE /* IRForms.h */,
+				4C26DE3B15727E2C0072A077 /* IRFormField+PrivateImplementation.h */,
+				4C26DE3C15727E2C0072A077 /* IRFormField+PrivateImplementation.m */,
 			);
 			path = "ios-forms";
 			sourceTree = "<group>";
@@ -271,6 +279,7 @@
 				4C35DA46156860B5008A54FE /* IRFormViewController.h in Headers */,
 				4C35DA4F156862AF008A54FE /* IRForm.h in Headers */,
 				4C35DA571568634E008A54FE /* IRFormSection.h in Headers */,
+				4C26DE3D15727E2C0072A077 /* IRFormField+PrivateImplementation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +403,7 @@
 				4C35DA8315695F44008A54FE /* IRFormSection.m in Sources */,
 				4C26DE2D1571A6420072A077 /* PersonalInformationFormViewController.m in Sources */,
 				4C26DE311571A8890072A077 /* UserProfile.m in Sources */,
+				4C26DE4015727E2C0072A077 /* IRFormField+PrivateImplementation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +415,7 @@
 				4C35DA48156860B5008A54FE /* IRFormViewController.m in Sources */,
 				4C35DA50156862AF008A54FE /* IRForm.m in Sources */,
 				4C35DA581568634E008A54FE /* IRFormSection.m in Sources */,
+				4C26DE3E15727E2C0072A077 /* IRFormField+PrivateImplementation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +432,7 @@
 				4C35DA51156862AF008A54FE /* IRForm.m in Sources */,
 				4C35DA5415686310008A54FE /* IRFormSectionTests.m in Sources */,
 				4C35DA591568634E008A54FE /* IRFormSection.m in Sources */,
+				4C26DE3F15727E2C0072A077 /* IRFormField+PrivateImplementation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

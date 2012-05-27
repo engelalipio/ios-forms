@@ -26,6 +26,7 @@
  */
 
 #import "IRFormField.h"
+#import "IRFormField+PrivateImplementation.h"
 
 @interface IRFormFieldTests : GHTestCase
 @end
@@ -138,6 +139,70 @@
     UITableViewCell *cell = [field cellForTableView:mockTableView];
     GHAssertNotNil(cell, @"The cell is nil.");
     
+    [mockCell verify];
+    [mockTableView verify];
+}
+
+- (void)testFormFieldLoadsiPadCellViewOniPadDevice {
+    id mockCell = [OCMockObject mockForClass:[UITableViewCell class]];
+    
+    id mockTableView = [OCMockObject mockForClass:[UITableView class]];
+    [[mockTableView expect] registerNib:[OCMArg any] forCellReuseIdentifier:@"TestField_iPad"];
+    [[[mockTableView expect] andReturn:mockCell] dequeueReusableCellWithIdentifier:@"TestField_iPad"];
+    
+    NSMutableDictionary *model = [NSMutableDictionary dictionary];
+    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:
+                                @"firstName",
+                                @"KeyPath",
+                                @"TestField_iPad",
+                                @"CellReuseIdentifier_iPad",
+                                @"TestFieldCell",
+                                @"CellNibName_iPad",
+                                nil];
+    IRFormField *field = [IRFormField alloc];
+    id mockField = [OCMockObject partialMockForObject:field];    
+    BOOL result = YES;
+    [[[mockField expect] andReturnValue:OCMOCK_VALUE(result)] isiPad];
+    
+    id fieldResult = [mockField initWithDictionary:dictionary model:model];
+    GHAssertEqualObjects(field, fieldResult, @"The result of initWithDictionary:model: is not the same field object.");
+    
+    UITableViewCell *cell = [mockField cellForTableView:mockTableView];
+    GHAssertNotNil(cell, @"The cell is nil.");
+    
+    [mockField verify];
+    [mockCell verify];
+    [mockTableView verify];
+}
+
+- (void)testFormFieldLoadsiPhoneCellViewOniPhoneDevice {
+    id mockCell = [OCMockObject mockForClass:[UITableViewCell class]];
+    
+    id mockTableView = [OCMockObject mockForClass:[UITableView class]];
+    [[mockTableView expect] registerNib:[OCMArg any] forCellReuseIdentifier:@"TestField_iPhone"];
+    [[[mockTableView expect] andReturn:mockCell] dequeueReusableCellWithIdentifier:@"TestField_iPhone"];
+    
+    NSMutableDictionary *model = [NSMutableDictionary dictionary];
+    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:
+                                @"firstName",
+                                @"KeyPath",
+                                @"TestField_iPhone",
+                                @"CellReuseIdentifier_iPhone",
+                                @"TestFieldCell",
+                                @"CellNibName_iPhone",
+                                nil];
+    IRFormField *field = [IRFormField alloc];
+    id mockField = [OCMockObject partialMockForObject:field];    
+    BOOL result = NO;
+    [[[mockField expect] andReturnValue:OCMOCK_VALUE(result)] isiPad];
+    
+    id fieldResult = [mockField initWithDictionary:dictionary model:model];
+    GHAssertEqualObjects(field, fieldResult, @"The result of initWithDictionary:model: is not the same field object.");
+    
+    UITableViewCell *cell = [mockField cellForTableView:mockTableView];
+    GHAssertNotNil(cell, @"The cell is nil.");
+    
+    [mockField verify];
     [mockCell verify];
     [mockTableView verify];
 }
