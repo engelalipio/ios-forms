@@ -29,6 +29,9 @@
 
 @implementation IRFormSection
 
+@synthesize footer;
+@synthesize header;
+
 #pragma mark - Initializers
 
 - (id)init {
@@ -40,6 +43,9 @@
     if (!self) {
         return self;
     }
+    
+    header = [dictionary objectForKey:@"Header"];
+    footer = [dictionary objectForKey:@"Footer"];
     
     NSArray *formFields = [dictionary objectForKey:@"Fields"];
     NSUInteger fieldCount = [formFields count];

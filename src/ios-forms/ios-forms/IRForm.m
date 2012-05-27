@@ -99,4 +99,14 @@
     return [formField cellForTableView:tableView];
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
+    IRFormSection *formSection = [sections objectAtIndex:section];
+    return formSection.footer;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    IRFormSection *formSection = [sections objectAtIndex:section];
+    return formSection.header;
+}
+
 @end

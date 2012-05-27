@@ -5,6 +5,8 @@
 	<key>Sections</key>
 	<array>
 		<dict>
+			<key>Header</key>
+			<string>Personal Information</string>
 			<key>Fields</key>
 			<array>
 				<dict>

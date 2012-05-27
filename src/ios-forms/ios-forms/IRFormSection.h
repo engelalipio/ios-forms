@@ -39,6 +39,11 @@
     NSMutableArray *fields;
 }
 
+/** @name Properties */
+
+@property (nonatomic, copy) NSString *footer;
+@property (nonatomic, copy) NSString *header;
+
 /** @name Initializing an IRFormSection instance. */
 
 /**
