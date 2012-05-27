@@ -42,6 +42,14 @@
     
     model = aModel;
     keyPath = [dictionary objectForKey:@"KeyPath"];
+    cellReuseIdentifier = [dictionary objectForKey:@"CellReuseIdentifier"];
+    cellNibName = [dictionary objectForKey:@"CellNibName"];
+    cellBundleId = [dictionary objectForKey:@"CellBundleId"];
+    cellNibRegistered = NO;
+    
+    if (!cellReuseIdentifier) {
+        cellReuseIdentifier = @"IRFormField";
+    }
     
     return self;
 }
@@ -83,9 +91,21 @@
 #pragma mark - Create the Field Cell
 
 - (UITableViewCell *)cellForTableView:(UITableView *)tableView {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"IRFormField"];
+    if (cellNibName && !cellNibRegistered) {
+        NSBundle *bundle = nil;
+        if (cellBundleId) {
+            bundle = [NSBundle bundleWithIdentifier:cellBundleId];
+        }
+        
+        UINib *nib = [UINib nibWithNibName:cellNibName bundle:bundle];
+        [tableView registerNib:nib forCellReuseIdentifier:cellReuseIdentifier];
+        
+        cellNibRegistered = YES;
+    }
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellReuseIdentifier];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"IRFormField"];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellReuseIdentifier];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     

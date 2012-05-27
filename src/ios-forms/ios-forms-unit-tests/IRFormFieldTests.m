@@ -97,4 +97,49 @@
     [mockTableView verify];
 }
 
+- (void)testCellForTableViewUsesReuseIdentifier {
+    id mockTableView = [OCMockObject mockForClass:[UITableView class]];
+    [[[mockTableView expect] andReturn:nil] dequeueReusableCellWithIdentifier:@"TestField"];
+    
+    NSMutableDictionary *model = [NSMutableDictionary dictionary];
+    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:
+                                @"firstName",
+                                @"KeyPath",
+                                @"TestField",
+                                @"CellReuseIdentifier",
+                                nil];
+    IRFormField *field = [[IRFormField alloc] initWithDictionary:dictionary model:model];
+    
+    UITableViewCell *cell = [field cellForTableView:mockTableView];
+    GHAssertNotNil(cell, @"The cell is nil.");
+    GHAssertEqualStrings(@"TestField", cell.reuseIdentifier, @"The cell reuse identifier is incorrect.");
+    
+    [mockTableView verify];
+}
+
+- (void)testCellForTableViewRegistersCustomView {
+    id mockCell = [OCMockObject mockForClass:[UITableViewCell class]];
+    
+    id mockTableView = [OCMockObject mockForClass:[UITableView class]];
+    [[mockTableView expect] registerNib:[OCMArg any] forCellReuseIdentifier:@"TestField"];
+    [[[mockTableView expect] andReturn:mockCell] dequeueReusableCellWithIdentifier:@"TestField"];
+    
+    NSMutableDictionary *model = [NSMutableDictionary dictionary];
+    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:
+                                @"firstName",
+                                @"KeyPath",
+                                @"TestField",
+                                @"CellReuseIdentifier",
+                                @"TestFieldCell",
+                                @"CellNibName",
+                                nil];
+    IRFormField *field = [[IRFormField alloc] initWithDictionary:dictionary model:model];
+    
+    UITableViewCell *cell = [field cellForTableView:mockTableView];
+    GHAssertNotNil(cell, @"The cell is nil.");
+    
+    [mockCell verify];
+    [mockTableView verify];
+}
+
 @end

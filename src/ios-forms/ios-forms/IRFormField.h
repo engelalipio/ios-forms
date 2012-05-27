@@ -36,6 +36,10 @@
     @private
     id model;
     NSString *keyPath;
+    NSString *cellReuseIdentifier;
+    NSString *cellNibName;
+    NSString *cellBundleId;
+    BOOL cellNibRegistered;
 }
 
 /** @name Initializing an IRFormField Instance */
