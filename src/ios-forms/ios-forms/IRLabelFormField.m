@@ -47,9 +47,10 @@
 - (UITableViewCell *)cellForTableView:(UITableView *)tableView {
     UITableViewCell *cell = [super cellForTableView:tableView];
 
-    UILabel *label = (UILabel *)[cell.contentView viewWithTag:kIRFormFieldCellLabelTag];
-    label.text = labelText;
-
+    if (labelText) {
+        UILabel *label = (UILabel *)[cell.contentView viewWithTag:kIRFormFieldCellLabelTag];
+        label.text = NSLocalizedString(labelText, nil);
+    }
     return cell;
 }
 

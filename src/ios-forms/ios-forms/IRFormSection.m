@@ -44,8 +44,15 @@
         return self;
     }
     
-    header = [dictionary objectForKey:@"Header"];
-    footer = [dictionary objectForKey:@"Footer"];
+    NSString *headerKey = [dictionary objectForKey:@"Header"];
+    if (headerKey) {
+        header = NSLocalizedString(headerKey, nil);
+    }
+    
+    NSString *footerKey = [dictionary objectForKey:@"Footer"];
+    if (footerKey) {
+        footer = NSLocalizedString(footerKey, nil);
+    }
     
     NSArray *formFields = [dictionary objectForKey:@"Fields"];
     NSUInteger fieldCount = [formFields count];

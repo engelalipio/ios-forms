@@ -150,7 +150,6 @@
     
     UITextField *textField = (UITextField *)[cell.contentView viewWithTag:kIRFormFieldCellTextTag];
     textField.delegate = self;
-    textField.placeholder = placeholder;
     textField.text = [self value];
     textField.autocapitalizationType = autocapitalizationType;
     textField.autocorrectionType = autocorrectionType;
@@ -160,6 +159,9 @@
     textField.returnKeyType = returnKeyType;
     textField.secureTextEntry = secureTextEntry;
     textField.spellCheckingType = spellCheckingType;
+    if (placeholder) {
+        textField.placeholder = NSLocalizedString(placeholder, nil);
+    }
     
     return cell;
 }
