@@ -69,8 +69,10 @@
 				<dict>
 					<key>KeyPath</key>
 					<string>annualIncome</string>
-					<key>LabelText</key>
+					<key>LabelText_iPad</key>
 					<string>Annual Income</string>
+					<key>LabelText_iPhone</key>
+					<string>Income</string>
 					<key>Placeholder</key>
 					<string>Annual income</string>
 					<key>Style</key>

@@ -32,7 +32,14 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(138.0f, 6.0f, 162.0f, 31.0f)];
+        CGFloat x;
+        if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+            x = 228.0f;
+        } else {
+            x = 138.0f;
+        }
+        
+        UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(x, 6.0f, 162.0f, 31.0f)];
         textField.tag = kIRFormFieldCellTextTag;
         textField.backgroundColor = [UIColor clearColor];
         textField.borderStyle = UITextBorderStyleNone;

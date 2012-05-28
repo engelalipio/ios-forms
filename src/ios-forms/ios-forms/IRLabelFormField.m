@@ -37,7 +37,15 @@
         return self;
     }
 
-    labelText = [dictionary objectForKey:@"LabelText"];
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        labelText = [dictionary objectForKey:@"LabelText_iPad"];
+    } else {
+        labelText = [dictionary objectForKey:@"LabelText_iPhone"];
+    }
+    
+    if (!labelText) {
+        labelText = [dictionary objectForKey:@"LabelText"];
+    }
     
     return self;
 }

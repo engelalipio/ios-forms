@@ -32,7 +32,14 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20.0f, 11.0f, 110.0f, 21.0f)];
+        CGFloat width;
+        if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+            width = 200.0f;
+        } else {
+            width = 110.0f;
+        }
+        
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20.0f, 11.0f, width, 21.0f)];
         label.tag = kIRFormFieldCellLabelTag;
         label.backgroundColor = [UIColor clearColor];
         label.textAlignment = UITextAlignmentRight;

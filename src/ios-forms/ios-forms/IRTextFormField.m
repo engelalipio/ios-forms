@@ -33,18 +33,20 @@
 
 - (id)initWithDictionary:(NSDictionary *)dictionary model:(id)aModel {
     self = [super initWithDictionary:dictionary model:aModel];
-    if (self) {
-        if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-            placeholder = [dictionary objectForKey:@"Placeholder_iPad"];
-        } else {
-            placeholder = [dictionary objectForKey:@"Placeholder_iPhone"];
-        }
-
-        if (!placeholder) {
-            placeholder = [dictionary objectForKey:@"Placeholder"];
-        }
+    if (!self) {
+        return self;
     }
     
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        placeholder = [dictionary objectForKey:@"Placeholder_iPad"];
+    } else {
+        placeholder = [dictionary objectForKey:@"Placeholder_iPhone"];
+    }
+    
+    if (!placeholder) {
+        placeholder = [dictionary objectForKey:@"Placeholder"];
+    }
+
     NSString *value = [dictionary objectForKey:@"AutocapitalizationType"];
     autocapitalizationType = UITextAutocapitalizationTypeNone;
     if (value) {
