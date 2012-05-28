@@ -25,7 +25,6 @@
  */
 
 #import "IRDateFormField.h"
-#import "IRTextFormFieldCell.h"
 
 @interface IRDateFormField ()
 
@@ -74,28 +73,6 @@
     return self;
 }
 
-- (UITableViewCell *)cellForTableView:(UITableView *)tableView {
-    UITableViewCell *cell = [super cellForTableView:tableView];
-    
-    UIDatePickerMode mode;
-    if (dateStyle != NSDateFormatterNoStyle && timeStyle != NSDateFormatterNoStyle) {
-        mode = UIDatePickerModeDateAndTime;
-    } else if (dateStyle != NSDateFormatterNoStyle) {
-        mode = UIDatePickerModeDate;
-    } else if (timeStyle != NSDateFormatterNoStyle) {
-        mode = UIDatePickerModeTime;
-    }
-    
-    UIDatePicker *datePicker = [[UIDatePicker alloc] initWithFrame:CGRectZero];
-    datePicker.datePickerMode = mode;
-    [datePicker addTarget:self action:@selector(dateChanged:) forControlEvents:UIControlEventValueChanged];
-    
-    UITextField *textField = (UITextField *)[cell.contentView viewWithTag:kIRFormFieldCellTextTag];
-    textField.inputView = datePicker;
-    
-    return cell;
-}
-
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
     [super textFieldDidBeginEditing:textField];
     
@@ -127,6 +104,23 @@
     UIDatePicker *datePicker = sender;
     [self setValue:datePicker.date];
     [self updateText];
+}
+
+- (UIView *)createInputView {
+    UIDatePickerMode mode;
+    if (dateStyle != NSDateFormatterNoStyle && timeStyle != NSDateFormatterNoStyle) {
+        mode = UIDatePickerModeDateAndTime;
+    } else if (dateStyle != NSDateFormatterNoStyle) {
+        mode = UIDatePickerModeDate;
+    } else if (timeStyle != NSDateFormatterNoStyle) {
+        mode = UIDatePickerModeTime;
+    }
+    
+    UIDatePicker *datePicker = [[UIDatePicker alloc] initWithFrame:CGRectZero];
+    datePicker.datePickerMode = mode;
+    [datePicker addTarget:self action:@selector(dateChanged:) forControlEvents:UIControlEventValueChanged];
+    
+    return datePicker;
 }
 
 @end

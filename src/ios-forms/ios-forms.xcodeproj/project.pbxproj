@@ -90,6 +90,10 @@
 		4CFC09351573B1F100F9C152 /* IRDateFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC09331573B1F100F9C152 /* IRDateFormField.m */; };
 		4CFC09361573B1F100F9C152 /* IRDateFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC09331573B1F100F9C152 /* IRDateFormField.m */; };
 		4CFC09371573B1F100F9C152 /* IRDateFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC09331573B1F100F9C152 /* IRDateFormField.m */; };
+		4CFC09491573F34300F9C152 /* IRPickerFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFC09471573F34300F9C152 /* IRPickerFormField.h */; };
+		4CFC094A1573F34300F9C152 /* IRPickerFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC09481573F34300F9C152 /* IRPickerFormField.m */; };
+		4CFC094B1573F34300F9C152 /* IRPickerFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC09481573F34300F9C152 /* IRPickerFormField.m */; };
+		4CFC094C1573F34300F9C152 /* IRPickerFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC09481573F34300F9C152 /* IRPickerFormField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -157,6 +161,8 @@
 		4CFC092C1573087F00F9C152 /* IRNumberFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRNumberFormField.m; sourceTree = "<group>"; };
 		4CFC09321573B1F100F9C152 /* IRDateFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRDateFormField.h; sourceTree = "<group>"; };
 		4CFC09331573B1F100F9C152 /* IRDateFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRDateFormField.m; sourceTree = "<group>"; };
+		4CFC09471573F34300F9C152 /* IRPickerFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRPickerFormField.h; sourceTree = "<group>"; };
+		4CFC09481573F34300F9C152 /* IRPickerFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRPickerFormField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +307,8 @@
 				4CFC092C1573087F00F9C152 /* IRNumberFormField.m */,
 				4CFC09321573B1F100F9C152 /* IRDateFormField.h */,
 				4CFC09331573B1F100F9C152 /* IRDateFormField.m */,
+				4CFC09471573F34300F9C152 /* IRPickerFormField.h */,
+				4CFC09481573F34300F9C152 /* IRPickerFormField.m */,
 			);
 			path = "ios-forms";
 			sourceTree = "<group>";
@@ -364,6 +372,7 @@
 				4C26DE6E1572BCF90072A077 /* IRFormFieldCell.h in Headers */,
 				4CFC092D1573087F00F9C152 /* IRNumberFormField.h in Headers */,
 				4CFC09341573B1F100F9C152 /* IRDateFormField.h in Headers */,
+				4CFC09491573F34300F9C152 /* IRPickerFormField.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +505,7 @@
 				4C26DE711572BCF90072A077 /* IRFormFieldCell.m in Sources */,
 				4CFC09301573087F00F9C152 /* IRNumberFormField.m in Sources */,
 				4CFC09371573B1F100F9C152 /* IRDateFormField.m in Sources */,
+				4CFC094C1573F34300F9C152 /* IRPickerFormField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +526,7 @@
 				4C26DE6F1572BCF90072A077 /* IRFormFieldCell.m in Sources */,
 				4CFC092E1573087F00F9C152 /* IRNumberFormField.m in Sources */,
 				4CFC09351573B1F100F9C152 /* IRDateFormField.m in Sources */,
+				4CFC094A1573F34300F9C152 /* IRPickerFormField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +556,7 @@
 				4C26DE701572BCF90072A077 /* IRFormFieldCell.m in Sources */,
 				4CFC092F1573087F00F9C152 /* IRNumberFormField.m in Sources */,
 				4CFC09361573B1F100F9C152 /* IRDateFormField.m in Sources */,
+				4CFC094B1573F34300F9C152 /* IRPickerFormField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

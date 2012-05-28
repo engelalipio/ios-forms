@@ -1,7 +1,8 @@
 /*
- * UserProfile.m
+ * IRPickerFormField.h
  *
- * This file implements the UserProfile class.
+ * This file defines the IRPickerFormField class. The IRPickerFormField class
+ * will present a list of items for the user to choose to populate a data field.
  *
  * Copyright 2012 ImaginaryRealities, LLC
  *
@@ -24,17 +25,14 @@
  * SOFTWARE.
  */
 
-#import "UserProfile.h"
+#import "IRTextFormField.h"
 
-@implementation UserProfile
+@class IRPickerItem;
 
-@synthesize annualIncome;
-@synthesize firstName;
-@synthesize lastName;
-@synthesize middleName;
-@synthesize nextPayDate;
-@synthesize prefix;
-@synthesize state;
-@synthesize suffix;
+@interface IRPickerFormField : IRTextFormField <UIPickerViewDataSource, UIPickerViewDelegate> {
+    @private
+    NSArray *values;
+    IRPickerItem *selectedItem;
+}
 
 @end

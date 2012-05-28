@@ -161,7 +161,7 @@
     textField.returnKeyType = returnKeyType;
     textField.secureTextEntry = secureTextEntry;
     textField.spellCheckingType = spellCheckingType;
-    textField.inputView = nil;
+    textField.inputView = [self createInputView];
     if (placeholder) {
         textField.placeholder = NSLocalizedString(placeholder, nil);
     }
@@ -201,6 +201,10 @@
     }
     
     cellTextField.text = [self editValue];
+}
+
+- (UIView *)createInputView {
+    return nil;
 }
 
 @end

@@ -72,4 +72,12 @@
  */
 - (void)updateText;
 
+/**
+ * Creates and returns the input view to display for the form field.
+ *
+ * @return Returns the UIView object for the input view, or nil to use the
+ *      default keyboard input view.
+ */
+- (UIView *)createInputView;
+
 @end

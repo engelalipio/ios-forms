@@ -78,6 +78,13 @@
 @property (nonatomic, copy) NSString *prefix;
 
 /**
+ * The state where the user lives.
+ *
+ * The state property stores the abbreviation of the state where the user lives.
+ */
+@property (nonatomic, copy) NSString *state;
+
+/**
  * The suffix for the user's name.
  *
  * The suffix property stores the suffix for the user's name if the user has

@@ -63,6 +63,42 @@
 		</dict>
 		<dict>
 			<key>Header</key>
+			<string>Address</string>
+			<key>Fields</key>
+			<array>
+				<dict>
+					<key>KeyPath</key>
+					<string>state</string>
+					<key>LabelText</key>
+					<string>State</string>
+					<key>Placeholder</key>
+					<string>State</string>
+					<key>Type</key>
+					<string>Picker</string>
+					<key>Values</key>
+					<dict>
+						<key>Arizona</key>
+						<string>AZ</string>
+						<key>California</key>
+						<string>CA</string>
+						<key>Washington</key>
+						<string>WA</string>
+						<key>Iowa</key>
+						<string>IA</string>
+						<key>Maine</key>
+						<string>ME</string>
+						<key>Nevada</key>
+						<string>NV</string>
+						<key>Florida</key>
+						<string>FL</string>
+						<key>Oregon</key>
+						<string>OR</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Header</key>
 			<string>Income Summary</string>
 			<key>Fields</key>
 			<array>

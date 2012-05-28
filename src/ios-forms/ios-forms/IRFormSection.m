@@ -28,6 +28,7 @@
 #import "IRTextFormField.h"
 #import "IRNumberFormField.h"
 #import "IRDateFormField.h"
+#import "IRPickerFormField.h"
 
 @implementation IRFormSection
 
@@ -75,6 +76,8 @@
             field = [[IRNumberFormField alloc] initWithDictionary:formField model:model];
         } else if ([fieldType isEqualToString:@"date"]) {
             field = [[IRDateFormField alloc] initWithDictionary:formField model:model];
+        } else if ([fieldType isEqualToString:@"picker"]) {
+            field = [[IRPickerFormField alloc] initWithDictionary:formField model:model];
         }
 
         [fields addObject:field];
