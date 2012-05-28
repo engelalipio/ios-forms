@@ -161,6 +161,7 @@
     textField.returnKeyType = returnKeyType;
     textField.secureTextEntry = secureTextEntry;
     textField.spellCheckingType = spellCheckingType;
+    textField.inputView = nil;
     if (placeholder) {
         textField.placeholder = NSLocalizedString(placeholder, nil);
     }
@@ -171,6 +172,7 @@
 #pragma mark - UITextFieldDelegate methods
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
+    cellTextField = textField;
     textField.text = [self editValue];
 }
 
@@ -178,6 +180,7 @@
     id actualValue = [self valueForText:textField.text];
     [self setValue:actualValue];
     textField.text = [self displayValue];
+    cellTextField = nil;
 }
 
 - (NSString *)displayValue {
@@ -190,6 +193,14 @@
 
 - (id)valueForText:(NSString *)text {
     return text;
+}
+
+- (void)updateText {
+    if (!cellTextField) {
+        return;
+    }
+    
+    cellTextField.text = [self editValue];
 }
 
 @end

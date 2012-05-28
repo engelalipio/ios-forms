@@ -67,6 +67,8 @@
 			<key>Fields</key>
 			<array>
 				<dict>
+					<key>KeyboardType</key>
+					<string>DecimalPad</string>
 					<key>KeyPath</key>
 					<string>annualIncome</string>
 					<key>LabelText_iPad</key>
@@ -79,6 +81,18 @@
 					<string>Currency</string>
 					<key>Type</key>
 					<string>Number</string>
+				</dict>
+				<dict>
+					<key>KeyPath</key>
+					<string>nextPayDate</string>
+					<key>LabelText</key>
+					<string>Pay Date</string>
+					<key>Placeholder</key>
+					<string>Next pay date</string>
+					<key>DateStyle</key>
+					<string>Long</string>
+					<key>Type</key>
+					<string>Date</string>
 				</dict>
 			</array>
 		</dict>

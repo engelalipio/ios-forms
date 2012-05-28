@@ -42,6 +42,7 @@
     UIReturnKeyType returnKeyType;
     BOOL secureTextEntry;
     UITextSpellCheckingType spellCheckingType;
+    UITextField *cellTextField;
 }
 
 /**
@@ -65,5 +66,10 @@
  * @return Returns the field value.
  */
 - (id)valueForText:(NSString *)text;
+
+/**
+ * Updates the text field with the current value from the model.
+ */
+- (void)updateText;
 
 @end

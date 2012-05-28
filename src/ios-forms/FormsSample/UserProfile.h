@@ -46,28 +46,36 @@
  *
  * The firstName property stores the user's first name or given name.
  */
-@property (nonatomic, strong) NSString *firstName;
+@property (nonatomic, copy) NSString *firstName;
 
 /**
  * The last name of the user.
  *
  * The lastName property stores the user's last name or surname.
  */
-@property (nonatomic, strong) NSString *lastName;
+@property (nonatomic, copy) NSString *lastName;
 
 /**
  * The middle name of the user.
  *
  * The middleName property stores the user's middle name.
  */
-@property (nonatomic, strong) NSString *middleName;
+@property (nonatomic, copy) NSString *middleName;
+
+/**
+ * The date in which the user will receive his next paycheck.
+ *
+ * The netPayDate property stores the date that the user will receive his next
+ * paycheck.
+ */
+@property (nonatomic, strong) NSDate *nextPayDate;
 
 /**
  * The prefix or title for the user's name.
  *
  * The prefix property stores a prefix or title for the user.
  */
-@property (nonatomic, strong) NSString *prefix;
+@property (nonatomic, copy) NSString *prefix;
 
 /**
  * The suffix for the user's name.
@@ -75,6 +83,6 @@
  * The suffix property stores the suffix for the user's name if the user has
  * one.
  */
-@property (nonatomic, strong) NSString *suffix;
+@property (nonatomic, copy) NSString *suffix;
 
 @end

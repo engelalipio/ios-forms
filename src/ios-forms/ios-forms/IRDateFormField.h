@@ -1,7 +1,8 @@
 /*
- * UserProfile.m
+ * IRDateFormField.h
  *
- * This file implements the UserProfile class.
+ * This file defines the IRDateFormField class. The IRDateFormField class allows
+ * the user to edit date or time values.
  *
  * Copyright 2012 ImaginaryRealities, LLC
  *
@@ -24,16 +25,12 @@
  * SOFTWARE.
  */
 
-#import "UserProfile.h"
+#import "IRTextFormField.h"
 
-@implementation UserProfile
-
-@synthesize annualIncome;
-@synthesize firstName;
-@synthesize lastName;
-@synthesize middleName;
-@synthesize nextPayDate;
-@synthesize prefix;
-@synthesize suffix;
+@interface IRDateFormField : IRTextFormField {
+    @private
+    NSDateFormatterStyle dateStyle;
+    NSDateFormatterStyle timeStyle;
+}
 
 @end
