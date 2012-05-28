@@ -150,7 +150,7 @@
     
     UITextField *textField = (UITextField *)[cell.contentView viewWithTag:kIRFormFieldCellTextTag];
     textField.delegate = self;
-    textField.text = [self value];
+    textField.text = [self displayValue];
     textField.autocapitalizationType = autocapitalizationType;
     textField.autocorrectionType = autocorrectionType;
     textField.keyboardAppearance = keyboardAppearance;
@@ -168,8 +168,26 @@
 
 #pragma mark - UITextFieldDelegate methods
 
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    textField.text = [self editValue];
+}
+
 - (void)textFieldDidEndEditing:(UITextField *)textField {
-    [self setValue:textField.text];
+    id actualValue = [self valueForText:textField.text];
+    [self setValue:actualValue];
+    textField.text = [self displayValue];
+}
+
+- (NSString *)displayValue {
+    return [self value];
+}
+
+- (NSString *)editValue {
+    return [self value];
+}
+
+- (id)valueForText:(NSString *)text {
+    return text;
 }
 
 @end

@@ -1,7 +1,8 @@
 /*
- * UserProfile.m
+ * IRNumberFormField.h
  *
- * This file implements the UserProfile class.
+ * This file defines the IRNumberFormField class. The IRNumberFormField class
+ * implements a form field that provides an editing experience for numeric data.
  *
  * Copyright 2012 ImaginaryRealities, LLC
  *
@@ -24,15 +25,19 @@
  * SOFTWARE.
  */
 
-#import "UserProfile.h"
+#import "IRTextFormField.h"
 
-@implementation UserProfile
-
-@synthesize annualIncome;
-@synthesize firstName;
-@synthesize lastName;
-@synthesize middleName;
-@synthesize prefix;
-@synthesize suffix;
+/**
+ * Form field that presents numeric data to be edited.
+ *
+ * The IRNumberFormField class implements a form field that presents formatted
+ * numeric data for the user to be edited. The IRNumberFormField will present
+ * the numeric value formatted when the field is not being edited, or
+ * unformatted when the field is being edited.
+ */
+@interface IRNumberFormField : IRTextFormField {
+    @private
+    NSNumberFormatterStyle style;
+}
 
 @end

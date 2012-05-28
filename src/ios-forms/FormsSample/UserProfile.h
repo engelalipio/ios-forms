@@ -35,6 +35,13 @@
 @interface UserProfile : NSObject
 
 /**
+ * The user's annual gross income.
+ *
+ * The annualIncome property stores the user's annual income.
+ */
+@property (nonatomic, strong) NSNumber *annualIncome;
+
+/**
  * The first name of the user.
  *
  * The firstName property stores the user's first name or given name.

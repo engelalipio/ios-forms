@@ -44,4 +44,26 @@
     UITextSpellCheckingType spellCheckingType;
 }
 
+/**
+ * Gets the formatted text representation of the value.
+ *
+ * @return Returns the formatted text representation of the value.
+ */
+- (NSString *)displayValue;
+
+/**
+ * Gets the unformatted text representation of the value.
+ *
+ * @return Returns the unformatted text representation of the value.
+ */
+- (NSString *)editValue;
+
+/**
+ * Gets the field value from the text.
+ *
+ * @param text The text representation of the value.
+ * @return Returns the field value.
+ */
+- (id)valueForText:(NSString *)text;
+
 @end

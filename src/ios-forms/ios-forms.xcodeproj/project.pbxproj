@@ -82,6 +82,10 @@
 		4CDC9DF915683F220043AC98 /* IRFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC9DF715683F220043AC98 /* IRFormField.m */; };
 		4CDC9DFA15683F220043AC98 /* IRFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC9DF715683F220043AC98 /* IRFormField.m */; };
 		4CDC9DFE1568461D0043AC98 /* TestField.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CDC9DFD1568461D0043AC98 /* TestField.plist */; };
+		4CFC092D1573087F00F9C152 /* IRNumberFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFC092B1573087F00F9C152 /* IRNumberFormField.h */; };
+		4CFC092E1573087F00F9C152 /* IRNumberFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC092C1573087F00F9C152 /* IRNumberFormField.m */; };
+		4CFC092F1573087F00F9C152 /* IRNumberFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC092C1573087F00F9C152 /* IRNumberFormField.m */; };
+		4CFC09301573087F00F9C152 /* IRNumberFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC092C1573087F00F9C152 /* IRNumberFormField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -145,6 +149,8 @@
 		4CDC9DF615683F220043AC98 /* IRFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRFormField.h; sourceTree = "<group>"; };
 		4CDC9DF715683F220043AC98 /* IRFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFormField.m; sourceTree = "<group>"; };
 		4CDC9DFD1568461D0043AC98 /* TestField.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestField.plist; sourceTree = "<group>"; };
+		4CFC092B1573087F00F9C152 /* IRNumberFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRNumberFormField.h; sourceTree = "<group>"; };
+		4CFC092C1573087F00F9C152 /* IRNumberFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRNumberFormField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +291,8 @@
 				4C26DE6715729A7B0072A077 /* IRTextFormField.m */,
 				4C26DE6C1572BCF80072A077 /* IRFormFieldCell.h */,
 				4C26DE6D1572BCF80072A077 /* IRFormFieldCell.m */,
+				4CFC092B1573087F00F9C152 /* IRNumberFormField.h */,
+				4CFC092C1573087F00F9C152 /* IRNumberFormField.m */,
 			);
 			path = "ios-forms";
 			sourceTree = "<group>";
@@ -346,6 +354,7 @@
 				4C26DE5F157296ED0072A077 /* IRTextFormFieldCell.h in Headers */,
 				4C26DE6815729A7B0072A077 /* IRTextFormField.h in Headers */,
 				4C26DE6E1572BCF90072A077 /* IRFormFieldCell.h in Headers */,
+				4CFC092D1573087F00F9C152 /* IRNumberFormField.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +485,7 @@
 				4C26DE62157296ED0072A077 /* IRTextFormFieldCell.m in Sources */,
 				4C26DE6B15729A7B0072A077 /* IRTextFormField.m in Sources */,
 				4C26DE711572BCF90072A077 /* IRFormFieldCell.m in Sources */,
+				4CFC09301573087F00F9C152 /* IRNumberFormField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +504,7 @@
 				4C26DE60157296ED0072A077 /* IRTextFormFieldCell.m in Sources */,
 				4C26DE6915729A7B0072A077 /* IRTextFormField.m in Sources */,
 				4C26DE6F1572BCF90072A077 /* IRFormFieldCell.m in Sources */,
+				4CFC092E1573087F00F9C152 /* IRNumberFormField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +532,7 @@
 				4C26DE6515729A160072A077 /* IRTextFormFieldTests.m in Sources */,
 				4C26DE6A15729A7B0072A077 /* IRTextFormField.m in Sources */,
 				4C26DE701572BCF90072A077 /* IRFormFieldCell.m in Sources */,
+				4CFC092F1573087F00F9C152 /* IRNumberFormField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

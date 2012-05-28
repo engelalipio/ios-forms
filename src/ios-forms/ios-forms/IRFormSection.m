@@ -26,6 +26,7 @@
 
 #import "IRFormSection.h"
 #import "IRTextFormField.h"
+#import "IRNumberFormField.h"
 
 @implementation IRFormSection
 
@@ -59,7 +60,20 @@
     fields = [[NSMutableArray alloc] initWithCapacity:fieldCount];
     for (NSUInteger i = 0; i < fieldCount; i++) {
         NSDictionary *formField = [formFields objectAtIndex:i];
-        IRFormField *field = [[IRTextFormField alloc] initWithDictionary:formField model:model];
+        NSString *fieldType = [formField objectForKey:@"Type"];
+        if (!fieldType) {
+            fieldType = @"text";
+        } else {
+            fieldType = [fieldType lowercaseString];
+        }
+        
+        IRFormField *field;
+        if ([fieldType isEqualToString:@"text"]) {
+            field = [[IRTextFormField alloc] initWithDictionary:formField model:model];
+        } else if ([fieldType isEqualToString:@"number"]) {
+            field = [[IRNumberFormField alloc] initWithDictionary:formField model:model];
+        }
+
         [fields addObject:field];
     }
     
