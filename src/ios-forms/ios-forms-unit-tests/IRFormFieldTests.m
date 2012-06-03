@@ -26,7 +26,7 @@
  */
 
 #import "IRFormField.h"
-#import "IRFormField+PrivateImplementation.h"
+#import "IRFormField_Private.h"
 
 @interface IRFormFieldTests : GHTestCase
 @end

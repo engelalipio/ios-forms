@@ -26,7 +26,6 @@
  */
 
 #import "IRFormViewController.h"
-#import "IRFormViewController+PrivateImplementation.h"
 #import "IRForm.h"
 
 @interface IRFormViewControllerTests : GHTestCase
