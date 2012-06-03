@@ -25,8 +25,57 @@
  */
 
 #import "IRFormViewController.h"
-#import "IRFormViewController+PrivateImplementation.h"
 #import "IRForm.h"
+
+@interface IRFormViewController ()
+
+/** @name Notification Management */
+
+/**
+ * Registers an observer with the notification center for an event.
+ *
+ * The addObserver:selector:name:object method is used to register an observer
+ * for a notification using the NSNotificationCenter class. This method is
+ * implemented to support unit testing the notification management.
+ *
+ * @param notificationObserver The observer object.
+ * @param aSelector A selector that will be invoked when the notification is
+ *      received.
+ * @param aName The name of the notification that will invoke the handler.
+ * @param anObject This parameter is passed to the notification handler.
+ */
+- (void)addObserver:(id)notificationObserver
+           selector:(SEL)aSelector
+               name:(NSString *)aName
+             object:(id)anObject;
+
+/**
+ * Unregisters the observer with the notification center for all events.
+ *
+ * @param notificationObserver The observer object that will be unregistered
+ *      from receiving notifications for all events.
+ */
+- (void)removeObserver:(id)notificationObserver;
+
+/** @name Keyboard Handling */
+
+/**
+ * Resizes the form view when the keyboard appears.
+ *
+ * @param notification An NSNotification object containing information about the
+ *      event.
+ */
+- (void)keyboardWillAppear:(NSNotification *)notification;
+
+/**
+ * Resizes the form view when the keyboard disappears.
+ *
+ * @param notification An NSNotification object containing information about the
+ *      event.
+ */
+- (void)keyboardWillDisappear:(NSNotification *)notification;
+
+@end
 
 @implementation IRFormViewController
 
@@ -65,6 +114,56 @@
 - (IRForm *)loadForm {
     [self doesNotRecognizeSelector:@selector(loadForm)];
     return nil;
+}
+
+#pragma mark - Notification Management
+
+- (void)addObserver:(id)notificationObserver selector:(SEL)aSelector name:(NSString *)aName object:(id)anObject
+{
+    [[NSNotificationCenter defaultCenter] addObserver:notificationObserver selector:aSelector name:aName object:anObject];
+}
+
+- (void)removeObserver:(id)notificationObserver
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:notificationObserver];
+}
+
+#pragma mark - Keyboard notification methods
+
+- (CGRect)adjustFrameHeightBy:(CGFloat)change multipliedBy:(NSInteger)direction
+{
+    CGRect frame = self.view.frame;
+    CGFloat newHeight = 1 == direction ? frame.size.height : frame.size.height - change;
+    return CGRectMake(0.0f, 0.0f, self.tableView.frame.size.width, newHeight);
+}
+
+- (CGFloat)keyboardEndingFrameHeight:(NSDictionary *)userInfo
+{
+    CGRect keyboardEndingUncorrectedFrame = [[userInfo objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    CGRect keyboardEndingFrame = [self.view convertRect:keyboardEndingUncorrectedFrame fromView:nil];
+    return keyboardEndingFrame.size.height;
+}
+
+- (void)matchAnimationTo:(NSDictionary *)userInfo
+{
+    [UIView setAnimationDuration:[[userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] doubleValue]];
+    [UIView setAnimationCurve:[[userInfo objectForKey:UIKeyboardAnimationCurveUserInfoKey] intValue]];
+}
+
+- (void)keyboardWillAppear:(NSNotification *)notification
+{
+    [UIView beginAnimations:nil context:NULL];
+    [self matchAnimationTo:[notification userInfo]];
+    self.tableView.frame = [self adjustFrameHeightBy:[self keyboardEndingFrameHeight:[notification userInfo]] multipliedBy:-1];
+    [UIView commitAnimations];
+}
+
+- (void)keyboardWillDisappear:(NSNotification *)notification
+{
+    [UIView beginAnimations:nil context:NULL];
+    [self matchAnimationTo:[notification userInfo]];
+    self.tableView.frame = [self adjustFrameHeightBy:[self keyboardEndingFrameHeight:[notification userInfo]] multipliedBy:1];
+    [UIView commitAnimations];
 }
 
 @end

@@ -10,38 +10,25 @@
 		4C26DE2D1571A6420072A077 /* PersonalInformationFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE2C1571A6420072A077 /* PersonalInformationFormViewController.m */; };
 		4C26DE311571A8890072A077 /* UserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE301571A8890072A077 /* UserProfile.m */; };
 		4C26DE331571AD370072A077 /* UserProfileForm.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C26DE321571AD370072A077 /* UserProfileForm.plist */; };
-		4C26DE3D15727E2C0072A077 /* IRFormField+PrivateImplementation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C26DE3B15727E2C0072A077 /* IRFormField+PrivateImplementation.h */; };
-		4C26DE3E15727E2C0072A077 /* IRFormField+PrivateImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE3C15727E2C0072A077 /* IRFormField+PrivateImplementation.m */; };
-		4C26DE3F15727E2C0072A077 /* IRFormField+PrivateImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE3C15727E2C0072A077 /* IRFormField+PrivateImplementation.m */; };
-		4C26DE4015727E2C0072A077 /* IRFormField+PrivateImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE3C15727E2C0072A077 /* IRFormField+PrivateImplementation.m */; };
-		4C26DE43157285370072A077 /* IRFormViewController+PrivateImplementation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C26DE41157285370072A077 /* IRFormViewController+PrivateImplementation.h */; };
-		4C26DE44157285370072A077 /* IRFormViewController+PrivateImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE42157285370072A077 /* IRFormViewController+PrivateImplementation.m */; };
-		4C26DE45157285370072A077 /* IRFormViewController+PrivateImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE42157285370072A077 /* IRFormViewController+PrivateImplementation.m */; };
-		4C26DE46157285370072A077 /* IRFormViewController+PrivateImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE42157285370072A077 /* IRFormViewController+PrivateImplementation.m */; };
 		4C26DE4915728AB80072A077 /* IRLabelFormFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE4815728AB80072A077 /* IRLabelFormFieldTests.m */; };
-		4C26DE4C15728B080072A077 /* IRLabelFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C26DE4A15728B080072A077 /* IRLabelFormField.h */; };
+		4C26DE4C15728B080072A077 /* IRLabelFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C26DE4A15728B080072A077 /* IRLabelFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C26DE4D15728B080072A077 /* IRLabelFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE4B15728B080072A077 /* IRLabelFormField.m */; };
 		4C26DE4E15728B080072A077 /* IRLabelFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE4B15728B080072A077 /* IRLabelFormField.m */; };
-		4C26DE4F15728B080072A077 /* IRLabelFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE4B15728B080072A077 /* IRLabelFormField.m */; };
 		4C26DE5215728D3E0072A077 /* IRLabelFormFieldCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE5115728D3E0072A077 /* IRLabelFormFieldCellTests.m */; };
 		4C26DE5515728D9C0072A077 /* IRLabelFormFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C26DE5315728D9C0072A077 /* IRLabelFormFieldCell.h */; };
 		4C26DE5615728D9C0072A077 /* IRLabelFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE5415728D9C0072A077 /* IRLabelFormFieldCell.m */; };
 		4C26DE5715728D9C0072A077 /* IRLabelFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE5415728D9C0072A077 /* IRLabelFormFieldCell.m */; };
-		4C26DE5815728D9C0072A077 /* IRLabelFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE5415728D9C0072A077 /* IRLabelFormFieldCell.m */; };
 		4C26DE5C157296630072A077 /* IRTextFormFieldCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE5B157296630072A077 /* IRTextFormFieldCellTests.m */; };
 		4C26DE5F157296ED0072A077 /* IRTextFormFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C26DE5D157296ED0072A077 /* IRTextFormFieldCell.h */; };
 		4C26DE60157296ED0072A077 /* IRTextFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE5E157296ED0072A077 /* IRTextFormFieldCell.m */; };
 		4C26DE61157296ED0072A077 /* IRTextFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE5E157296ED0072A077 /* IRTextFormFieldCell.m */; };
-		4C26DE62157296ED0072A077 /* IRTextFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE5E157296ED0072A077 /* IRTextFormFieldCell.m */; };
 		4C26DE6515729A160072A077 /* IRTextFormFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE6415729A160072A077 /* IRTextFormFieldTests.m */; };
 		4C26DE6815729A7B0072A077 /* IRTextFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C26DE6615729A7B0072A077 /* IRTextFormField.h */; };
 		4C26DE6915729A7B0072A077 /* IRTextFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE6715729A7B0072A077 /* IRTextFormField.m */; };
 		4C26DE6A15729A7B0072A077 /* IRTextFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE6715729A7B0072A077 /* IRTextFormField.m */; };
-		4C26DE6B15729A7B0072A077 /* IRTextFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE6715729A7B0072A077 /* IRTextFormField.m */; };
 		4C26DE6E1572BCF90072A077 /* IRFormFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C26DE6C1572BCF80072A077 /* IRFormFieldCell.h */; };
 		4C26DE6F1572BCF90072A077 /* IRFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE6D1572BCF80072A077 /* IRFormFieldCell.m */; };
 		4C26DE701572BCF90072A077 /* IRFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE6D1572BCF80072A077 /* IRFormFieldCell.m */; };
-		4C26DE711572BCF90072A077 /* IRFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE6D1572BCF80072A077 /* IRFormFieldCell.m */; };
 		4C35DA4215686056008A54FE /* IRFormViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA4015686056008A54FE /* IRFormViewControllerTests.m */; };
 		4C35DA46156860B5008A54FE /* IRFormViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C35DA44156860B5008A54FE /* IRFormViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C35DA48156860B5008A54FE /* IRFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA45156860B5008A54FE /* IRFormViewController.m */; };
@@ -65,11 +52,35 @@
 		4C35DA7415693BB4008A54FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA7315693BB4008A54FE /* AppDelegate.m */; };
 		4C35DA7C15693DCB008A54FE /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C35DA7B15693DCB008A54FE /* MainStoryboard_iPhone.storyboard */; };
 		4C35DA7E15693DDE008A54FE /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C35DA7D15693DDE008A54FE /* MainStoryboard_iPad.storyboard */; };
-		4C35DA8015695F31008A54FE /* IRFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA45156860B5008A54FE /* IRFormViewController.m */; };
-		4C35DA8115695F3A008A54FE /* IRFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC9DF715683F220043AC98 /* IRFormField.m */; };
-		4C35DA8215695F40008A54FE /* IRForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA4E156862AF008A54FE /* IRForm.m */; };
-		4C35DA8315695F44008A54FE /* IRFormSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA561568634E008A54FE /* IRFormSection.m */; };
 		4C35DA8F15696299008A54FE /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C35DA8E15696299008A54FE /* libOCMock.a */; };
+		4CCDE2DE157A6629005CB018 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DCA1567FB350043AC98 /* Foundation.framework */; };
+		4CCDE2E4157A6629005CB018 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CCDE2E2157A6629005CB018 /* InfoPlist.strings */; };
+		4CCDE2EA157A6647005CB018 /* IRFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CDC9DF615683F220043AC98 /* IRFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCDE2EB157A6651005CB018 /* IRFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC9DF715683F220043AC98 /* IRFormField.m */; };
+		4CCDE2EC157A6656005CB018 /* IRFormViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C35DA44156860B5008A54FE /* IRFormViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCDE2ED157A6663005CB018 /* IRFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA45156860B5008A54FE /* IRFormViewController.m */; };
+		4CCDE2EE157A6667005CB018 /* IRForm.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C35DA4D156862AF008A54FE /* IRForm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCDE2EF157A666D005CB018 /* IRForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA4E156862AF008A54FE /* IRForm.m */; };
+		4CCDE2F0157A6671005CB018 /* IRFormSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C35DA551568634E008A54FE /* IRFormSection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCDE2F1157A6679005CB018 /* IRFormSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA561568634E008A54FE /* IRFormSection.m */; };
+		4CCDE2F2157A667E005CB018 /* IRForms.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C35DA5E15693AFF008A54FE /* IRForms.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCDE2F7157A669E005CB018 /* IRLabelFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C26DE4A15728B080072A077 /* IRLabelFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCDE2F8157A66A7005CB018 /* IRLabelFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE4B15728B080072A077 /* IRLabelFormField.m */; };
+		4CCDE2F9157A66AE005CB018 /* IRLabelFormFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C26DE5315728D9C0072A077 /* IRLabelFormFieldCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCDE2FA157A66B6005CB018 /* IRLabelFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE5415728D9C0072A077 /* IRLabelFormFieldCell.m */; };
+		4CCDE2FB157A66B9005CB018 /* IRTextFormFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C26DE5D157296ED0072A077 /* IRTextFormFieldCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCDE2FC157A66C0005CB018 /* IRTextFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE5E157296ED0072A077 /* IRTextFormFieldCell.m */; };
+		4CCDE2FD157A66C5005CB018 /* IRTextFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C26DE6615729A7B0072A077 /* IRTextFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCDE2FE157A66CC005CB018 /* IRTextFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE6715729A7B0072A077 /* IRTextFormField.m */; };
+		4CCDE2FF157A66D0005CB018 /* IRFormFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C26DE6C1572BCF80072A077 /* IRFormFieldCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCDE300157A66DA005CB018 /* IRFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE6D1572BCF80072A077 /* IRFormFieldCell.m */; };
+		4CCDE301157A66DE005CB018 /* IRNumberFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFC092B1573087F00F9C152 /* IRNumberFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCDE302157A66E8005CB018 /* IRNumberFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC092C1573087F00F9C152 /* IRNumberFormField.m */; };
+		4CCDE303157A66EC005CB018 /* IRDateFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFC09321573B1F100F9C152 /* IRDateFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCDE304157A66F3005CB018 /* IRDateFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC09331573B1F100F9C152 /* IRDateFormField.m */; };
+		4CCDE305157A66F7005CB018 /* IRPickerFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFC09471573F34300F9C152 /* IRPickerFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCDE306157A66FE005CB018 /* IRPickerFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC09481573F34300F9C152 /* IRPickerFormField.m */; };
+		4CCDE337157A77FB005CB018 /* IRForms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCDE2DD157A6629005CB018 /* IRForms.framework */; };
 		4CDC9DCB1567FB350043AC98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DCA1567FB350043AC98 /* Foundation.framework */; };
 		4CDC9DDE1567FB860043AC98 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DDD1567FB860043AC98 /* UIKit.framework */; };
 		4CDC9DDF1567FB860043AC98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DCA1567FB350043AC98 /* Foundation.framework */; };
@@ -85,15 +96,12 @@
 		4CFC092D1573087F00F9C152 /* IRNumberFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFC092B1573087F00F9C152 /* IRNumberFormField.h */; };
 		4CFC092E1573087F00F9C152 /* IRNumberFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC092C1573087F00F9C152 /* IRNumberFormField.m */; };
 		4CFC092F1573087F00F9C152 /* IRNumberFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC092C1573087F00F9C152 /* IRNumberFormField.m */; };
-		4CFC09301573087F00F9C152 /* IRNumberFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC092C1573087F00F9C152 /* IRNumberFormField.m */; };
 		4CFC09341573B1F100F9C152 /* IRDateFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFC09321573B1F100F9C152 /* IRDateFormField.h */; };
 		4CFC09351573B1F100F9C152 /* IRDateFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC09331573B1F100F9C152 /* IRDateFormField.m */; };
 		4CFC09361573B1F100F9C152 /* IRDateFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC09331573B1F100F9C152 /* IRDateFormField.m */; };
-		4CFC09371573B1F100F9C152 /* IRDateFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC09331573B1F100F9C152 /* IRDateFormField.m */; };
 		4CFC09491573F34300F9C152 /* IRPickerFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFC09471573F34300F9C152 /* IRPickerFormField.h */; };
 		4CFC094A1573F34300F9C152 /* IRPickerFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC09481573F34300F9C152 /* IRPickerFormField.m */; };
 		4CFC094B1573F34300F9C152 /* IRPickerFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC09481573F34300F9C152 /* IRPickerFormField.m */; };
-		4CFC094C1573F34300F9C152 /* IRPickerFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC09481573F34300F9C152 /* IRPickerFormField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,10 +110,6 @@
 		4C26DE2F1571A8890072A077 /* UserProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfile.h; sourceTree = "<group>"; };
 		4C26DE301571A8890072A077 /* UserProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfile.m; sourceTree = "<group>"; };
 		4C26DE321571AD370072A077 /* UserProfileForm.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserProfileForm.plist; sourceTree = "<group>"; };
-		4C26DE3B15727E2C0072A077 /* IRFormField+PrivateImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRFormField+PrivateImplementation.h"; sourceTree = "<group>"; };
-		4C26DE3C15727E2C0072A077 /* IRFormField+PrivateImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRFormField+PrivateImplementation.m"; sourceTree = "<group>"; };
-		4C26DE41157285370072A077 /* IRFormViewController+PrivateImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRFormViewController+PrivateImplementation.h"; sourceTree = "<group>"; };
-		4C26DE42157285370072A077 /* IRFormViewController+PrivateImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRFormViewController+PrivateImplementation.m"; sourceTree = "<group>"; };
 		4C26DE4815728AB80072A077 /* IRLabelFormFieldTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRLabelFormFieldTests.m; sourceTree = "<group>"; };
 		4C26DE4A15728B080072A077 /* IRLabelFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRLabelFormField.h; sourceTree = "<group>"; };
 		4C26DE4B15728B080072A077 /* IRLabelFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRLabelFormField.m; sourceTree = "<group>"; };
@@ -142,6 +146,10 @@
 		4C35DA7B15693DCB008A54FE /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		4C35DA7D15693DDE008A54FE /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		4C35DA8E15696299008A54FE /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = ../../lib/OCMock/libOCMock.a; sourceTree = "<group>"; };
+		4CCDE2DD157A6629005CB018 /* IRForms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = IRForms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CCDE2E1157A6629005CB018 /* IRForms-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IRForms-Info.plist"; sourceTree = "<group>"; };
+		4CCDE2E3157A6629005CB018 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CCDE2E5157A6629005CB018 /* IRForms-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IRForms-Prefix.pch"; sourceTree = "<group>"; };
 		4CDC9DC71567FB350043AC98 /* libios-forms.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libios-forms.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDC9DCA1567FB350043AC98 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4CDC9DCE1567FB350043AC98 /* ios-forms-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-forms-Prefix.pch"; sourceTree = "<group>"; };
@@ -173,6 +181,15 @@
 				4C35DA6615693BB4008A54FE /* UIKit.framework in Frameworks */,
 				4C35DA6715693BB4008A54FE /* Foundation.framework in Frameworks */,
 				4C35DA6815693BB4008A54FE /* CoreGraphics.framework in Frameworks */,
+				4CCDE337157A77FB005CB018 /* IRForms.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CCDE2D7157A6629005CB018 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CCDE2DE157A6629005CB018 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,12 +260,31 @@
 			path = iPhone;
 			sourceTree = "<group>";
 		};
+		4CCDE2DF157A6629005CB018 /* IRForms */ = {
+			isa = PBXGroup;
+			children = (
+				4CCDE2E0157A6629005CB018 /* Supporting Files */,
+			);
+			path = IRForms;
+			sourceTree = "<group>";
+		};
+		4CCDE2E0157A6629005CB018 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CCDE2E1157A6629005CB018 /* IRForms-Info.plist */,
+				4CCDE2E2157A6629005CB018 /* InfoPlist.strings */,
+				4CCDE2E5157A6629005CB018 /* IRForms-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		4CDC9DBC1567FB350043AC98 = {
 			isa = PBXGroup;
 			children = (
 				4CDC9DCC1567FB350043AC98 /* ios-forms */,
 				4CDC9DE21567FB860043AC98 /* ios-forms-unit-tests */,
 				4C35DA6915693BB4008A54FE /* FormsSample */,
+				4CCDE2DF157A6629005CB018 /* IRForms */,
 				4CDC9DC91567FB350043AC98 /* Frameworks */,
 				4CDC9DC81567FB350043AC98 /* Products */,
 			);
@@ -260,6 +296,7 @@
 				4CDC9DC71567FB350043AC98 /* libios-forms.a */,
 				4CDC9DDB1567FB860043AC98 /* ios-forms-unit-tests.app */,
 				4C35DA6415693BB3008A54FE /* FormsSample.app */,
+				4CCDE2DD157A6629005CB018 /* IRForms.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -289,10 +326,6 @@
 				4C35DA551568634E008A54FE /* IRFormSection.h */,
 				4C35DA561568634E008A54FE /* IRFormSection.m */,
 				4C35DA5E15693AFF008A54FE /* IRForms.h */,
-				4C26DE3B15727E2C0072A077 /* IRFormField+PrivateImplementation.h */,
-				4C26DE3C15727E2C0072A077 /* IRFormField+PrivateImplementation.m */,
-				4C26DE41157285370072A077 /* IRFormViewController+PrivateImplementation.h */,
-				4C26DE42157285370072A077 /* IRFormViewController+PrivateImplementation.m */,
 				4C26DE4A15728B080072A077 /* IRLabelFormField.h */,
 				4C26DE4B15728B080072A077 /* IRLabelFormField.m */,
 				4C26DE5315728D9C0072A077 /* IRLabelFormFieldCell.h */,
@@ -354,6 +387,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		4CCDE2D8157A6629005CB018 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CCDE2EA157A6647005CB018 /* IRFormField.h in Headers */,
+				4CCDE2EC157A6656005CB018 /* IRFormViewController.h in Headers */,
+				4CCDE2EE157A6667005CB018 /* IRForm.h in Headers */,
+				4CCDE2F0157A6671005CB018 /* IRFormSection.h in Headers */,
+				4CCDE2F2157A667E005CB018 /* IRForms.h in Headers */,
+				4CCDE2F7157A669E005CB018 /* IRLabelFormField.h in Headers */,
+				4CCDE2F9157A66AE005CB018 /* IRLabelFormFieldCell.h in Headers */,
+				4CCDE2FB157A66B9005CB018 /* IRTextFormFieldCell.h in Headers */,
+				4CCDE2FD157A66C5005CB018 /* IRTextFormField.h in Headers */,
+				4CCDE2FF157A66D0005CB018 /* IRFormFieldCell.h in Headers */,
+				4CCDE301157A66DE005CB018 /* IRNumberFormField.h in Headers */,
+				4CCDE303157A66EC005CB018 /* IRDateFormField.h in Headers */,
+				4CCDE305157A66F7005CB018 /* IRPickerFormField.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4CDC9DC51567FB350043AC98 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -363,8 +416,6 @@
 				4C35DA46156860B5008A54FE /* IRFormViewController.h in Headers */,
 				4C35DA4F156862AF008A54FE /* IRForm.h in Headers */,
 				4C35DA571568634E008A54FE /* IRFormSection.h in Headers */,
-				4C26DE3D15727E2C0072A077 /* IRFormField+PrivateImplementation.h in Headers */,
-				4C26DE43157285370072A077 /* IRFormViewController+PrivateImplementation.h in Headers */,
 				4C26DE4C15728B080072A077 /* IRLabelFormField.h in Headers */,
 				4C26DE5515728D9C0072A077 /* IRLabelFormFieldCell.h in Headers */,
 				4C26DE5F157296ED0072A077 /* IRTextFormFieldCell.h in Headers */,
@@ -395,6 +446,27 @@
 			productName = FormsSample;
 			productReference = 4C35DA6415693BB3008A54FE /* FormsSample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		4CCDE2DC157A6629005CB018 /* IRForms */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CCDE2E8157A6629005CB018 /* Build configuration list for PBXNativeTarget "IRForms" */;
+			buildPhases = (
+				4CCDE2D5157A6629005CB018 /* ShellScript */,
+				4CCDE2D6157A6629005CB018 /* Sources */,
+				4CCDE2D7157A6629005CB018 /* Frameworks */,
+				4CCDE2D8157A6629005CB018 /* Headers */,
+				4CCDE2D9157A6629005CB018 /* Resources */,
+				4CCDE2DA157A6629005CB018 /* ShellScript */,
+				4CCDE2DB157A6629005CB018 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IRForms;
+			productName = IRForms;
+			productReference = 4CCDE2DD157A6629005CB018 /* IRForms.framework */;
+			productType = "com.apple.product-type.framework.static";
 		};
 		4CDC9DC61567FB350043AC98 /* ios-forms */ = {
 			isa = PBXNativeTarget;
@@ -454,6 +526,7 @@
 				4CDC9DC61567FB350043AC98 /* ios-forms */,
 				4CDC9DDA1567FB860043AC98 /* ios-forms-unit-tests */,
 				4C35DA6315693BB3008A54FE /* FormsSample */,
+				4CCDE2DC157A6629005CB018 /* IRForms */,
 			);
 		};
 /* End PBXProject section */
@@ -470,6 +543,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CCDE2D9157A6629005CB018 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CCDE2E4157A6629005CB018 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4CDC9DD91567FB860043AC98 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -483,6 +564,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4CCDE2D5157A6629005CB018 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n\tUFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version  from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n  ([[ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]] || \\\n    ([[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n     [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n     [[ ! \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\n    )\n  )\nthen\n    exit 0\nfi\n\n\n# Clean other platform if needed\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]]\nthen\n\techo \"Platform \\\"$UFW_SDK_PLATFORM\\\" was cleaned recently. Cleaning \\\"$UFW_OTHER_PLATFORM\\\" as well\"\n\techo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\n\txcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\nfi\n\n\n# Make sure we are building from fresh binaries\n\nrm -rf \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\n\nif [[ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]]\nthen\n    rm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n    rm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nfi\n";
+		};
+		4CCDE2DA157A6629005CB018 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "HEADERS_ROOT=$SRCROOT/$PRODUCT_NAME\nFRAMEWORK_HEADERS_DIR=\"$BUILT_PRODUCTS_DIR/$WRAPPER_NAME/Versions/$FRAMEWORK_VERSION/Headers\"\n\n## only header files expected at this point\nPUBLIC_HEADERS=$(find $FRAMEWORK_HEADERS_DIR/. -not -type d 2> /dev/null | sed -e \"s@.*/@@g\")\n\nFIND_OPTS=\"\"\nfor PUBLIC_HEADER in $PUBLIC_HEADERS; do\n  if [ -n \"$FIND_OPTS\" ]; then\n    FIND_OPTS=\"$FIND_OPTS -o\"\n  fi\n  FIND_OPTS=\"$FIND_OPTS -name '$PUBLIC_HEADER'\"\ndone\n\nif [ -n \"$FIND_OPTS\" ]; then\n  for ORIG_HEADER in $(eval \"find $HEADERS_ROOT/. $FIND_OPTS\" 2> /dev/null | sed -e \"s@^$HEADERS_ROOT/./@@g\"); do\n    PUBLIC_HEADER=$(basename $ORIG_HEADER)\n    RELATIVE_PATH=$(dirname $ORIG_HEADER)\n    if [ -e $FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER ]; then\n      mkdir -p \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH\"\n      mv \"$FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER\" \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH/$PUBLIC_HEADER\"\n    fi\n  done\nfi\n";
+		};
+		4CCDE2DB157A6629005CB018 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\nexport UFW_MASTER_SCRIPT_RUNNING=1\n\n\n# Functions\n\n## List files in the specified directory, storing to the specified array.\n#\n# @param $1 The path to list\n# @param $2 The name of the array to fill\n#\n##\nlist_files ()\n{\n    filelist=$(ls \"$1\")\n    while read line\n    do\n        eval \"$2[\\${#$2[*]}]=\\\"\\$line\\\"\"\n    done <<< \"$filelist\"\n}\n\n\n# Sanity check\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n    echo \"Framework target \\\"${TARGET_NAME}\\\" had no source files to build from. Make sure your source files have the correct target membership\"\n    exit 1\nfi\n\n\n# Gather information\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n    UFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date.\n# We already checked the other platform in the prerun script.\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]\nthen\n    echo \"ONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM}: Skipping other platform build\"\nelse\n    # Make sure the other platform gets built\n    \n    echo \"Build other platform\"\n    \n    echo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    \n    \n    # Build the fat static library binary\n    \n    echo \"Create universal static library\"\n    \n    echo \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \n    echo mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n    mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nfi\n\n# Build embedded framework structure\n\necho \"Build Embedded Framework\"\n\necho rm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\necho mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\necho cp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\ncp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\n\ndeclare -a UFW_FILE_LIST\nlist_files \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" UFW_FILE_LIST\nfor filename in \"${UFW_FILE_LIST[@]}\"\ndo\n    if [[ \"${filename}\" != \"Info.plist\" ]] && [[ ! \"${filename}\" =~ .*\\.lproj$ ]]\n    then\n        echo ln -sfh \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n        ln -sfh \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n    fi\ndone\n\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]\nthen\n    # Replace other platform's framework with a copy of this one (so that both have the same universal binary)\n    \n    echo \"Copy from $UFW_SDK_PLATFORM to $UFW_OTHER_PLATFORM\"\n    \n    echo rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    echo cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4C35DA6015693BB3008A54FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -490,22 +613,27 @@
 			files = (
 				4C35DA7015693BB4008A54FE /* main.m in Sources */,
 				4C35DA7415693BB4008A54FE /* AppDelegate.m in Sources */,
-				4C35DA8015695F31008A54FE /* IRFormViewController.m in Sources */,
-				4C35DA8115695F3A008A54FE /* IRFormField.m in Sources */,
-				4C35DA8215695F40008A54FE /* IRForm.m in Sources */,
-				4C35DA8315695F44008A54FE /* IRFormSection.m in Sources */,
 				4C26DE2D1571A6420072A077 /* PersonalInformationFormViewController.m in Sources */,
 				4C26DE311571A8890072A077 /* UserProfile.m in Sources */,
-				4C26DE4015727E2C0072A077 /* IRFormField+PrivateImplementation.m in Sources */,
-				4C26DE46157285370072A077 /* IRFormViewController+PrivateImplementation.m in Sources */,
-				4C26DE4F15728B080072A077 /* IRLabelFormField.m in Sources */,
-				4C26DE5815728D9C0072A077 /* IRLabelFormFieldCell.m in Sources */,
-				4C26DE62157296ED0072A077 /* IRTextFormFieldCell.m in Sources */,
-				4C26DE6B15729A7B0072A077 /* IRTextFormField.m in Sources */,
-				4C26DE711572BCF90072A077 /* IRFormFieldCell.m in Sources */,
-				4CFC09301573087F00F9C152 /* IRNumberFormField.m in Sources */,
-				4CFC09371573B1F100F9C152 /* IRDateFormField.m in Sources */,
-				4CFC094C1573F34300F9C152 /* IRPickerFormField.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CCDE2D6157A6629005CB018 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CCDE2EB157A6651005CB018 /* IRFormField.m in Sources */,
+				4CCDE2ED157A6663005CB018 /* IRFormViewController.m in Sources */,
+				4CCDE2EF157A666D005CB018 /* IRForm.m in Sources */,
+				4CCDE2F1157A6679005CB018 /* IRFormSection.m in Sources */,
+				4CCDE2F8157A66A7005CB018 /* IRLabelFormField.m in Sources */,
+				4CCDE2FA157A66B6005CB018 /* IRLabelFormFieldCell.m in Sources */,
+				4CCDE2FC157A66C0005CB018 /* IRTextFormFieldCell.m in Sources */,
+				4CCDE2FE157A66CC005CB018 /* IRTextFormField.m in Sources */,
+				4CCDE300157A66DA005CB018 /* IRFormFieldCell.m in Sources */,
+				4CCDE302157A66E8005CB018 /* IRNumberFormField.m in Sources */,
+				4CCDE304157A66F3005CB018 /* IRDateFormField.m in Sources */,
+				4CCDE306157A66FE005CB018 /* IRPickerFormField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,8 +645,6 @@
 				4C35DA48156860B5008A54FE /* IRFormViewController.m in Sources */,
 				4C35DA50156862AF008A54FE /* IRForm.m in Sources */,
 				4C35DA581568634E008A54FE /* IRFormSection.m in Sources */,
-				4C26DE3E15727E2C0072A077 /* IRFormField+PrivateImplementation.m in Sources */,
-				4C26DE44157285370072A077 /* IRFormViewController+PrivateImplementation.m in Sources */,
 				4C26DE4D15728B080072A077 /* IRLabelFormField.m in Sources */,
 				4C26DE5615728D9C0072A077 /* IRLabelFormFieldCell.m in Sources */,
 				4C26DE60157296ED0072A077 /* IRTextFormFieldCell.m in Sources */,
@@ -543,8 +669,6 @@
 				4C35DA51156862AF008A54FE /* IRForm.m in Sources */,
 				4C35DA5415686310008A54FE /* IRFormSectionTests.m in Sources */,
 				4C35DA591568634E008A54FE /* IRFormSection.m in Sources */,
-				4C26DE3F15727E2C0072A077 /* IRFormField+PrivateImplementation.m in Sources */,
-				4C26DE45157285370072A077 /* IRFormViewController+PrivateImplementation.m in Sources */,
 				4C26DE4915728AB80072A077 /* IRLabelFormFieldTests.m in Sources */,
 				4C26DE4E15728B080072A077 /* IRLabelFormField.m in Sources */,
 				4C26DE5215728D3E0072A077 /* IRLabelFormFieldCellTests.m in Sources */,
@@ -567,6 +691,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				4C35DA6D15693BB4008A54FE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4CCDE2E2157A6629005CB018 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CCDE2E3157A6629005CB018 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -606,6 +738,44 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4CCDE2E6157A6629005CB018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IRForms/IRForms-Prefix.pch";
+				INFOPLIST_FILE = "IRForms/IRForms-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		4CCDE2E7157A6629005CB018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IRForms/IRForms-Prefix.pch";
+				INFOPLIST_FILE = "IRForms/IRForms-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
 		};
@@ -739,6 +909,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		4CCDE2E8157A6629005CB018 /* Build configuration list for PBXNativeTarget "IRForms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CCDE2E6157A6629005CB018 /* Debug */,
+				4CCDE2E7157A6629005CB018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		4CDC9DC11567FB350043AC98 /* Build configuration list for PBXProject "ios-forms" */ = {
 			isa = XCConfigurationList;

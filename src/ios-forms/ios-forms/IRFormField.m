@@ -25,7 +25,6 @@
  */
 
 #import "IRFormField.h"
-#import "IRFormField+PrivateImplementation.h"
 
 @implementation IRFormField
 
@@ -45,7 +44,7 @@
     keyPath = [dictionary objectForKey:@"KeyPath"];
     cellNibRegistered = NO;
     
-    if ([self isiPad]) {
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         cellReuseIdentifier = [dictionary objectForKey:@"CellReuseIdentifier_iPad"];
         cellNibName = [dictionary objectForKey:@"CellNibName_iPad"];
         cellBundleId = [dictionary objectForKey:@"CellBundleId_iPad"];

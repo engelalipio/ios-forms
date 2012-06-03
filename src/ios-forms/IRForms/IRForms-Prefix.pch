@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'IRForms' target in the 'IRForms' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif
