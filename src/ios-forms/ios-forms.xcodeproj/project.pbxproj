@@ -11,39 +11,14 @@
 		4C26DE311571A8890072A077 /* UserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE301571A8890072A077 /* UserProfile.m */; };
 		4C26DE331571AD370072A077 /* UserProfileForm.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C26DE321571AD370072A077 /* UserProfileForm.plist */; };
 		4C26DE4915728AB80072A077 /* IRLabelFormFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE4815728AB80072A077 /* IRLabelFormFieldTests.m */; };
-		4C26DE4C15728B080072A077 /* IRLabelFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C26DE4A15728B080072A077 /* IRLabelFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C26DE4D15728B080072A077 /* IRLabelFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE4B15728B080072A077 /* IRLabelFormField.m */; };
-		4C26DE4E15728B080072A077 /* IRLabelFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE4B15728B080072A077 /* IRLabelFormField.m */; };
 		4C26DE5215728D3E0072A077 /* IRLabelFormFieldCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE5115728D3E0072A077 /* IRLabelFormFieldCellTests.m */; };
-		4C26DE5515728D9C0072A077 /* IRLabelFormFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C26DE5315728D9C0072A077 /* IRLabelFormFieldCell.h */; };
-		4C26DE5615728D9C0072A077 /* IRLabelFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE5415728D9C0072A077 /* IRLabelFormFieldCell.m */; };
-		4C26DE5715728D9C0072A077 /* IRLabelFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE5415728D9C0072A077 /* IRLabelFormFieldCell.m */; };
 		4C26DE5C157296630072A077 /* IRTextFormFieldCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE5B157296630072A077 /* IRTextFormFieldCellTests.m */; };
-		4C26DE5F157296ED0072A077 /* IRTextFormFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C26DE5D157296ED0072A077 /* IRTextFormFieldCell.h */; };
-		4C26DE60157296ED0072A077 /* IRTextFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE5E157296ED0072A077 /* IRTextFormFieldCell.m */; };
-		4C26DE61157296ED0072A077 /* IRTextFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE5E157296ED0072A077 /* IRTextFormFieldCell.m */; };
 		4C26DE6515729A160072A077 /* IRTextFormFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE6415729A160072A077 /* IRTextFormFieldTests.m */; };
-		4C26DE6815729A7B0072A077 /* IRTextFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C26DE6615729A7B0072A077 /* IRTextFormField.h */; };
-		4C26DE6915729A7B0072A077 /* IRTextFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE6715729A7B0072A077 /* IRTextFormField.m */; };
-		4C26DE6A15729A7B0072A077 /* IRTextFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE6715729A7B0072A077 /* IRTextFormField.m */; };
-		4C26DE6E1572BCF90072A077 /* IRFormFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C26DE6C1572BCF80072A077 /* IRFormFieldCell.h */; };
-		4C26DE6F1572BCF90072A077 /* IRFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE6D1572BCF80072A077 /* IRFormFieldCell.m */; };
-		4C26DE701572BCF90072A077 /* IRFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE6D1572BCF80072A077 /* IRFormFieldCell.m */; };
 		4C35DA4215686056008A54FE /* IRFormViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA4015686056008A54FE /* IRFormViewControllerTests.m */; };
-		4C35DA46156860B5008A54FE /* IRFormViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C35DA44156860B5008A54FE /* IRFormViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C35DA48156860B5008A54FE /* IRFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA45156860B5008A54FE /* IRFormViewController.m */; };
-		4C35DA49156860B5008A54FE /* IRFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA45156860B5008A54FE /* IRFormViewController.m */; };
 		4C35DA4C15686271008A54FE /* IRFormTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA4B15686271008A54FE /* IRFormTests.m */; };
-		4C35DA4F156862AF008A54FE /* IRForm.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C35DA4D156862AF008A54FE /* IRForm.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C35DA50156862AF008A54FE /* IRForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA4E156862AF008A54FE /* IRForm.m */; };
-		4C35DA51156862AF008A54FE /* IRForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA4E156862AF008A54FE /* IRForm.m */; };
 		4C35DA5415686310008A54FE /* IRFormSectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA5315686310008A54FE /* IRFormSectionTests.m */; };
-		4C35DA571568634E008A54FE /* IRFormSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C35DA551568634E008A54FE /* IRFormSection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C35DA581568634E008A54FE /* IRFormSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA561568634E008A54FE /* IRFormSection.m */; };
-		4C35DA591568634E008A54FE /* IRFormSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA561568634E008A54FE /* IRFormSection.m */; };
 		4C35DA5B1568786C008A54FE /* TestForm.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C35DA5A1568786C008A54FE /* TestForm.plist */; };
 		4C35DA5D15687891008A54FE /* TestSection.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C35DA5C15687891008A54FE /* TestSection.plist */; };
-		4C35DA5F15693AFF008A54FE /* IRForms.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C35DA5E15693AFF008A54FE /* IRForms.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C35DA6615693BB4008A54FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DDD1567FB860043AC98 /* UIKit.framework */; };
 		4C35DA6715693BB4008A54FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DCA1567FB350043AC98 /* Foundation.framework */; };
 		4C35DA6815693BB4008A54FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DE01567FB860043AC98 /* CoreGraphics.framework */; };
@@ -55,33 +30,32 @@
 		4C35DA8F15696299008A54FE /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C35DA8E15696299008A54FE /* libOCMock.a */; };
 		4CCDE2DE157A6629005CB018 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DCA1567FB350043AC98 /* Foundation.framework */; };
 		4CCDE2E4157A6629005CB018 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CCDE2E2157A6629005CB018 /* InfoPlist.strings */; };
-		4CCDE2EA157A6647005CB018 /* IRFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CDC9DF615683F220043AC98 /* IRFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CCDE2EB157A6651005CB018 /* IRFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC9DF715683F220043AC98 /* IRFormField.m */; };
-		4CCDE2EC157A6656005CB018 /* IRFormViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C35DA44156860B5008A54FE /* IRFormViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CCDE2ED157A6663005CB018 /* IRFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA45156860B5008A54FE /* IRFormViewController.m */; };
-		4CCDE2EE157A6667005CB018 /* IRForm.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C35DA4D156862AF008A54FE /* IRForm.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CCDE2EF157A666D005CB018 /* IRForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA4E156862AF008A54FE /* IRForm.m */; };
-		4CCDE2F0157A6671005CB018 /* IRFormSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C35DA551568634E008A54FE /* IRFormSection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CCDE2F1157A6679005CB018 /* IRFormSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C35DA561568634E008A54FE /* IRFormSection.m */; };
-		4CCDE2F2157A667E005CB018 /* IRForms.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C35DA5E15693AFF008A54FE /* IRForms.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CCDE2F7157A669E005CB018 /* IRLabelFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C26DE4A15728B080072A077 /* IRLabelFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CCDE2F8157A66A7005CB018 /* IRLabelFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE4B15728B080072A077 /* IRLabelFormField.m */; };
-		4CCDE2F9157A66AE005CB018 /* IRLabelFormFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C26DE5315728D9C0072A077 /* IRLabelFormFieldCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CCDE2FA157A66B6005CB018 /* IRLabelFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE5415728D9C0072A077 /* IRLabelFormFieldCell.m */; };
-		4CCDE2FB157A66B9005CB018 /* IRTextFormFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C26DE5D157296ED0072A077 /* IRTextFormFieldCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CCDE2FC157A66C0005CB018 /* IRTextFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE5E157296ED0072A077 /* IRTextFormFieldCell.m */; };
-		4CCDE2FD157A66C5005CB018 /* IRTextFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C26DE6615729A7B0072A077 /* IRTextFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CCDE2FE157A66CC005CB018 /* IRTextFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE6715729A7B0072A077 /* IRTextFormField.m */; };
-		4CCDE2FF157A66D0005CB018 /* IRFormFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C26DE6C1572BCF80072A077 /* IRFormFieldCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CCDE300157A66DA005CB018 /* IRFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C26DE6D1572BCF80072A077 /* IRFormFieldCell.m */; };
-		4CCDE301157A66DE005CB018 /* IRNumberFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFC092B1573087F00F9C152 /* IRNumberFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CCDE302157A66E8005CB018 /* IRNumberFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC092C1573087F00F9C152 /* IRNumberFormField.m */; };
-		4CCDE303157A66EC005CB018 /* IRDateFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFC09321573B1F100F9C152 /* IRDateFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CCDE304157A66F3005CB018 /* IRDateFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC09331573B1F100F9C152 /* IRDateFormField.m */; };
-		4CCDE305157A66F7005CB018 /* IRPickerFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFC09471573F34300F9C152 /* IRPickerFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CCDE306157A66FE005CB018 /* IRPickerFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC09481573F34300F9C152 /* IRPickerFormField.m */; };
 		4CCDE337157A77FB005CB018 /* IRForms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCDE2DD157A6629005CB018 /* IRForms.framework */; };
-		4CDC9DCB1567FB350043AC98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DCA1567FB350043AC98 /* Foundation.framework */; };
+		4CCDE351157B9C23005CB018 /* IRDateFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CCDE338157B9C22005CB018 /* IRDateFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCDE352157B9C23005CB018 /* IRDateFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCDE339157B9C22005CB018 /* IRDateFormField.m */; };
+		4CCDE353157B9C23005CB018 /* IRForm.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CCDE33A157B9C22005CB018 /* IRForm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCDE354157B9C23005CB018 /* IRForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCDE33B157B9C22005CB018 /* IRForm.m */; };
+		4CCDE355157B9C23005CB018 /* IRFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CCDE33C157B9C22005CB018 /* IRFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCDE356157B9C23005CB018 /* IRFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCDE33D157B9C22005CB018 /* IRFormField.m */; };
+		4CCDE357157B9C23005CB018 /* IRFormFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CCDE33E157B9C22005CB018 /* IRFormFieldCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCDE358157B9C23005CB018 /* IRFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCDE33F157B9C22005CB018 /* IRFormFieldCell.m */; };
+		4CCDE359157B9C23005CB018 /* IRForms.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CCDE340157B9C22005CB018 /* IRForms.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCDE35A157B9C23005CB018 /* IRFormSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CCDE341157B9C23005CB018 /* IRFormSection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCDE35B157B9C23005CB018 /* IRFormSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCDE342157B9C23005CB018 /* IRFormSection.m */; };
+		4CCDE35C157B9C23005CB018 /* IRFormViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CCDE343157B9C23005CB018 /* IRFormViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCDE35D157B9C23005CB018 /* IRFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCDE344157B9C23005CB018 /* IRFormViewController.m */; };
+		4CCDE35E157B9C23005CB018 /* IRLabelFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CCDE345157B9C23005CB018 /* IRLabelFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCDE35F157B9C23005CB018 /* IRLabelFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCDE346157B9C23005CB018 /* IRLabelFormField.m */; };
+		4CCDE360157B9C23005CB018 /* IRLabelFormFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CCDE347157B9C23005CB018 /* IRLabelFormFieldCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCDE361157B9C23005CB018 /* IRLabelFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCDE348157B9C23005CB018 /* IRLabelFormFieldCell.m */; };
+		4CCDE362157B9C23005CB018 /* IRNumberFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CCDE349157B9C23005CB018 /* IRNumberFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCDE363157B9C23005CB018 /* IRNumberFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCDE34A157B9C23005CB018 /* IRNumberFormField.m */; };
+		4CCDE364157B9C23005CB018 /* IRPickerFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CCDE34B157B9C23005CB018 /* IRPickerFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCDE365157B9C23005CB018 /* IRPickerFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCDE34C157B9C23005CB018 /* IRPickerFormField.m */; };
+		4CCDE366157B9C23005CB018 /* IRTextFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CCDE34D157B9C23005CB018 /* IRTextFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCDE367157B9C23005CB018 /* IRTextFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCDE34E157B9C23005CB018 /* IRTextFormField.m */; };
+		4CCDE368157B9C23005CB018 /* IRTextFormFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CCDE34F157B9C23005CB018 /* IRTextFormFieldCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCDE369157B9C23005CB018 /* IRTextFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCDE350157B9C23005CB018 /* IRTextFormFieldCell.m */; };
 		4CDC9DDE1567FB860043AC98 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DDD1567FB860043AC98 /* UIKit.framework */; };
 		4CDC9DDF1567FB860043AC98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DCA1567FB350043AC98 /* Foundation.framework */; };
 		4CDC9DE11567FB860043AC98 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DE01567FB860043AC98 /* CoreGraphics.framework */; };
@@ -89,19 +63,7 @@
 		4CDC9DE91567FB860043AC98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC9DE81567FB860043AC98 /* main.m */; };
 		4CDC9DF21567FBEE0043AC98 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DF11567FBEE0043AC98 /* GHUnitIOS.framework */; };
 		4CDC9DF515683E4E0043AC98 /* IRFormFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC9DF415683E4E0043AC98 /* IRFormFieldTests.m */; };
-		4CDC9DF815683F220043AC98 /* IRFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CDC9DF615683F220043AC98 /* IRFormField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CDC9DF915683F220043AC98 /* IRFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC9DF715683F220043AC98 /* IRFormField.m */; };
-		4CDC9DFA15683F220043AC98 /* IRFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC9DF715683F220043AC98 /* IRFormField.m */; };
 		4CDC9DFE1568461D0043AC98 /* TestField.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CDC9DFD1568461D0043AC98 /* TestField.plist */; };
-		4CFC092D1573087F00F9C152 /* IRNumberFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFC092B1573087F00F9C152 /* IRNumberFormField.h */; };
-		4CFC092E1573087F00F9C152 /* IRNumberFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC092C1573087F00F9C152 /* IRNumberFormField.m */; };
-		4CFC092F1573087F00F9C152 /* IRNumberFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC092C1573087F00F9C152 /* IRNumberFormField.m */; };
-		4CFC09341573B1F100F9C152 /* IRDateFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFC09321573B1F100F9C152 /* IRDateFormField.h */; };
-		4CFC09351573B1F100F9C152 /* IRDateFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC09331573B1F100F9C152 /* IRDateFormField.m */; };
-		4CFC09361573B1F100F9C152 /* IRDateFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC09331573B1F100F9C152 /* IRDateFormField.m */; };
-		4CFC09491573F34300F9C152 /* IRPickerFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFC09471573F34300F9C152 /* IRPickerFormField.h */; };
-		4CFC094A1573F34300F9C152 /* IRPickerFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC09481573F34300F9C152 /* IRPickerFormField.m */; };
-		4CFC094B1573F34300F9C152 /* IRPickerFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC09481573F34300F9C152 /* IRPickerFormField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,31 +73,14 @@
 		4C26DE301571A8890072A077 /* UserProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfile.m; sourceTree = "<group>"; };
 		4C26DE321571AD370072A077 /* UserProfileForm.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserProfileForm.plist; sourceTree = "<group>"; };
 		4C26DE4815728AB80072A077 /* IRLabelFormFieldTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRLabelFormFieldTests.m; sourceTree = "<group>"; };
-		4C26DE4A15728B080072A077 /* IRLabelFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRLabelFormField.h; sourceTree = "<group>"; };
-		4C26DE4B15728B080072A077 /* IRLabelFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRLabelFormField.m; sourceTree = "<group>"; };
 		4C26DE5115728D3E0072A077 /* IRLabelFormFieldCellTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRLabelFormFieldCellTests.m; sourceTree = "<group>"; };
-		4C26DE5315728D9C0072A077 /* IRLabelFormFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRLabelFormFieldCell.h; sourceTree = "<group>"; };
-		4C26DE5415728D9C0072A077 /* IRLabelFormFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRLabelFormFieldCell.m; sourceTree = "<group>"; };
 		4C26DE5B157296630072A077 /* IRTextFormFieldCellTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRTextFormFieldCellTests.m; sourceTree = "<group>"; };
-		4C26DE5D157296ED0072A077 /* IRTextFormFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRTextFormFieldCell.h; sourceTree = "<group>"; };
-		4C26DE5E157296ED0072A077 /* IRTextFormFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRTextFormFieldCell.m; sourceTree = "<group>"; };
 		4C26DE6415729A160072A077 /* IRTextFormFieldTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRTextFormFieldTests.m; sourceTree = "<group>"; };
-		4C26DE6615729A7B0072A077 /* IRTextFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRTextFormField.h; sourceTree = "<group>"; };
-		4C26DE6715729A7B0072A077 /* IRTextFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRTextFormField.m; sourceTree = "<group>"; };
-		4C26DE6C1572BCF80072A077 /* IRFormFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRFormFieldCell.h; sourceTree = "<group>"; };
-		4C26DE6D1572BCF80072A077 /* IRFormFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFormFieldCell.m; sourceTree = "<group>"; };
 		4C35DA4015686056008A54FE /* IRFormViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFormViewControllerTests.m; sourceTree = "<group>"; };
-		4C35DA44156860B5008A54FE /* IRFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRFormViewController.h; sourceTree = "<group>"; };
-		4C35DA45156860B5008A54FE /* IRFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFormViewController.m; sourceTree = "<group>"; };
 		4C35DA4B15686271008A54FE /* IRFormTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFormTests.m; sourceTree = "<group>"; };
-		4C35DA4D156862AF008A54FE /* IRForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRForm.h; sourceTree = "<group>"; };
-		4C35DA4E156862AF008A54FE /* IRForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRForm.m; sourceTree = "<group>"; };
 		4C35DA5315686310008A54FE /* IRFormSectionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFormSectionTests.m; sourceTree = "<group>"; };
-		4C35DA551568634E008A54FE /* IRFormSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRFormSection.h; sourceTree = "<group>"; };
-		4C35DA561568634E008A54FE /* IRFormSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFormSection.m; sourceTree = "<group>"; };
 		4C35DA5A1568786C008A54FE /* TestForm.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestForm.plist; sourceTree = "<group>"; };
 		4C35DA5C15687891008A54FE /* TestSection.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestSection.plist; sourceTree = "<group>"; };
-		4C35DA5E15693AFF008A54FE /* IRForms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRForms.h; sourceTree = "<group>"; };
 		4C35DA6415693BB3008A54FE /* FormsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C35DA6B15693BB4008A54FE /* FormsSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FormsSample-Info.plist"; sourceTree = "<group>"; };
 		4C35DA6D15693BB4008A54FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -150,7 +95,31 @@
 		4CCDE2E1157A6629005CB018 /* IRForms-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IRForms-Info.plist"; sourceTree = "<group>"; };
 		4CCDE2E3157A6629005CB018 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4CCDE2E5157A6629005CB018 /* IRForms-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IRForms-Prefix.pch"; sourceTree = "<group>"; };
-		4CDC9DC71567FB350043AC98 /* libios-forms.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libios-forms.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CCDE338157B9C22005CB018 /* IRDateFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRDateFormField.h; sourceTree = "<group>"; };
+		4CCDE339157B9C22005CB018 /* IRDateFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRDateFormField.m; sourceTree = "<group>"; };
+		4CCDE33A157B9C22005CB018 /* IRForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRForm.h; sourceTree = "<group>"; };
+		4CCDE33B157B9C22005CB018 /* IRForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRForm.m; sourceTree = "<group>"; };
+		4CCDE33C157B9C22005CB018 /* IRFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRFormField.h; sourceTree = "<group>"; };
+		4CCDE33D157B9C22005CB018 /* IRFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFormField.m; sourceTree = "<group>"; };
+		4CCDE33E157B9C22005CB018 /* IRFormFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRFormFieldCell.h; sourceTree = "<group>"; };
+		4CCDE33F157B9C22005CB018 /* IRFormFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFormFieldCell.m; sourceTree = "<group>"; };
+		4CCDE340157B9C22005CB018 /* IRForms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRForms.h; sourceTree = "<group>"; };
+		4CCDE341157B9C23005CB018 /* IRFormSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRFormSection.h; sourceTree = "<group>"; };
+		4CCDE342157B9C23005CB018 /* IRFormSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFormSection.m; sourceTree = "<group>"; };
+		4CCDE343157B9C23005CB018 /* IRFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRFormViewController.h; sourceTree = "<group>"; };
+		4CCDE344157B9C23005CB018 /* IRFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFormViewController.m; sourceTree = "<group>"; };
+		4CCDE345157B9C23005CB018 /* IRLabelFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRLabelFormField.h; sourceTree = "<group>"; };
+		4CCDE346157B9C23005CB018 /* IRLabelFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRLabelFormField.m; sourceTree = "<group>"; };
+		4CCDE347157B9C23005CB018 /* IRLabelFormFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRLabelFormFieldCell.h; sourceTree = "<group>"; };
+		4CCDE348157B9C23005CB018 /* IRLabelFormFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRLabelFormFieldCell.m; sourceTree = "<group>"; };
+		4CCDE349157B9C23005CB018 /* IRNumberFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRNumberFormField.h; sourceTree = "<group>"; };
+		4CCDE34A157B9C23005CB018 /* IRNumberFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRNumberFormField.m; sourceTree = "<group>"; };
+		4CCDE34B157B9C23005CB018 /* IRPickerFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRPickerFormField.h; sourceTree = "<group>"; };
+		4CCDE34C157B9C23005CB018 /* IRPickerFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRPickerFormField.m; sourceTree = "<group>"; };
+		4CCDE34D157B9C23005CB018 /* IRTextFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRTextFormField.h; sourceTree = "<group>"; };
+		4CCDE34E157B9C23005CB018 /* IRTextFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRTextFormField.m; sourceTree = "<group>"; };
+		4CCDE34F157B9C23005CB018 /* IRTextFormFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRTextFormFieldCell.h; sourceTree = "<group>"; };
+		4CCDE350157B9C23005CB018 /* IRTextFormFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRTextFormFieldCell.m; sourceTree = "<group>"; };
 		4CDC9DCA1567FB350043AC98 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4CDC9DCE1567FB350043AC98 /* ios-forms-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-forms-Prefix.pch"; sourceTree = "<group>"; };
 		4CDC9DDB1567FB860043AC98 /* ios-forms-unit-tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-forms-unit-tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,15 +131,7 @@
 		4CDC9DEA1567FB860043AC98 /* ios-forms-unit-tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-forms-unit-tests-Prefix.pch"; sourceTree = "<group>"; };
 		4CDC9DF11567FBEE0043AC98 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = ../../lib/GHUnitIOS.framework; sourceTree = "<group>"; };
 		4CDC9DF415683E4E0043AC98 /* IRFormFieldTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFormFieldTests.m; sourceTree = "<group>"; };
-		4CDC9DF615683F220043AC98 /* IRFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRFormField.h; sourceTree = "<group>"; };
-		4CDC9DF715683F220043AC98 /* IRFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFormField.m; sourceTree = "<group>"; };
 		4CDC9DFD1568461D0043AC98 /* TestField.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestField.plist; sourceTree = "<group>"; };
-		4CFC092B1573087F00F9C152 /* IRNumberFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRNumberFormField.h; sourceTree = "<group>"; };
-		4CFC092C1573087F00F9C152 /* IRNumberFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRNumberFormField.m; sourceTree = "<group>"; };
-		4CFC09321573B1F100F9C152 /* IRDateFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRDateFormField.h; sourceTree = "<group>"; };
-		4CFC09331573B1F100F9C152 /* IRDateFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRDateFormField.m; sourceTree = "<group>"; };
-		4CFC09471573F34300F9C152 /* IRPickerFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRPickerFormField.h; sourceTree = "<group>"; };
-		4CFC09481573F34300F9C152 /* IRPickerFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRPickerFormField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,14 +151,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CCDE2DE157A6629005CB018 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4CDC9DC41567FB350043AC98 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4CDC9DCB1567FB350043AC98 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +216,31 @@
 		4CCDE2DF157A6629005CB018 /* IRForms */ = {
 			isa = PBXGroup;
 			children = (
+				4CCDE338157B9C22005CB018 /* IRDateFormField.h */,
+				4CCDE339157B9C22005CB018 /* IRDateFormField.m */,
+				4CCDE33A157B9C22005CB018 /* IRForm.h */,
+				4CCDE33B157B9C22005CB018 /* IRForm.m */,
+				4CCDE33C157B9C22005CB018 /* IRFormField.h */,
+				4CCDE33D157B9C22005CB018 /* IRFormField.m */,
+				4CCDE33E157B9C22005CB018 /* IRFormFieldCell.h */,
+				4CCDE33F157B9C22005CB018 /* IRFormFieldCell.m */,
+				4CCDE340157B9C22005CB018 /* IRForms.h */,
+				4CCDE341157B9C23005CB018 /* IRFormSection.h */,
+				4CCDE342157B9C23005CB018 /* IRFormSection.m */,
+				4CCDE343157B9C23005CB018 /* IRFormViewController.h */,
+				4CCDE344157B9C23005CB018 /* IRFormViewController.m */,
+				4CCDE345157B9C23005CB018 /* IRLabelFormField.h */,
+				4CCDE346157B9C23005CB018 /* IRLabelFormField.m */,
+				4CCDE347157B9C23005CB018 /* IRLabelFormFieldCell.h */,
+				4CCDE348157B9C23005CB018 /* IRLabelFormFieldCell.m */,
+				4CCDE349157B9C23005CB018 /* IRNumberFormField.h */,
+				4CCDE34A157B9C23005CB018 /* IRNumberFormField.m */,
+				4CCDE34B157B9C23005CB018 /* IRPickerFormField.h */,
+				4CCDE34C157B9C23005CB018 /* IRPickerFormField.m */,
+				4CCDE34D157B9C23005CB018 /* IRTextFormField.h */,
+				4CCDE34E157B9C23005CB018 /* IRTextFormField.m */,
+				4CCDE34F157B9C23005CB018 /* IRTextFormFieldCell.h */,
+				4CCDE350157B9C23005CB018 /* IRTextFormFieldCell.m */,
 				4CCDE2E0157A6629005CB018 /* Supporting Files */,
 			);
 			path = IRForms;
@@ -293,7 +271,6 @@
 		4CDC9DC81567FB350043AC98 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4CDC9DC71567FB350043AC98 /* libios-forms.a */,
 				4CDC9DDB1567FB860043AC98 /* ios-forms-unit-tests.app */,
 				4C35DA6415693BB3008A54FE /* FormsSample.app */,
 				4CCDE2DD157A6629005CB018 /* IRForms.framework */,
@@ -317,31 +294,6 @@
 			isa = PBXGroup;
 			children = (
 				4CDC9DCD1567FB350043AC98 /* Supporting Files */,
-				4CDC9DF615683F220043AC98 /* IRFormField.h */,
-				4CDC9DF715683F220043AC98 /* IRFormField.m */,
-				4C35DA44156860B5008A54FE /* IRFormViewController.h */,
-				4C35DA45156860B5008A54FE /* IRFormViewController.m */,
-				4C35DA4D156862AF008A54FE /* IRForm.h */,
-				4C35DA4E156862AF008A54FE /* IRForm.m */,
-				4C35DA551568634E008A54FE /* IRFormSection.h */,
-				4C35DA561568634E008A54FE /* IRFormSection.m */,
-				4C35DA5E15693AFF008A54FE /* IRForms.h */,
-				4C26DE4A15728B080072A077 /* IRLabelFormField.h */,
-				4C26DE4B15728B080072A077 /* IRLabelFormField.m */,
-				4C26DE5315728D9C0072A077 /* IRLabelFormFieldCell.h */,
-				4C26DE5415728D9C0072A077 /* IRLabelFormFieldCell.m */,
-				4C26DE5D157296ED0072A077 /* IRTextFormFieldCell.h */,
-				4C26DE5E157296ED0072A077 /* IRTextFormFieldCell.m */,
-				4C26DE6615729A7B0072A077 /* IRTextFormField.h */,
-				4C26DE6715729A7B0072A077 /* IRTextFormField.m */,
-				4C26DE6C1572BCF80072A077 /* IRFormFieldCell.h */,
-				4C26DE6D1572BCF80072A077 /* IRFormFieldCell.m */,
-				4CFC092B1573087F00F9C152 /* IRNumberFormField.h */,
-				4CFC092C1573087F00F9C152 /* IRNumberFormField.m */,
-				4CFC09321573B1F100F9C152 /* IRDateFormField.h */,
-				4CFC09331573B1F100F9C152 /* IRDateFormField.m */,
-				4CFC09471573F34300F9C152 /* IRPickerFormField.h */,
-				4CFC09481573F34300F9C152 /* IRPickerFormField.m */,
 			);
 			path = "ios-forms";
 			sourceTree = "<group>";
@@ -391,39 +343,19 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CCDE2EA157A6647005CB018 /* IRFormField.h in Headers */,
-				4CCDE2EC157A6656005CB018 /* IRFormViewController.h in Headers */,
-				4CCDE2EE157A6667005CB018 /* IRForm.h in Headers */,
-				4CCDE2F0157A6671005CB018 /* IRFormSection.h in Headers */,
-				4CCDE2F2157A667E005CB018 /* IRForms.h in Headers */,
-				4CCDE2F7157A669E005CB018 /* IRLabelFormField.h in Headers */,
-				4CCDE2F9157A66AE005CB018 /* IRLabelFormFieldCell.h in Headers */,
-				4CCDE2FB157A66B9005CB018 /* IRTextFormFieldCell.h in Headers */,
-				4CCDE2FD157A66C5005CB018 /* IRTextFormField.h in Headers */,
-				4CCDE2FF157A66D0005CB018 /* IRFormFieldCell.h in Headers */,
-				4CCDE301157A66DE005CB018 /* IRNumberFormField.h in Headers */,
-				4CCDE303157A66EC005CB018 /* IRDateFormField.h in Headers */,
-				4CCDE305157A66F7005CB018 /* IRPickerFormField.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4CDC9DC51567FB350043AC98 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4C35DA5F15693AFF008A54FE /* IRForms.h in Headers */,
-				4CDC9DF815683F220043AC98 /* IRFormField.h in Headers */,
-				4C35DA46156860B5008A54FE /* IRFormViewController.h in Headers */,
-				4C35DA4F156862AF008A54FE /* IRForm.h in Headers */,
-				4C35DA571568634E008A54FE /* IRFormSection.h in Headers */,
-				4C26DE4C15728B080072A077 /* IRLabelFormField.h in Headers */,
-				4C26DE5515728D9C0072A077 /* IRLabelFormFieldCell.h in Headers */,
-				4C26DE5F157296ED0072A077 /* IRTextFormFieldCell.h in Headers */,
-				4C26DE6815729A7B0072A077 /* IRTextFormField.h in Headers */,
-				4C26DE6E1572BCF90072A077 /* IRFormFieldCell.h in Headers */,
-				4CFC092D1573087F00F9C152 /* IRNumberFormField.h in Headers */,
-				4CFC09341573B1F100F9C152 /* IRDateFormField.h in Headers */,
-				4CFC09491573F34300F9C152 /* IRPickerFormField.h in Headers */,
+				4CCDE351157B9C23005CB018 /* IRDateFormField.h in Headers */,
+				4CCDE353157B9C23005CB018 /* IRForm.h in Headers */,
+				4CCDE355157B9C23005CB018 /* IRFormField.h in Headers */,
+				4CCDE357157B9C23005CB018 /* IRFormFieldCell.h in Headers */,
+				4CCDE359157B9C23005CB018 /* IRForms.h in Headers */,
+				4CCDE35A157B9C23005CB018 /* IRFormSection.h in Headers */,
+				4CCDE35C157B9C23005CB018 /* IRFormViewController.h in Headers */,
+				4CCDE35E157B9C23005CB018 /* IRLabelFormField.h in Headers */,
+				4CCDE360157B9C23005CB018 /* IRLabelFormFieldCell.h in Headers */,
+				4CCDE362157B9C23005CB018 /* IRNumberFormField.h in Headers */,
+				4CCDE364157B9C23005CB018 /* IRPickerFormField.h in Headers */,
+				4CCDE366157B9C23005CB018 /* IRTextFormField.h in Headers */,
+				4CCDE368157B9C23005CB018 /* IRTextFormFieldCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,23 +400,6 @@
 			productReference = 4CCDE2DD157A6629005CB018 /* IRForms.framework */;
 			productType = "com.apple.product-type.framework.static";
 		};
-		4CDC9DC61567FB350043AC98 /* ios-forms */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4CDC9DD41567FB350043AC98 /* Build configuration list for PBXNativeTarget "ios-forms" */;
-			buildPhases = (
-				4CDC9DC31567FB350043AC98 /* Sources */,
-				4CDC9DC41567FB350043AC98 /* Frameworks */,
-				4CDC9DC51567FB350043AC98 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "ios-forms";
-			productName = "ios-forms";
-			productReference = 4CDC9DC71567FB350043AC98 /* libios-forms.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		4CDC9DDA1567FB860043AC98 /* ios-forms-unit-tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CDC9DEE1567FB860043AC98 /* Build configuration list for PBXNativeTarget "ios-forms-unit-tests" */;
@@ -523,7 +438,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4CDC9DC61567FB350043AC98 /* ios-forms */,
 				4CDC9DDA1567FB860043AC98 /* ios-forms-unit-tests */,
 				4C35DA6315693BB3008A54FE /* FormsSample */,
 				4CCDE2DC157A6629005CB018 /* IRForms */,
@@ -622,37 +536,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CCDE2EB157A6651005CB018 /* IRFormField.m in Sources */,
-				4CCDE2ED157A6663005CB018 /* IRFormViewController.m in Sources */,
-				4CCDE2EF157A666D005CB018 /* IRForm.m in Sources */,
-				4CCDE2F1157A6679005CB018 /* IRFormSection.m in Sources */,
-				4CCDE2F8157A66A7005CB018 /* IRLabelFormField.m in Sources */,
-				4CCDE2FA157A66B6005CB018 /* IRLabelFormFieldCell.m in Sources */,
-				4CCDE2FC157A66C0005CB018 /* IRTextFormFieldCell.m in Sources */,
-				4CCDE2FE157A66CC005CB018 /* IRTextFormField.m in Sources */,
-				4CCDE300157A66DA005CB018 /* IRFormFieldCell.m in Sources */,
-				4CCDE302157A66E8005CB018 /* IRNumberFormField.m in Sources */,
-				4CCDE304157A66F3005CB018 /* IRDateFormField.m in Sources */,
-				4CCDE306157A66FE005CB018 /* IRPickerFormField.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4CDC9DC31567FB350043AC98 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4CDC9DF915683F220043AC98 /* IRFormField.m in Sources */,
-				4C35DA48156860B5008A54FE /* IRFormViewController.m in Sources */,
-				4C35DA50156862AF008A54FE /* IRForm.m in Sources */,
-				4C35DA581568634E008A54FE /* IRFormSection.m in Sources */,
-				4C26DE4D15728B080072A077 /* IRLabelFormField.m in Sources */,
-				4C26DE5615728D9C0072A077 /* IRLabelFormFieldCell.m in Sources */,
-				4C26DE60157296ED0072A077 /* IRTextFormFieldCell.m in Sources */,
-				4C26DE6915729A7B0072A077 /* IRTextFormField.m in Sources */,
-				4C26DE6F1572BCF90072A077 /* IRFormFieldCell.m in Sources */,
-				4CFC092E1573087F00F9C152 /* IRNumberFormField.m in Sources */,
-				4CFC09351573B1F100F9C152 /* IRDateFormField.m in Sources */,
-				4CFC094A1573F34300F9C152 /* IRPickerFormField.m in Sources */,
+				4CCDE352157B9C23005CB018 /* IRDateFormField.m in Sources */,
+				4CCDE354157B9C23005CB018 /* IRForm.m in Sources */,
+				4CCDE356157B9C23005CB018 /* IRFormField.m in Sources */,
+				4CCDE358157B9C23005CB018 /* IRFormFieldCell.m in Sources */,
+				4CCDE35B157B9C23005CB018 /* IRFormSection.m in Sources */,
+				4CCDE35D157B9C23005CB018 /* IRFormViewController.m in Sources */,
+				4CCDE35F157B9C23005CB018 /* IRLabelFormField.m in Sources */,
+				4CCDE361157B9C23005CB018 /* IRLabelFormFieldCell.m in Sources */,
+				4CCDE363157B9C23005CB018 /* IRNumberFormField.m in Sources */,
+				4CCDE365157B9C23005CB018 /* IRPickerFormField.m in Sources */,
+				4CCDE367157B9C23005CB018 /* IRTextFormField.m in Sources */,
+				4CCDE369157B9C23005CB018 /* IRTextFormFieldCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,25 +557,13 @@
 			files = (
 				4CDC9DE91567FB860043AC98 /* main.m in Sources */,
 				4CDC9DF515683E4E0043AC98 /* IRFormFieldTests.m in Sources */,
-				4CDC9DFA15683F220043AC98 /* IRFormField.m in Sources */,
 				4C35DA4215686056008A54FE /* IRFormViewControllerTests.m in Sources */,
-				4C35DA49156860B5008A54FE /* IRFormViewController.m in Sources */,
 				4C35DA4C15686271008A54FE /* IRFormTests.m in Sources */,
-				4C35DA51156862AF008A54FE /* IRForm.m in Sources */,
 				4C35DA5415686310008A54FE /* IRFormSectionTests.m in Sources */,
-				4C35DA591568634E008A54FE /* IRFormSection.m in Sources */,
 				4C26DE4915728AB80072A077 /* IRLabelFormFieldTests.m in Sources */,
-				4C26DE4E15728B080072A077 /* IRLabelFormField.m in Sources */,
 				4C26DE5215728D3E0072A077 /* IRLabelFormFieldCellTests.m in Sources */,
-				4C26DE5715728D9C0072A077 /* IRLabelFormFieldCell.m in Sources */,
 				4C26DE5C157296630072A077 /* IRTextFormFieldCellTests.m in Sources */,
-				4C26DE61157296ED0072A077 /* IRTextFormFieldCell.m in Sources */,
 				4C26DE6515729A160072A077 /* IRTextFormFieldTests.m in Sources */,
-				4C26DE6A15729A7B0072A077 /* IRTextFormField.m in Sources */,
-				4C26DE701572BCF90072A077 /* IRFormFieldCell.m in Sources */,
-				4CFC092F1573087F00F9C152 /* IRNumberFormField.m in Sources */,
-				4CFC09361573B1F100F9C152 /* IRDateFormField.m in Sources */,
-				4CFC094B1573F34300F9C152 /* IRPickerFormField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -821,30 +704,6 @@
 			};
 			name = Release;
 		};
-		4CDC9DD51567FB350043AC98 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DSTROOT = /tmp/ios_forms.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ios-forms/ios-forms-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		4CDC9DD61567FB350043AC98 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DSTROOT = /tmp/ios_forms.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ios-forms/ios-forms-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		4CDC9DEF1567FB860043AC98 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -923,15 +782,6 @@
 			buildConfigurations = (
 				4CDC9DD21567FB350043AC98 /* Debug */,
 				4CDC9DD31567FB350043AC98 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4CDC9DD41567FB350043AC98 /* Build configuration list for PBXNativeTarget "ios-forms" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4CDC9DD51567FB350043AC98 /* Debug */,
-				4CDC9DD61567FB350043AC98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
