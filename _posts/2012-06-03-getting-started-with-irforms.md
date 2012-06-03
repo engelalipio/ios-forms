@@ -654,7 +654,7 @@ how to load the customer information form:
 @end
 {% endhighlight %}
 
-{% hightlight objc %}
+{% highlight objc %}
 /*
  * CustomerInformationFormViewController.m
  *
