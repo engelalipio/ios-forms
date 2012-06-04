@@ -319,97 +319,159 @@ To create the customer information form:
 1. Create a new property list. I will name mine *CustomerInformationForm.plist*.
 2. Make your property list look like this:
 
-* Sections (Array)
-    * Item 0 (Dictionary)
-        * Header (String) = Customer Information
-        * Fields (Array)
-            * Item 0 (Dictionary)
-                * KeyPath (String) = firstName
-                * LabelText (String) = First Name
-                * Placeholder (String) = First name
-            * Item 1 (Dictionary)
-                * KeyPath (String) = lastName
-                * LabelText (String) = Last Name
-                * Placeholder (String) = Last name
-            * Item 3 (Dictionary)
-                * KeyPath (String) = city
-                * LabelText (String) = City
-                * Placeholder (String) = City
-            * Item 4 (Dictionary)
-                * Type (String) = Picker
-                * KeyPath (String) = state
-                * LabelText (String) = State
-                * Placeholder (String) = State
-                * Values (Dictionary)
-                    * Alabama (String) = AL
-                    * Alaska (String) = AK
-                    * Arizona (String) = AZ
-                    * Arkansas (String) = AR
-                    * California (String) = CA
-                    * Colorado (String) = CO
-                    * Connecticut (String) = CT
-                    * Delaware (String) = DE
-                    * District of Colombia (String) = DC
-                    * Florida (String) = FL
-                    * Georgia (String) = GA
-                    * Hawaii (String) = HI
-                    * Idaho (String) = ID
-                    * Illinois (String) = IL
-                    * Indiana (String) = IN
-                    * Iowa (String) = IA
-                    * Kansas (String) = KS
-                    * Kentucky (String) = KY
-                    * Louisiana (String) = LA
-                    * Maine (String) = ME
-                    * Maryland (String) = MD
-                    * Massachusetts (String) = MA
-                    * Michigan (String) = MI
-                    * Minnesota (String) = MN
-                    * Mississippi (String) = MS
-                    * Missouri (String) = MO
-                    * Montana (String) = MT
-                    * Nebraska (String) = NE
-                    * Nevada (String) = NV
-                    * New Hampshire (String) = NH
-                    * New Jersey (String) = NJ
-                    * New Mexico (String) = NM
-                    * New York (String) = NY
-                    * North Carolina (String) = NC
-                    * North Dakota (String) = ND
-                    * Ohio (String) = OH
-                    * Oklahoma (String) = OK
-                    * Oregon (String) = OR
-                    * Pennsylvania (String) = PA
-                    * Rhode Island (String) = RI
-                    * South Carolina (String) = SC
-                    * South Dakota (String) = SD
-                    * Tennessee (String) = TN
-                    * Texas (String) = TX
-                    * Utah (String) = UT
-                    * Vermont (String) = VT
-                    * Virginia (String) = VA
-                    * Washington (String) = WA
-                    * West Virginia (String) = WV
-                    * Wisconsin (String) = WI
-                    * Wyoming (String) = WY
-            * Item 5 (Dictionary)
-                * KeyPath (String) = postalCode
-                * LabelText (String) = Postal Code
-                * Placeholder (String) = Postal code
-                * KeyboardType (String) = NumberPad
-    * Item 1 (Dictionary)
-        * Header (String) = Contact Information
-        * Fields (Array)
-            * Item 0 (Dictionary)
-                * KeyPath (String) = emailAddress
-                * LabelText (String) = Email
-                * Placeholder (String) = Email address
-                * KeyboardType (String) = EmailAddress
-            * Item 1 (Dictionary)
-                * KeyPath (String) = twitterName
-                * LabelText (String) = Twitter
-                * Placeholder (String) = Twitter name
-                * KeyboardType (String) = Twitter
+<ul>
+    <li>
+        Sections (Array)
+        <ul>
+            <li>
+                Item 0 (Dictionary)
+                <ul>
+                    <li>Header (String) = Customer Information</li>
+                    <li>
+                        Fields (Array)
+                        <ul>
+                            <li>
+                                Item 0 (Dictionary)
+                                <ul>
+                                    <li>KeyPath (String) = firstName</li>
+                                    <li>LabelText (String) = First Name</li>
+                                    <li>Placeholder (String) = First name</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Item 1 (Dictionary)
+                                <ul>
+                                    <li>KeyPath (String) = lastName</li>
+                                    <li>LabelText (String) = Last Name</li>
+                                    <li>Placeholder (String) = Last name</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Item 2 (Dictionary)
+                                <ul>
+                                    <li>KeyPath (String) = streetAddress</li>
+                                    <li>LabelText (String) = Address</li>
+                                    <li>Placeholder (String) = Address</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Item 3 (Dictionary)
+                                <ul>
+                                    <li>KeyPath (String) = city</li>
+                                    <li>LabelText (String) = City</li>
+                                    <li>Placeholder (String) = City</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Item 4 (Dictionary)
+                                <ul>
+                                    <li>Type (String) = Picker</li>
+                                    <li>KeyPath (String) = state</li>
+                                    <li>LabelText (String) = State</li>
+                                    <li>Placeholder (String) = State</li>
+                                    <li>
+                                        Values (Dictionary)
+                                        <ul>
+                                            <li>Alabama (String) = AL</li>
+                                            <li>Alaska (String) = AK</li>
+                                            <li>Arizona (String) = AZ</li>
+                                            <li>Arkansas (String) = AR</li>
+                                            <li>California (String) = CA</li>
+                                            <li>Colorado (String) = CO</li>
+                                            <li>Connecticut (String) = CT</li>
+                                            <li>Delaware (String) = DE</li>
+                                            <li>District of Colombia (String) = DC</li>
+                                            <li>Florida (String) = FL</li>
+                                            <li>Georgia (String) = GA</li>
+                                            <li>Hawaii (String) = HI</li>
+                                            <li>Idaho (String) = ID</li>
+                                            <li>Illinios (String) = IL</li>
+                                            <li>Indiana (String) = IN</li>
+                                            <li>Iowa (String) = IA</li>
+                                            <li>Kansas (String) = KS</li>
+                                            <li>Kentucky (String) = KY</li>
+                                            <li>Louisiana (String) = LA</li>
+                                            <li>Maine (String) = ME</li>
+                                            <li>Maryland (String) = MD</li>
+                                            <li>Massachusetts (String) = MA</li>
+                                            <li>Michigan (String) = MI</li>
+                                            <li>Minnesota (String) = MN</li>
+                                            <li>Mississippi (String) = MS</li>
+                                            <li>Missouri (String) = MO</li>
+                                            <li>Montana (String) = MT</li>
+                                            <li>Nebraska (String) = NE</li>
+                                            <li>Nevada (String) = NV</li>
+                                            <li>New Hampshire (String) = NH</li>
+                                            <li>New Jersey (String) = NJ</li>
+                                            <li>New Mexico (String) = NM</li>
+                                            <li>New York (String) = NY</li>
+                                            <li>North Carolina (String) = NC</li>
+                                            <li>North Dakota (String) = ND</li>
+                                            <li>Ohio (String) = OH</li>
+                                            <li>Oklahoma (String) = OK</li>
+                                            <li>Oregon (String) = OR</li>
+                                            <li>Pennsylvania (String) = PA</li>
+                                            <li>Rhode Island (String) = RI</li>
+                                            <li>South Carolina (String) = SC</li>
+                                            <li>South Dakota (String) = SD</li>
+                                            <li>Tennessee (String) = TN</li>
+                                            <li>Texas (String) = TX</li>
+                                            <li>Utah (String) = UT</li>
+                                            <li>Vermont (String) = VT</li>
+                                            <li>Virginia (String) = VA</li>
+                                            <li>Washington (String) = WA</li>
+                                            <li>West Virginia (String) = WV</li>
+                                            <li>Wisconsin (String) = WI</li>
+                                            <li>Wyoming (String) = WY</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Item 5 (Dictionary)
+                                <ul>
+                                    <li>KeyPath (String) = postalCode</li>
+                                    <li>LabelText (String) = Postal Code</li>
+                                    <li>Placeholder (String) = Postal Code</li>
+                                    <li>KeyboardType (String) = NumberPad</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Item 1 (Dictionary)
+                <ul>
+                    <li>Header (String) = Contact Information</li>
+                    <li>
+                        Fields (Array)
+                        <ul>
+                            <li>
+                                Item 0 (Dictionary)
+                                <ul>
+                                    <li>KeyPath (String) = emailAddress</li>
+                                    <li>LabelText (String) = Email</li>
+                                    <li>Placeholder (String) = Email address</li>
+                                    <li>KeyboardType (String) = EmailAddress</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Item 1 (Dictionary)
+                                <ul>
+                                    <li>KeyPath (String) = twitterName</li>
+                                    <li>LabelText (String) = Twitter</li>
+                                    <li>Placeholder (String) = Twitter name</li>
+                                    <li>KeyboardType (String) = Twitter</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
 
 The customer information form modeled above has two sections. The first section
 collects the user's first and last name, and the user's mailing address. The
@@ -433,48 +495,100 @@ currency when the field is not in edit mode.
 
 The second form definition for product information should look like this:
 
-* Sections (Array)
-    * Item 0 (Dictionary)
-        * Header (String) = Product Information
-        * Fields (Array)
-            * Item 0 (Dictionary)
-                * KeyPath (String) = productTitle
-                * LabelText (String) = Product Title
-                * Placeholder (String) = Product title
-            * Item 1 (Dictionary)
-                * KeyPath (String) = serialNumber
-                * LabelText (String) = Serial Number
-                * Placeholder (String) = Serial number
+<ul>
+    <li>
+        Sections (Array)
+        <ul>
+            <li>
+                Item 0 (Dictionary)
+                <ul>
+                    <li>Header (String) = Product Information</li>
+                    <li>
+                        Fields (Array)
+                        <ul>
+                            <li>
+                                Item 0 (Dictionary)
+                                <ul>
+                                    <li>KeyPath (String) = productTitle</li>
+                                    <li>LabelText (String) = Product Title</li>
+                                    <li>Placeholder (String) = Product title</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Item 1 (Dictionary)
+                                <ul>
+                                    <li>KeyPath (String) = serialNumber</li>
+                                    <li>LabelText (String) = Serial Number</li>
+                                    <li>Placeholder (String) = Serial number</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
 
 The third form definition for the purchase information form should look like
 this:
 
-* Sections (Array)
-    * Item 0 (Dictionary)
-        * Header (String) = Purchase information
-        * Fields (Array)
-            * Item 0 (Dictionary)
-                * Type (String) = Picker
-                * KeyPath = seller
-                * LabelText (String) = Seller
-                * Placeholder (String) = Seller
-                * Values (Dictionary)
-                    * Best Buy (String) = Best Buy
-                    * Apple Store (String) = Apple Store
-                    * Web Store (String) = Web Store
-                    * Other (String) = Other
-            * Item 1 (Dictionary)
-                * Type (String) = Date
-                * DateStyle (String) = Long
-                * KeyPath (String) = purchaseDate
-                * LabelText (String) = Purchase Date
-                * Placeholder (String) = Purchase date
-            * Item 2 (Dictionary)
-                * Type (String) = Number
-                * Style (String) = Currency
-                * KeyPath (String) = purchasePrice
-                * LabelText (String) = Purchase Price
-                * Placeholder (String) = Purchase price
+<ul>
+    <li>
+        Sections (Array)
+        <ul>
+            <li>
+                Item 0 (Dictionary)
+                <ul>
+                    <li>Header (String) = Purchase Information</li>
+                    <li>
+                        Fields (Array)
+                        <ul>
+                            <li>
+                                Item 0 (Dictionary)
+                                <ul>
+                                    <li>Type (String) = Picker</li>
+                                    <li>KeyPath (String) = seller</li>
+                                    <li>LabelText (String) = Seller</li>
+                                    <li>Placeholder (String) = Seller</li>
+                                    <li>
+                                        Values (Dictionary)
+                                        <ul>
+                                            <li>Best Buy (String) = Best Buy</li>
+                                            <li>Apple Store (String) = Apple Store</li>
+                                            <li>Web Store (String) = Web Store</li>
+                                            <li>Other (String) = Other</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Item 1 (Dictionary)
+                                <ul>
+                                    <li>Type (String) = Date</li>
+                                    <li>DateStyle (String) = Long</li>
+                                    <li>KeyPath (String) = purchaseDate</li>
+                                    <li>LabelText (String) = Date</li>
+                                    <li>Placeholder (String) = Purchase date</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Item 2 (Dictionary)
+                                <ul>
+                                    <li>Type (String) = Number</li>
+                                    <li>Style (String) = Currency</li>
+                                    <li>KeyPath (String) = purchasePrice</li>
+                                    <li>LabelText (String) = Price</li>
+                                    <li>Placeholder (String) = Purchase price</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
 
 The purchase information form demonstrates how to use the Number and Date form
 field types. With the Number form field, we are using the Currency style or
