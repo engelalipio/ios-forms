@@ -25,6 +25,8 @@
  * SOFTWARE.
  */
 
+#import "IRFormFieldDelegate.h"
+
 /**
  * Base class for a form field.
  *
@@ -41,6 +43,26 @@
     NSString *cellBundleId;
     BOOL cellNibRegistered;
 }
+
+/** @name Properties */
+
+/**
+ * Gets or sets the delegate that receives notifications of events from the form
+ * field.
+ *
+ * The delegate property stores a reference to an object that implements the
+ * IRFormFieldDelegate protocol. The delegate object will receive notifications
+ * of events that affect the state of the form field.
+ */
+@property (nonatomic, weak) id<IRFormFieldDelegate> delegate;
+
+/**
+ * Gets or sets the index path of the form field in the presentation table.
+ *
+ * The indexPath property stores the index path of the field when presented in
+ * a form table view.
+ */
+@property (nonatomic, copy) NSIndexPath *indexPath;
 
 /** @name Initializing an IRFormField Instance */
 

@@ -89,6 +89,7 @@
     CGRect frame = [self.view frame];
     
     form = [self loadForm];
+    form.delegate = self;
     
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, frame.size.width, frame.size.height)
                                              style:UITableViewStyleGrouped];
@@ -156,6 +157,8 @@
     [self matchAnimationTo:[notification userInfo]];
     self.tableView.frame = [self adjustFrameHeightBy:[self keyboardEndingFrameHeight:[notification userInfo]] multipliedBy:-1];
     [UIView commitAnimations];
+    
+    [form scrollToActiveFieldInTableView:self.tableView];
 }
 
 - (void)keyboardWillDisappear:(NSNotification *)notification
@@ -164,6 +167,14 @@
     [self matchAnimationTo:[notification userInfo]];
     self.tableView.frame = [self adjustFrameHeightBy:[self keyboardEndingFrameHeight:[notification userInfo]] multipliedBy:1];
     [UIView commitAnimations];
+    
+    [form scrollToActiveFieldInTableView:self.tableView];
+}
+
+#pragma mark - Form delegate
+
+- (void)form:(IRForm *)form fieldBecameActiveAtIndexPath:(NSIndexPath *)indexPath {
+    [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
 }
 
 @end

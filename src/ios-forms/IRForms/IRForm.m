@@ -31,6 +31,8 @@
 
 @implementation IRForm
 
+@synthesize delegate;
+
 #pragma mark - Initializers
 
 - (id)init {
@@ -97,6 +99,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     IRFormSection *formSection = [sections objectAtIndex:[indexPath section]];
     IRFormField *formField = [formSection fieldAtIndex:[indexPath row]];
+    formField.indexPath = indexPath;
+    formField.delegate = self;
     return [formField cellForTableView:tableView];
 }
 
@@ -114,7 +118,25 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     IRFormFieldCell *cell = (IRFormFieldCell *)[tableView cellForRowAtIndexPath:indexPath];
+    activeField = indexPath;
     [cell activateCell];
+}
+
+#pragma mark -
+
+- (void)scrollToActiveFieldInTableView:(UITableView *)tableView {
+    if (!activeField) {
+        return;
+    }
+    
+    [tableView scrollToRowAtIndexPath:activeField atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
+}
+
+#pragma mark - Form field delegate
+
+- (void)formFieldDidBecomeActive:(IRFormField *)formField {
+    activeField = formField.indexPath;
+    [self.delegate form:self fieldBecameActiveAtIndexPath:activeField];
 }
 
 @end

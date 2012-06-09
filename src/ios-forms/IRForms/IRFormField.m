@@ -29,6 +29,9 @@
 
 @implementation IRFormField
 
+@synthesize delegate;
+@synthesize indexPath;
+
 #pragma mark Initializers
 
 - (id)init {

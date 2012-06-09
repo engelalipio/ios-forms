@@ -1,8 +1,9 @@
 /*
- * IRForms.h
+ * IRFormFieldDelegate.h
  *
- * This header file imports all of the public header files for the iOS Forms
- * library.
+ * This file defines the IRFormFieldDelegate class. The IRForm class implements
+ * the IRFormFieldDelegate class to receive notifications for events from the
+ * form field.
  *
  * Copyright 2012 ImaginaryRealities, LLC
  *
@@ -25,17 +26,17 @@
  * SOFTWARE.
  */
 
-#import "IRFormDelegate.h"
-#import "IRForm.h"
-#import "IRFormViewController.h"
-#import "IRFormSection.h"
-#import "IRFormFieldDelegate.h"
-#import "IRFormField.h"
-#import "IRFormFieldCell.h"
-#import "IRLabelFormField.h"
-#import "IRLabelFormFieldCell.h"
-#import "IRTextFormField.h"
-#import "IRTextFormFieldCell.h"
-#import "IRNumberFormField.h"
-#import "IRDateFormField.h"
-#import "IRPickerFormField.h"
+@class IRFormField;
+
+@protocol IRFormFieldDelegate <NSObject>
+
+@required
+
+/**
+ * Notifies the delegate that the form field became the active field.
+ *
+ * @param formField The IRFormField object that is active.
+ */
+- (void)formFieldDidBecomeActive:(IRFormField *)formField;
+
+@end

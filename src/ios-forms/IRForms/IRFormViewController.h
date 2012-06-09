@@ -26,7 +26,7 @@
  * SOFTWARE.
  */
 
-@class IRForm;
+#import "IRForm.h"
 
 /**
  * View controller for a data entry form.
@@ -37,7 +37,7 @@
  * table view is linked to an IRForm object that implements the form and manages
  * the data entry experience.
  */
-@interface IRFormViewController : UIViewController {
+@interface IRFormViewController : UIViewController <IRFormDelegate> {
     @private
     IRForm *form;
 }

@@ -25,6 +25,9 @@
  * SOFTWARE.
  */
 
+#import "IRFormFieldDelegate.h"
+#import "IRFormDelegate.h"
+
 /**
  * The IRForm class represents a data entry form.
  *
@@ -35,10 +38,23 @@
  * is presented by the IRFormViewController in order to present the sections
  * and fields of the form correctly.
  */
-@interface IRForm : NSObject <UITableViewDataSource, UITableViewDelegate> {
+@interface IRForm : NSObject <UITableViewDataSource, UITableViewDelegate, IRFormFieldDelegate> {
     @private
     NSMutableArray *sections;
+    NSIndexPath *activeField;
 }
+
+/** @name Properties */
+
+/**
+ * Gets or sets the delegate for the form.
+ *
+ * The delegate property stores a reference to an object that implements the
+ * IRFormDelegate protocol. The IRForm object will invoke the delegate methods
+ * on the delegate to inform the delegate of events that affect the state or
+ * presentation of the form.
+ */
+@property (nonatomic, weak) id<IRFormDelegate> delegate;
 
 /** @name Initializing an IRForm Instance */
 
@@ -72,5 +88,15 @@
 - (id)initWithPropertyList:(NSString *)propertyListName
                     bundle:(NSBundle *)bundle 
                      model:(id)model;
+
+/** @name Scrolling */
+
+/**
+ * Scrolls to the active field in the table view.
+ *
+ * @param tableView The UITableView object that is presenting the form user
+ *      interface.
+ */
+- (void)scrollToActiveFieldInTableView:(UITableView *)tableView;
 
 @end

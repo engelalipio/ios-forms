@@ -174,6 +174,7 @@
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
     cellTextField = textField;
     textField.text = [self editValue];
+    [self.delegate formFieldDidBecomeActive:self];
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField {

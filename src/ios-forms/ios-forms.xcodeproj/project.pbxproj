@@ -28,6 +28,8 @@
 		4C35DA7C15693DCB008A54FE /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C35DA7B15693DCB008A54FE /* MainStoryboard_iPhone.storyboard */; };
 		4C35DA7E15693DDE008A54FE /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C35DA7D15693DDE008A54FE /* MainStoryboard_iPad.storyboard */; };
 		4C35DA8F15696299008A54FE /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C35DA8E15696299008A54FE /* libOCMock.a */; };
+		4C6C1DB51583E85F0035BEA7 /* IRFormFieldDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C6C1DB31583E0990035BEA7 /* IRFormFieldDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C6C1DB71583EADA0035BEA7 /* IRFormDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C6C1DB61583EADA0035BEA7 /* IRFormDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4CCDE2DE157A6629005CB018 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDC9DCA1567FB350043AC98 /* Foundation.framework */; };
 		4CCDE2E4157A6629005CB018 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CCDE2E2157A6629005CB018 /* InfoPlist.strings */; };
 		4CCDE337157A77FB005CB018 /* IRForms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCDE2DD157A6629005CB018 /* IRForms.framework */; };
@@ -103,6 +105,8 @@
 		4C35DA7B15693DCB008A54FE /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		4C35DA7D15693DDE008A54FE /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		4C35DA8E15696299008A54FE /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = ../../lib/OCMock/libOCMock.a; sourceTree = "<group>"; };
+		4C6C1DB31583E0990035BEA7 /* IRFormFieldDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRFormFieldDelegate.h; sourceTree = "<group>"; };
+		4C6C1DB61583EADA0035BEA7 /* IRFormDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRFormDelegate.h; sourceTree = "<group>"; };
 		4CCDE2DD157A6629005CB018 /* IRForms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = IRForms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCDE2E1157A6629005CB018 /* IRForms-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IRForms-Info.plist"; sourceTree = "<group>"; };
 		4CCDE2E3157A6629005CB018 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -255,6 +259,8 @@
 				4CCDE350157B9C23005CB018 /* IRTextFormFieldCell.m */,
 				4CCDE2E0157A6629005CB018 /* Supporting Files */,
 				4CCDE37B157B9DFD005CB018 /* IRFormField_Private.h */,
+				4C6C1DB31583E0990035BEA7 /* IRFormFieldDelegate.h */,
+				4C6C1DB61583EADA0035BEA7 /* IRFormDelegate.h */,
 			);
 			path = IRForms;
 			sourceTree = "<group>";
@@ -352,6 +358,8 @@
 				4CCDE364157B9C23005CB018 /* IRPickerFormField.h in Headers */,
 				4CCDE366157B9C23005CB018 /* IRTextFormField.h in Headers */,
 				4CCDE368157B9C23005CB018 /* IRTextFormFieldCell.h in Headers */,
+				4C6C1DB51583E85F0035BEA7 /* IRFormFieldDelegate.h in Headers */,
+				4C6C1DB71583EADA0035BEA7 /* IRFormDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -784,6 +792,7 @@
 				4CCDE2E7157A6629005CB018 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CDC9DC11567FB350043AC98 /* Build configuration list for PBXProject "ios-forms" */ = {
 			isa = XCConfigurationList;
