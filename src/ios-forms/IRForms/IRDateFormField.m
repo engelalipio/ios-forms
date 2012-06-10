@@ -123,4 +123,8 @@
     return datePicker;
 }
 
+- (NSString *)defaultCellReuseIdentifier {
+    return @"IRDateFormField";
+}
+
 @end

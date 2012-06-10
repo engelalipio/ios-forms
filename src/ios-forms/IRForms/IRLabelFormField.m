@@ -66,4 +66,8 @@
     return [[IRLabelFormFieldCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
 }
 
+- (NSString *)defaultCellReuseIdentifier {
+    return @"IRLabelFormField";
+}
+
 @end

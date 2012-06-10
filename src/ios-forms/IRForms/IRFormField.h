@@ -141,4 +141,16 @@
  */
 - (UITableViewCell *)createCellWithReuseIdentifier:(NSString *)reuseIdentifier;
 
+/** @name Default settings */
+
+/**
+ * Gets the default cell reuse identifier for the field type.
+ *
+ * This method can be overridden by derived classes to return a different cell
+ * reuse identifier specific to the field type.
+ *
+ * @return Returns the default cell reuse identifier to use for the field type.
+ */
+- (NSString *)defaultCellReuseIdentifier;
+
 @end

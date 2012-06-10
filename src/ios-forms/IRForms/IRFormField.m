@@ -63,7 +63,7 @@
     }
     
     if (!cellReuseIdentifier) {
-        cellReuseIdentifier = @"IRFormField";
+        cellReuseIdentifier = [self defaultCellReuseIdentifier];
     }
     
     if (!cellNibName) {
@@ -143,6 +143,10 @@
 
 - (BOOL)isiPad {
     return [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad;
+}
+
+- (NSString *)defaultCellReuseIdentifier {
+    return @"IRFormField";
 }
 
 @end

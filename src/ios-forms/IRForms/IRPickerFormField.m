@@ -72,10 +72,12 @@
     if (currentValue) {
         NSUInteger index = [values indexOfObjectPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
             IRPickerItem *item = obj;
-            return item.value == currentValue;
+            return [currentValue isEqual:item.value];
         }];
-        selectedItem = [values objectAtIndex:index];
-        [pickerView selectRow:index inComponent:0 animated:NO];
+        if (index != NSNotFound) {
+            selectedItem = [values objectAtIndex:index];
+            [pickerView selectRow:index inComponent:0 animated:NO];
+        }
     }
     
     return pickerView;
@@ -123,6 +125,10 @@
     [self setValue:nil];
     [self updateText];
     return YES;
+}
+
+- (NSString *)defaultCellReuseIdentifier {
+    return @"IRPickerFormField";
 }
 
 @end

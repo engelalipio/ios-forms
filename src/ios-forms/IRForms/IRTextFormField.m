@@ -208,4 +208,8 @@
     return nil;
 }
 
+- (NSString *)defaultCellReuseIdentifier {
+    return @"IRTextFormField";
+}
+
 @end
